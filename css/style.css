@@ -276,6 +276,10 @@ button {
   margin-right: 8px;
 }
 
+.tours__see__all__link:hover, .our-cars__see-all__link:hover {
+  color: #ffa048;
+}
+
 .swiper-button-disabled {
   display: none !important;
 }
