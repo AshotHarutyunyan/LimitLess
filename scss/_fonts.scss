@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+%bold-50 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 65px;
+}
+
+%bold-40 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+  font-feature-settings: "tnum" on, "lnum" on;
+}
+
+%bold-16 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: "tnum" on, "lnum" on;
+}
+
+%regular-16-feature {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: "tnum" on, "lnum" on;
+}
+
+%medium-16 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+%regular-14 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+%regular-12 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+%regular-16 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+%bold-14 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+%bold-20 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+%bold-36 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 54px;
+  font-feature-settings: "tnum" on, "lnum" on;
+}
+
+%thin-14 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+}
+
+%mediun-18 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+%regular-18 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+%regular-13 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+%nunito-14 {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+%inter-18 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+%inter-20 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+%inter-16 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+%inter-14 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+%nunito-18 {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}

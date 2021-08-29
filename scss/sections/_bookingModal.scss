@@ -1,0 +1,71 @@
+.booking-modal {
+  &__dialog {
+    max-width: 780px !important;
+  }
+
+  &__header {
+    justify-content: flex-start;
+
+    .btn-close {
+      margin: 0;
+    }
+
+    .modal-title {
+      margin-left: 50%;
+      transform: translateX(-100%);
+      color: #222222;
+      @extend %inter-18;
+    }
+  }
+
+  .modal-header,
+  .modal-footer {
+    border-color: #ebebeb !important;
+  }
+
+  &__body {
+    padding: 0px;
+    overflow-y: auto;
+    max-height: calc(100vh - 113px);
+    min-height: 190px;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px #ebebeb;
+      border-radius: 10px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #ebebeb;
+      border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #ebebeb;
+    }
+
+    &__top {
+      display: flex;
+      padding: 18px 50px 6px;
+      border-bottom: 1px solid #ebebeb;
+
+      &__image {
+        max-width: 342px;
+        width: 100%;
+        height: 170px;
+        border-radius: 20px;
+        margin-right: 63px;
+      }
+    }
+  }
+
+  &__close {
+    background: none;
+  }
+}

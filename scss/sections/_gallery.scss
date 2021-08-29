@@ -1,0 +1,21 @@
+.gallery {
+  margin-top: 117px;
+
+  &__title {
+    text-align: center;
+    @extend %bold-40;
+    color: #25294a;
+    margin-bottom: 39px;
+  }
+
+  &__slide {
+    margin-bottom: 40px;
+
+    img {
+      max-width: 286px;
+      height: 230px;
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+}

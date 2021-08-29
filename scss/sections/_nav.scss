@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  &__list {
+    list-style: none;
+    display: flex;
+
+    &__item {
+      margin-right: 58px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      &__link {
+        color: #161827;
+        text-decoration: none;
+        @extend %regular-16-feature;
+      }
+
+      &__link_active {
+        color: #007b8c;
+        font-weight: bold;
+      }
+    }
+  }
+}

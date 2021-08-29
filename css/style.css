@@ -1,0 +1,1180 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+.hero__left-block__title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 65px;
+}
+
+.activity__content__title, .services__title, .tours__title, .advantages__content__title, .our-cars__title, .testimonials__title, .gallery__title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+}
+
+.booking-form__checklist__item__price {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+}
+
+.nav__list__item__link, .activity__content__subtitle, .home-card__description {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+}
+
+.get_started, .testimonials__slide__top__user__name {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.search-bar__item__label, .our-cars__see-all__description, .car__content__subtitle, .testimonials__slide__top__user__position, .footer .copyright {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.search-bar__item__input, .search-bar__item__input::-webkit-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.search-bar__item__input, .search-bar__item__input:-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.search-bar__item__input, .search-bar__item__input::-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.search-bar__item__input, .search-bar__item__input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.hero__left-block__description, .activity__content__description, .tours__list__item__content__description {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.hero__left-block__buttons__first, .activity__content__button, .car__content__book, .home-card__more, .tours__see__all__link, .our-cars__see-all__link, .hero__left-block__buttons__second {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.services__list__item__title, .car__content__top__title, .car__content__top__price, .booking-form__amount__price {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.home-card__title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 54px;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+}
+
+.services__list__item__description {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+}
+
+.tours__list__item__content__title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.tours__list__item__content__price {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.car__content__description, .testimonials__slide__comment {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.advantages__content__subtitle, .advantages__content__list__item__description {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.booking-modal__header .modal-title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.booking-form__title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.booking-form__subtitle, .booking-form__checklist__item label, .booking-form__bottom__description, .booking-form__bottom__buttons__clear, .booking-form__bottom__buttons__submit {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.booking-form__inputs label {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.booking-form__amount__title {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #f9fafc;
+}
+
+input {
+  outline: none;
+}
+
+dl,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.get_started {
+  border: 1px solid #007b8c;
+  border-radius: 8px;
+  color: #007b8c;
+  padding: 12px 16px 12px 24px;
+  background: none;
+}
+
+.hero__left-block__buttons__first, .activity__content__button, .car__content__book, .home-card__more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #007b8c;
+  border-radius: 50px;
+  padding: 11px 0;
+  border: none;
+  color: #ffffff;
+}
+
+.tours__see__all__link, .our-cars__see-all__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #ffa048;
+}
+
+.tours__see__all__link span, .our-cars__see-all__link span {
+  margin-right: 8px;
+}
+
+.swiper-button-disabled {
+  display: none !important;
+}
+
+.swiper-button {
+  color: #2c2a7b !important;
+  width: 30px !important;
+  height: 14px !important;
+  overflow: hidden;
+  margin-top: 0px !important;
+  top: 115px !important;
+}
+
+.swiper-button-next {
+  right: 0 !important;
+}
+
+.swiper-button-prev {
+  left: 0 !important;
+}
+
+.header {
+  padding: 16px 48px;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__list__item {
+  margin-right: 58px;
+}
+
+.nav__list__item:last-of-type {
+  margin-right: 0;
+}
+
+.nav__list__item__link {
+  color: #161827;
+  text-decoration: none;
+}
+
+.nav__list__item__link_active {
+  color: #007b8c;
+  font-weight: bold;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 106px auto 81px;
+}
+
+.hero__left-block {
+  max-width: 498px;
+  width: 100%;
+  margin-right: 52px;
+}
+
+.hero__left-block__title {
+  margin: 0;
+  color: #0a183a;
+}
+
+.hero__left-block__description {
+  color: #0a183a;
+  margin: 20px 0 50px;
+}
+
+.hero__left-block__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero__left-block__buttons__first {
+  min-width: 136px;
+}
+
+.hero__left-block__buttons__second {
+  background: none;
+  border: none;
+  color: #007b8c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 24px;
+}
+
+.hero__left-block__buttons__second span {
+  margin-right: 13px;
+}
+
+.hero__right-block {
+  max-width: 695px;
+  width: 100%;
+}
+
+.hero__right-block__img {
+  background: url("../../assets/images/heroImage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 246px;
+  margin-bottom: 32px;
+  border-radius: 20px;
+}
+
+.search-bar {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 12px 40px rgba(192, 196, 234, 0.25);
+          box-shadow: 0px 12px 40px rgba(192, 196, 234, 0.25);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 9px 10px 32px;
+}
+
+.search-bar__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.search-bar__item:first-of-type .search-bar__item__input {
+  max-width: 132px;
+}
+
+.search-bar__item__label {
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+.search-bar__item__input {
+  max-width: 62px;
+  width: 100%;
+  border: none;
+  color: #2c2a7b;
+}
+
+.search-bar__item__input::-webkit-input-placeholder {
+  color: #2c2a7b;
+  opacity: 0.6;
+}
+
+.search-bar__item__input:-ms-input-placeholder {
+  color: #2c2a7b;
+  opacity: 0.6;
+}
+
+.search-bar__item__input::-ms-input-placeholder {
+  color: #2c2a7b;
+  opacity: 0.6;
+}
+
+.search-bar__item__input::placeholder {
+  color: #2c2a7b;
+  opacity: 0.6;
+}
+
+.search-bar__submit {
+  border-radius: 50%;
+  border: none;
+  background: #ffa048;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.activity {
+  margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.activity__img {
+  background: url("../../assets/images/activityImage.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 402px;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.activity__content {
+  max-width: 498px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 105px;
+}
+
+.activity__content__title {
+  color: #25294a;
+}
+
+.activity__content__subtitle {
+  color: #ffa048;
+}
+
+.activity__content__description {
+  color: #0a183a;
+}
+
+.activity__content__button {
+  max-width: 122px;
+}
+
+.services {
+  margin-top: 160px;
+}
+
+.services__title {
+  color: #25294a;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 54px;
+}
+
+.services__list__item {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 12px 40px rgba(192, 196, 234, 0.25);
+          box-shadow: 0px 12px 40px rgba(192, 196, 234, 0.25);
+  border-radius: 16px;
+  max-width: 392px;
+  padding: 32px 18px 32px 32px;
+}
+
+.services__list__item__top-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 19px;
+}
+
+.services__list__item__top-block img {
+  margin-right: 16px;
+}
+
+.services__list__item__title {
+  color: #25294a;
+}
+
+.services__list__item__description {
+  color: #a2a4c2;
+  margin-bottom: 0;
+}
+
+.tours {
+  margin-top: 160px;
+}
+
+.tours__title {
+  color: #25294a;
+  text-align: center;
+}
+
+.tours__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 53px;
+}
+
+.tours__list__item {
+  max-width: 394px;
+  width: 100%;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 4px rgba(28, 5, 77, 0.1), 0px 12px 32px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 4px rgba(28, 5, 77, 0.1), 0px 12px 32px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+
+.tours__list__item__img {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+}
+
+.tours__list__item__content {
+  padding: 16px 24px;
+}
+
+.tours__list__item__content__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tours__list__item__content__title {
+  color: #25294a;
+}
+
+.tours__list__item__content__title__region {
+  color: #ffa048;
+}
+
+.tours__list__item__content__price {
+  color: #25294a;
+}
+
+.tours__list__item__content__description {
+  color: #25294a;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+.tours__see__all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 32px;
+}
+
+.advantages {
+  margin-top: 103px;
+  background: url("../../assets/images/Luggage.png");
+  background-repeat: no-repeat;
+  background-size: 374px 448px;
+  background-position: right;
+}
+
+.advantages__content {
+  max-width: 538px;
+  width: 100%;
+  min-height: 448px;
+}
+
+.advantages__content__title {
+  margin-bottom: 0;
+  color: #25294a;
+}
+
+.advantages__content__subtitle {
+  margin-top: 16px;
+  color: #7c8db0;
+}
+
+.advantages__content__list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 16px;
+}
+
+.advantages__content__list__item img {
+  margin: 0 12px 0 4px;
+}
+
+.advantages__content__list__item__description {
+  color: #7c8db0;
+  margin-bottom: 0;
+}
+
+.our-cars {
+  margin-top: 160px;
+}
+
+.our-cars__title {
+  text-align: center;
+  color: #25294a;
+  margin-bottom: 53px;
+}
+
+.our-cars__slide img {
+  max-width: 392px;
+  width: 100%;
+  height: 230px;
+}
+
+.our-cars__see-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 65px;
+}
+
+.our-cars__see-all__description {
+  color: #a2a4c2;
+}
+
+.our-cars__see-all__description span {
+  font-weight: 700;
+  color: #25294a;
+}
+
+.car__content__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 24px;
+}
+
+.car__content__top__title {
+  color: #25294a;
+}
+
+.car__content__top__price {
+  color: #ffa048;
+}
+
+.car__content__subtitle {
+  color: #0a183a;
+}
+
+.car__content__description {
+  color: #0a183a;
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.car__content__book {
+  min-width: 220px;
+}
+
+.home-card {
+  background: url("../../assets/images/MaskGroup.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #007b8c;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 55px 0 50px;
+  margin-top: 100px;
+}
+
+.home-card__title {
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+.home-card__more {
+  background: #ffa048;
+  min-width: 128px;
+  margin: 27px 0 34px;
+}
+
+.home-card__description {
+  color: #ffffff;
+}
+
+.testimonials {
+  margin-top: 160px;
+}
+
+.testimonials__title {
+  text-align: center;
+  color: #25294a;
+  margin-bottom: 73px;
+}
+
+.testimonials__slide {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 15px 25px rgba(200, 209, 236, 0.35);
+          box-shadow: 0px 15px 25px rgba(200, 209, 236, 0.35);
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 40px;
+}
+
+.testimonials__slide__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.testimonials__slide__top__user {
+  margin-left: 16px;
+}
+
+.testimonials__slide__top__user__name {
+  color: #25294a;
+}
+
+.testimonials__slide__top__user__position {
+  color: #3c42b1;
+  opacity: 0.4;
+}
+
+.testimonials__slide__top img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.testimonials__slide__rate {
+  margin-top: 16px;
+}
+
+.testimonials__slide__comment {
+  color: #0a183a;
+}
+
+.gallery {
+  margin-top: 117px;
+}
+
+.gallery__title {
+  text-align: center;
+  color: #25294a;
+  margin-bottom: 39px;
+}
+
+.gallery__slide {
+  margin-bottom: 40px;
+}
+
+.gallery__slide img {
+  max-width: 286px;
+  height: 230px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.footer {
+  background: #007b8c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 70px 0;
+  margin-top: 100px;
+}
+
+.footer__logo {
+  margin: 18px 0;
+}
+
+.footer .copyright {
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.footer .nav__list__item__link {
+  color: #ffffff;
+}
+
+.booking-modal__dialog {
+  max-width: 780px !important;
+}
+
+.booking-modal__header {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.booking-modal__header .btn-close {
+  margin: 0;
+}
+
+.booking-modal__header .modal-title {
+  margin-left: 50%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  color: #222222;
+}
+
+.booking-modal .modal-header,
+.booking-modal .modal-footer {
+  border-color: #ebebeb !important;
+}
+
+.booking-modal__body {
+  padding: 0px;
+  overflow-y: auto;
+  max-height: calc(100vh - 113px);
+  min-height: 190px;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+.booking-modal__body::-webkit-scrollbar {
+  width: 10px;
+}
+
+.booking-modal__body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px #ebebeb;
+          box-shadow: inset 0 0 5px #ebebeb;
+  border-radius: 10px;
+}
+
+.booking-modal__body::-webkit-scrollbar-thumb {
+  background: #ebebeb;
+  border-radius: 10px;
+}
+
+.booking-modal__body::-webkit-scrollbar-thumb:hover {
+  background: #ebebeb;
+}
+
+.booking-modal__body__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 18px 50px 6px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.booking-modal__body__top__image {
+  max-width: 342px;
+  width: 100%;
+  height: 170px;
+  border-radius: 20px;
+  margin-right: 63px;
+}
+
+.booking-modal__close {
+  background: none;
+}
+
+.booking-form__steps__step {
+  display: none;
+}
+
+.booking-form__steps__step_active {
+  display: block;
+}
+
+.booking-form__title {
+  color: #222222;
+  padding: 0px 50px;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+.booking-form__subtitle {
+  color: #9ca3bf;
+  padding: 0px 50px;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.booking-form__checklist {
+  border-bottom: 1px solid #ebebeb;
+  padding: 0 50px 32px;
+}
+
+.booking-form__checklist__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 24px;
+}
+
+.booking-form__checklist__item label {
+  color: #222222;
+  margin-left: 16px;
+}
+
+.booking-form__checklist__item__price {
+  color: #ffa048;
+  margin-bottom: 0;
+}
+
+.booking-form__amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 36px 50px 24px;
+}
+
+.booking-form__amount__title {
+  color: #36374a;
+  margin-bottom: 0;
+}
+
+.booking-form__amount__price {
+  color: #36374a;
+  margin-bottom: 0;
+}
+
+.booking-form__bottom {
+  padding: 24px 50px 50px;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  background: #ffffff;
+  border-top: 1px solid #ebebeb;
+}
+
+.booking-form__bottom__description {
+  color: #222222;
+  margin-bottom: 36px;
+}
+
+.booking-form__bottom__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.booking-form__bottom__buttons__clear {
+  text-decoration: underline;
+  color: #007b8c;
+  background: none;
+}
+
+.booking-form__bottom__buttons__back {
+  text-decoration: none;
+}
+
+.booking-form__bottom__buttons__back img {
+  margin-right: 12px;
+}
+
+.booking-form__bottom__buttons__submit {
+  padding: 15px 0;
+  background: #007b8c;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 172px;
+  color: #ffffff;
+}
+
+.booking-form__inputs {
+  padding: 0 50px;
+}
+
+.booking-form__inputs .form-group {
+  margin-top: 32px;
+}
+
+.booking-form__inputs label {
+  margin-bottom: 14px;
+  color: #0a0a2e;
+}
+
+.booking-form__inputs input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url("../../assets/icons/Calendar.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  border-width: thin;
+}
+/*# sourceMappingURL=style.css.map */

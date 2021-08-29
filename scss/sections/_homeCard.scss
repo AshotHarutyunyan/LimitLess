@@ -1,0 +1,31 @@
+.home-card {
+  background: url("../../assets/images/MaskGroup.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #007b8c;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 55px 0 50px;
+  margin-top: 100px;
+
+  &__title {
+    @extend %bold-36;
+    margin-bottom: 0;
+    color: #ffffff;
+  }
+
+  &__more {
+    @extend %blue_button;
+    background: #ffa048;
+    min-width: 128px;
+    margin: 27px 0 34px;
+  }
+
+  &__description {
+    @extend %regular-16-feature;
+    color: #ffffff;
+  }
+}

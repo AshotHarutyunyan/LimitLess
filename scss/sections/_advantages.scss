@@ -1,0 +1,43 @@
+.advantages {
+  margin-top: 103px;
+  background: url("../../assets/images/Luggage.png");
+  background-repeat: no-repeat;
+  background-size: 374px 448px;
+  background-position: right;
+
+  &__content {
+    max-width: 538px;
+    width: 100%;
+    min-height: 448px;
+
+    &__title {
+      @extend %bold-40;
+      margin-bottom: 0;
+      color: #25294a;
+    }
+
+    &__subtitle {
+      @extend %nunito-14;
+      margin-top: 16px;
+      color: #7c8db0;
+    }
+
+    &__list {
+      &__item {
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+
+        img {
+          margin: 0 12px 0 4px;
+        }
+
+        &__description {
+          @extend %nunito-14;
+          color: #7c8db0;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

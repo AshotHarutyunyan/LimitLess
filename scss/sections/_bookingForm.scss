@@ -1,0 +1,141 @@
+.booking-form {
+  &__steps {
+    &__step {
+      display: none;
+
+      &_active {
+        display: block;
+      }
+    }
+  }
+
+  &__title {
+    @extend %inter-20;
+    color: #222222;
+    padding: 0px 50px;
+    margin-top: 24px;
+    margin-bottom: 0;
+  }
+
+  &__subtitle {
+    @extend %inter-16;
+    color: #9ca3bf;
+    padding: 0px 50px;
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+
+  &__checklist {
+    // padding-bottom: 32px;
+    border-bottom: 1px solid #ebebeb;
+    padding: 0 50px 32px;
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 24px;
+      label {
+        @extend %inter-16;
+        color: #222222;
+        margin-left: 16px;
+      }
+
+      &__price {
+        @extend %bold-16;
+        color: #ffa048;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 50px 24px;
+
+    &__title {
+      @extend %nunito-18;
+      color: #36374a;
+      margin-bottom: 0;
+    }
+
+    &__price {
+      @extend %bold-20;
+      color: #36374a;
+      margin-bottom: 0;
+    }
+  }
+
+  &__bottom {
+    padding: 24px 50px 50px;
+    position: sticky;
+    bottom: 0;
+    background: #ffffff;
+    border-top: 1px solid #ebebeb;
+
+    &__description {
+      @extend %inter-16;
+      color: #222222;
+      margin-bottom: 36px;
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__clear {
+        @extend %inter-16;
+        text-decoration: underline;
+        color: #007b8c;
+        background: none;
+      }
+
+      &__back {
+        text-decoration: none;
+        img {
+          margin-right: 12px;
+        }
+      }
+
+      &__submit {
+        padding: 15px 0;
+        background: #007b8c;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 172px;
+        @extend %inter-16;
+        color: #ffffff;
+      }
+    }
+  }
+
+  &__inputs {
+    padding: 0 50px;
+
+    .form-group {
+      margin-top: 32px;
+    }
+
+    label {
+      @extend %inter-14;
+      margin-bottom: 14px;
+      color: #0a0a2e;
+    }
+
+    input[type="date"]::-webkit-calendar-picker-indicator {
+      color: rgba(0, 0, 0, 0);
+      opacity: 1;
+      display: block;
+      background: url("../../assets/icons/Calendar.svg") no-repeat;
+      width: 20px;
+      height: 20px;
+      margin-top: 5px;
+      border-width: thin;
+    }
+  }
+}
