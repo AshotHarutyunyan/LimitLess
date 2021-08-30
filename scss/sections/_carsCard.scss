@@ -1,0 +1,25 @@
+.cars-card {
+  background: url("../../assets/images/carsCardBackground.png") no-repeat;
+  background-size: contain;
+  background-position: right;
+  padding: 63px 85px !important;
+  margin-bottom: 158px;
+
+  &__title {
+    @extend %bold-36;
+
+    color: #25294a;
+  }
+
+  &__subtitle {
+    @extend %regular-16-feature;
+    color: #25294a;
+    margin: 8px 0 32px;
+  }
+
+  &__more {
+    @extend %blue_button;
+    background: #ffa048;
+    min-width: 128px;
+  }
+}

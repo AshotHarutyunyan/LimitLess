@@ -1,0 +1,65 @@
+.tour-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 80px;
+
+  &__left-block {
+    max-width: 782px;
+    width: 100%;
+    &__title {
+      @extend %bold-40;
+      margin: 0;
+
+      color: #0a183a;
+      span {
+        color: #ffa048;
+      }
+    }
+
+    &__subtitle {
+      @extend %medium-16;
+      color: #25294a;
+      margin: 20px 0 8px;
+    }
+
+    &__dates {
+      @extend %regular-16;
+      color: #000000;
+      margin-bottom: 32px;
+    }
+
+    &__description__block {
+      @extend %regular-16;
+      margin-bottom: 24px;
+      color: #0a183a;
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__prices {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      &__list {
+        max-width: 340px;
+        width: 100%;
+        &__title {
+          @extend %medium-16;
+          color: #25294a;
+          padding-bottom: 8px;
+          border-bottom: 1px solid #d9dbe9;
+        }
+
+        &__point {
+          @extend %regular-16;
+          color: #000000;
+          margin-top: 24px;
+        }
+      }
+    }
+  }
+}

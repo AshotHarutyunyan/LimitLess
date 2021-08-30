@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 .hero__left-block__title {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -9,7 +10,7 @@
   line-height: 65px;
 }
 
-.activity__content__title, .services__title, .tours__title, .advantages__content__title, .our-cars__title, .testimonials__title, .gallery__title {
+.activity__content__title, .services__title, .tours__title, .advantages__content__title, .our-cars__title, .testimonials__title, .gallery__title, .hero-card__title, .tour-page__left-block__title {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -17,6 +18,22 @@
   line-height: 60px;
   -webkit-font-feature-settings: "tnum" on, "lnum" on;
           font-feature-settings: "tnum" on, "lnum" on;
+}
+
+.cars__title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 65px;
+}
+
+.tours-list__right-block__title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 130%;
 }
 
 .booking-form__checklist__item__price {
@@ -29,7 +46,7 @@
           font-feature-settings: "tnum" on, "lnum" on;
 }
 
-.nav__list__item__link, .activity__content__subtitle, .home-card__description {
+.nav__list__item__link, .activity__content__subtitle, .home-card__description, .cars-card__subtitle {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -39,12 +56,20 @@
           font-feature-settings: "tnum" on, "lnum" on;
 }
 
-.get_started, .testimonials__slide__top__user__name {
+.get_started, .testimonials__slide__top__user__name, .tour-page__left-block__subtitle, .tour-page__left-block__prices__list__title {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+}
+
+.tours-list .tours__list__item__content__price {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
 }
 
 .search-bar__item__label, .our-cars__see-all__description, .car__content__subtitle, .testimonials__slide__top__user__position, .footer .copyright {
@@ -87,7 +112,7 @@
   line-height: 18px;
 }
 
-.hero__left-block__description, .activity__content__description, .tours__list__item__content__description {
+.hero__left-block__description, .activity__content__description, .tours__list__item__content__description, .hero-card__subtitle, .tours-list__right-block__list__item__description, .tour-page__left-block__dates, .tour-page__left-block__description__block, .tour-page__left-block__prices__list__point {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -95,7 +120,7 @@
   line-height: 30px;
 }
 
-.hero__left-block__buttons__first, .activity__content__button, .car__content__book, .home-card__more, .tours__see__all__link, .our-cars__see-all__link, .hero__left-block__buttons__second {
+.hero__left-block__buttons__first, .activity__content__button, .car__content__book, .home-card__more, .cars-card__more, .tours__see__all__link, .our-cars__see-all__link, .hero__left-block__buttons__second {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -111,7 +136,7 @@
   line-height: 30px;
 }
 
-.home-card__title {
+.home-card__title, .cars-card__title {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -231,8 +256,9 @@ button {
 }
 
 .container {
-  max-width: 1240px;
-  width: 100%;
+  max-width: 1440px !important;
+  width: 100% !important;
+  padding: 0 100px !important;
   margin: 0 auto;
 }
 
@@ -244,7 +270,7 @@ button {
   background: none;
 }
 
-.hero__left-block__buttons__first, .activity__content__button, .car__content__book, .home-card__more {
+.hero__left-block__buttons__first, .activity__content__button, .car__content__book, .home-card__more, .cars-card__more {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -413,7 +439,7 @@ button {
 }
 
 .hero__right-block__img {
-  background: url("../../assets/images/heroImage.png");
+  background: url("../assets/images/heroImage.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 246px;
@@ -515,7 +541,7 @@ button {
 }
 
 .activity__img {
-  background: url("../../assets/images/activityImage.png");
+  background: url("../assets/images/activityImage.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 402px;
@@ -643,6 +669,7 @@ button {
   -webkit-box-shadow: 0px 2px 4px rgba(28, 5, 77, 0.1), 0px 12px 32px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 2px 4px rgba(28, 5, 77, 0.1), 0px 12px 32px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
+  text-decoration: none;
 }
 
 .tours__list__item__img {
@@ -668,6 +695,7 @@ button {
 
 .tours__list__item__content__title {
   color: #25294a;
+  margin-bottom: 0;
 }
 
 .tours__list__item__content__title__region {
@@ -676,6 +704,7 @@ button {
 
 .tours__list__item__content__price {
   color: #25294a;
+  margin-bottom: 0;
 }
 
 .tours__list__item__content__description {
@@ -696,7 +725,7 @@ button {
 
 .advantages {
   margin-top: 103px;
-  background: url("../../assets/images/Luggage.png");
+  background: url("../assets/images/Luggage.png");
   background-repeat: no-repeat;
   background-size: 374px 448px;
   background-position: right;
@@ -805,7 +834,7 @@ button {
 }
 
 .home-card {
-  background: url("../../assets/images/MaskGroup.png");
+  background: url("../assets/images/MaskGroup.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #007b8c;
@@ -823,7 +852,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 55px 0 50px;
+  padding: 55px 0 50px !important;
   margin-top: 100px;
 }
 
@@ -840,6 +869,7 @@ button {
 
 .home-card__description {
   color: #ffffff;
+  text-align: center;
 }
 
 .testimonials {
@@ -1175,10 +1205,255 @@ button {
   color: rgba(0, 0, 0, 0);
   opacity: 1;
   display: block;
-  background: url("../../assets/icons/Calendar.svg") no-repeat;
+  background: url("../assets/icons/Calendar.svg") no-repeat;
   width: 20px;
   height: 20px;
   margin-top: 5px;
   border-width: thin;
+}
+
+.cars__title {
+  color: #0a183a;
+  margin: 50px 0;
+}
+
+.cars__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cars__list__item {
+  max-width: 392px;
+  width: 100%;
+  margin-bottom: 105px;
+}
+
+.cars__list__item img {
+  width: 100%;
+}
+
+.cars__galery {
+  margin-top: 55px;
+}
+
+.hero-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: url("../assets/images/searchBarBackground.png") no-repeat;
+  background-size: cover;
+  margin-top: 37px;
+  padding: 97px 0 !important;
+}
+
+.hero-card__title {
+  color: #0a183a;
+}
+
+.hero-card__subtitle {
+  color: #0a183a;
+  opacity: 0.8;
+  margin-bottom: 24px;
+}
+
+.hero-card .search-bar {
+  max-width: 695px;
+  width: 100%;
+}
+
+.cars-card {
+  background: url("../assets/images/carsCardBackground.png") no-repeat;
+  background-size: contain;
+  background-position: right;
+  padding: 63px 85px !important;
+  margin-bottom: 158px;
+}
+
+.cars-card__title {
+  color: #25294a;
+}
+
+.cars-card__subtitle {
+  color: #25294a;
+  margin: 8px 0 32px;
+}
+
+.cars-card__more {
+  background: #ffa048;
+  min-width: 128px;
+}
+
+.tours-list {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tours-list .tours__list__item {
+  margin-bottom: 30px;
+}
+
+.tours-list .tours__list__item__content__price {
+  color: #ffa048;
+}
+
+.tours-list__card {
+  padding: 56px 0 !important;
+}
+
+.tours-list__left-block {
+  max-width: 818px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tours-list__right-block {
+  max-width: 367px;
+  width: 100%;
+}
+
+.tours-list__right-block__title {
+  color: #0a1244;
+  margin-bottom: 22px;
+}
+
+.tours-list__right-block__list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-bottom: 1px solid #d9dbe9;
+  padding: 20px 0px;
+}
+
+.tours-list__right-block__list__item:first-of-type {
+  border-top: 1px solid #d9dbe9;
+}
+
+.tours-list__right-block__list__item__number img {
+  width: 47px;
+  height: 43px;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+.tours-list__right-block__list__item__description {
+  color: #0a1244;
+  line-height: 150%;
+}
+
+.tours-list__right-block__list__item__description span {
+  color: #2c2a7b;
+  opacity: 0.6;
+}
+
+.tour-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 80px;
+}
+
+.tour-page__left-block {
+  max-width: 782px;
+  width: 100%;
+}
+
+.tour-page__left-block__title {
+  margin: 0;
+  color: #0a183a;
+}
+
+.tour-page__left-block__title span {
+  color: #ffa048;
+}
+
+.tour-page__left-block__subtitle {
+  color: #25294a;
+  margin: 20px 0 8px;
+}
+
+.tour-page__left-block__dates {
+  color: #000000;
+  margin-bottom: 32px;
+}
+
+.tour-page__left-block__description__block {
+  margin-bottom: 24px;
+  color: #0a183a;
+}
+
+.tour-page__left-block__image {
+  width: 100%;
+}
+
+.tour-page__left-block__prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.tour-page__left-block__prices__list {
+  max-width: 340px;
+  width: 100%;
+}
+
+.tour-page__left-block__prices__list__title {
+  color: #25294a;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #d9dbe9;
+}
+
+.tour-page__left-block__prices__list__point {
+  color: #000000;
+  margin-top: 24px;
 }
 /*# sourceMappingURL=style.css.map */

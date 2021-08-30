@@ -1,0 +1,28 @@
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url("../../assets/images/searchBarBackground.png") no-repeat;
+  background-size: cover;
+  margin-top: 37px;
+  padding: 97px 0 !important;
+
+  &__title {
+    @extend %bold-40;
+    color: #0a183a;
+  }
+
+  &__subtitle {
+    @extend %regular-16;
+    color: #0a183a;
+    opacity: 0.8;
+    margin-bottom: 24px;
+  }
+
+  .search-bar {
+    max-width: 695px;
+    width: 100%;
+  }
+}

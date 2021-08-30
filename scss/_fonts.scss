@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 
 %bold-50 {
   font-family: "Poppins", sans-serif;
@@ -17,6 +18,22 @@
   font-size: 40px;
   line-height: 60px;
   font-feature-settings: "tnum" on, "lnum" on;
+}
+
+%bold-32 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 65px;
+}
+
+%bold-18 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 130%;
 }
 
 %bold-16 {
@@ -43,6 +60,14 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+}
+
+%medium-18 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
 }
 
 %regular-14 {
@@ -172,4 +197,12 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
+}
+
+%barlow-18 {
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 130%;
 }

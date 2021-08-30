@@ -40,20 +40,25 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    const nextStepButton = document.querySelector('.booking-form__bottom__buttons__next');
 
-    document.querySelector('.booking-form__bottom__buttons__next').addEventListener('click', () => {
+    nextStepButton?.addEventListener('click', () => {
         const bookingFormSteps = document.querySelectorAll('.booking-form__steps__step');
         bookingFormSteps[0].classList.remove('booking-form__steps__step_active');
         bookingFormSteps[1].classList.add('booking-form__steps__step_active');
     });
 
-    document.querySelector('.booking-form__bottom__buttons__back').addEventListener('click', () => {
+    const backToPrevStepButton = document.querySelector('.booking-form__bottom__buttons__back')
+
+    backToPrevStepButton?.addEventListener('click', () => {
         const bookingFormSteps = document.querySelectorAll('.booking-form__steps__step');
         bookingFormSteps[1].classList.remove('booking-form__steps__step_active');
         bookingFormSteps[0].classList.add('booking-form__steps__step_active');
     });
 
-    document.querySelector('.booking-form__bottom__buttons__clear').addEventListener('click', () => {
+    const clearAllButton = document.querySelector('.booking-form__bottom__buttons__clear')
+
+    clearAllButton?.addEventListener('click', () => {
         const bookingFormCheckboxes = document.querySelectorAll('.form-check-input');
         bookingFormCheckboxes.forEach((el) => {
             el.checked = false;
