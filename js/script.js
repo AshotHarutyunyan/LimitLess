@@ -40,6 +40,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    const swiper4 = new Swiper("#swiper5", {
+        watchSlidesProgress: true,
+        slidesPerView: 3,
+        spaceBetween: 32,
+
+        navigation: {
+            prevEl: ".car-swiper-button-prev",
+            nextEl: ".car-swiper-button-next",
+        },
+    });
+
     const nextStepButton = document.querySelector('.booking-form__bottom__buttons__next');
 
     nextStepButton?.addEventListener('click', () => {
@@ -65,5 +76,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    const days = document.querySelectorAll('.tour-page__right-block__days__list__item');
+    const daysContents = document.querySelectorAll('.tour-page__right-block__days-content__list__item');
+    const removeClassFromList = (elements, className) => {
+        elements.forEach((el) => {
+            el.classList.remove(className);
+        })
+    }
+
+    days?.forEach((day) => {
+        day.addEventListener('click', () => {
+            const selectedIndex = Number(day.getAttribute('data-day'));
+            removeClassFromList(days, 'tour-page__right-block__days__list__item_active');
+            removeClassFromList(daysContents, 'tour-page__right-block__days-content__list__item_active');
+            days[selectedIndex].classList.add('tour-page__right-block__days__list__item_active');
+            daysContents[selectedIndex].classList.add('tour-page__right-block__days-content__list__item_active');
+        });
+    });
 
 });

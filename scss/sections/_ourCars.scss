@@ -1,5 +1,10 @@
 .our-cars {
   margin-top: 160px;
+  padding: 0 60px !important;
+
+  .swiper {
+    padding: 0 20px;
+  }
 
   &__title {
     text-align: center;

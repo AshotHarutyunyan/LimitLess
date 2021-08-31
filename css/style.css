@@ -10,7 +10,7 @@
   line-height: 65px;
 }
 
-.activity__content__title, .services__title, .tours__title, .advantages__content__title, .our-cars__title, .testimonials__title, .gallery__title, .hero-card__title, .tour-page__left-block__title {
+.activity__content__title, .services__title, .tours__title, .advantages__content__title, .our-cars__title, .testimonials__title, .gallery__title, .hero-card__title, .tour-page__left-block__title, .car-page__left-block__title {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -20,7 +20,7 @@
           font-feature-settings: "tnum" on, "lnum" on;
 }
 
-.cars__title {
+.cars__title, .gallery-page__title {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -36,7 +36,7 @@
   line-height: 130%;
 }
 
-.booking-form__checklist__item__price {
+.booking-form__checklist__item__price, .tour-page__right-block__days-content__list__item__description {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -56,7 +56,7 @@
           font-feature-settings: "tnum" on, "lnum" on;
 }
 
-.get_started, .testimonials__slide__top__user__name, .tour-page__left-block__subtitle, .tour-page__left-block__prices__list__title {
+.get_started, .testimonials__slide__top__user__name, .tour-page__left-block__subtitle, .tour-page__left-block__prices__list__title, .tour-page__right-block__price__title, .tour-page__right-block__days__title, .car-page__right-block__title {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -72,7 +72,7 @@
   line-height: 27px;
 }
 
-.search-bar__item__label, .our-cars__see-all__description, .car__content__subtitle, .testimonials__slide__top__user__position, .footer .copyright {
+.search-bar__item__label, .our-cars__see-all__description, .car__content__subtitle, .testimonials__slide__top__user__position, .footer .copyright, .tour-page__right-block__days__list__item {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -80,7 +80,7 @@
   line-height: 21px;
 }
 
-.search-bar__item__input, .search-bar__item__input::-webkit-input-placeholder {
+.search-bar__item__input, .search-bar__item__input::-webkit-input-placeholder, .car-page__right-block__priceList__item p {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -88,7 +88,7 @@
   line-height: 18px;
 }
 
-.search-bar__item__input, .search-bar__item__input:-ms-input-placeholder {
+.search-bar__item__input, .search-bar__item__input:-ms-input-placeholder, .car-page__right-block__priceList__item p {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -96,7 +96,7 @@
   line-height: 18px;
 }
 
-.search-bar__item__input, .search-bar__item__input::-ms-input-placeholder {
+.search-bar__item__input, .search-bar__item__input::-ms-input-placeholder, .car-page__right-block__priceList__item p {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -104,7 +104,7 @@
   line-height: 18px;
 }
 
-.search-bar__item__input, .search-bar__item__input::placeholder {
+.search-bar__item__input, .search-bar__item__input::placeholder, .car-page__right-block__priceList__item p {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -112,7 +112,7 @@
   line-height: 18px;
 }
 
-.hero__left-block__description, .activity__content__description, .tours__list__item__content__description, .hero-card__subtitle, .tours-list__right-block__list__item__description, .tour-page__left-block__dates, .tour-page__left-block__description__block, .tour-page__left-block__prices__list__point {
+.hero__left-block__description, .activity__content__description, .tours__list__item__content__description, .hero-card__subtitle, .tours-list__right-block__list__item__description, .tour-page__left-block__dates, .tour-page__left-block__description__block, .tour-page__left-block__prices__list__point, .tour-page__right-block__price__list__item__title, .tour-page__right-block__price__list__item__age, .tour-page__right-block__price__list__item__price, .car-page__left-block__subtitle, .car-page__left-block__description, .car-page__right-block__description {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -120,7 +120,7 @@
   line-height: 30px;
 }
 
-.hero__left-block__buttons__first, .activity__content__button, .car__content__book, .home-card__more, .cars-card__more, .tours__see__all__link, .our-cars__see-all__link, .hero__left-block__buttons__second {
+.hero__left-block__buttons__first, .activity__content__button, .car__content__book, .home-card__more, .cars-card__more, .tour-page__right-block__price__book, .car-page__right-block__order, .tours__see__all__link, .our-cars__see-all__link, .hero__left-block__buttons__second {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -255,6 +255,10 @@ button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   max-width: 1440px !important;
   width: 100% !important;
@@ -270,7 +274,7 @@ button {
   background: none;
 }
 
-.hero__left-block__buttons__first, .activity__content__button, .car__content__book, .home-card__more, .cars-card__more {
+.hero__left-block__buttons__first, .activity__content__button, .car__content__book, .home-card__more, .cars-card__more, .tour-page__right-block__price__book, .car-page__right-block__order {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,6 +289,8 @@ button {
   padding: 11px 0;
   border: none;
   color: #ffffff;
+  position: relative;
+  z-index: 11;
 }
 
 .tours__see__all__link, .our-cars__see-all__link {
@@ -320,7 +326,7 @@ button {
 }
 
 .swiper-button-next {
-  right: 0 !important;
+  right: 10px !important;
 }
 
 .swiper-button-prev {
@@ -439,7 +445,7 @@ button {
 }
 
 .hero__right-block__img {
-  background: url("../assets/images/heroImage.png");
+  background: url("../../assets/images/heroImage.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 246px;
@@ -541,7 +547,7 @@ button {
 }
 
 .activity__img {
-  background: url("../assets/images/activityImage.png");
+  background: url("../../assets/images/activityImage.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 402px;
@@ -725,7 +731,7 @@ button {
 
 .advantages {
   margin-top: 103px;
-  background: url("../assets/images/Luggage.png");
+  background: url("../../assets/images/Luggage.png");
   background-repeat: no-repeat;
   background-size: 374px 448px;
   background-position: right;
@@ -768,6 +774,11 @@ button {
 
 .our-cars {
   margin-top: 160px;
+  padding: 0 60px !important;
+}
+
+.our-cars .swiper {
+  padding: 0 20px;
 }
 
 .our-cars__title {
@@ -834,7 +845,7 @@ button {
 }
 
 .home-card {
-  background: url("../assets/images/MaskGroup.png");
+  background: url("../../assets/images/MaskGroup.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #007b8c;
@@ -932,6 +943,11 @@ button {
 
 .gallery {
   margin-top: 117px;
+  padding: 0 60px !important;
+}
+
+.gallery .swiper {
+  padding: 0 20px;
 }
 
 .gallery__title {
@@ -1205,7 +1221,7 @@ button {
   color: rgba(0, 0, 0, 0);
   opacity: 1;
   display: block;
-  background: url("../assets/icons/Calendar.svg") no-repeat;
+  background: url("../../assets/icons/Calendar.svg") no-repeat;
   width: 20px;
   height: 20px;
   margin-top: 5px;
@@ -1257,7 +1273,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: url("../assets/images/searchBarBackground.png") no-repeat;
+  background: url("../../assets/images/searchBarBackground.png") no-repeat;
   background-size: cover;
   margin-top: 37px;
   padding: 97px 0 !important;
@@ -1279,7 +1295,7 @@ button {
 }
 
 .cars-card {
-  background: url("../assets/images/carsCardBackground.png") no-repeat;
+  background: url("../../assets/images/carsCardBackground.png") no-repeat;
   background-size: contain;
   background-position: right;
   padding: 63px 85px !important;
@@ -1455,5 +1471,308 @@ button {
 .tour-page__left-block__prices__list__point {
   color: #000000;
   margin-top: 24px;
+}
+
+.tour-page__right-block {
+  max-width: 367px;
+  width: 100%;
+}
+
+.tour-page__right-block__price__title {
+  color: #25294a;
+  padding-bottom: 8px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #d9dbe9;
+}
+
+.tour-page__right-block__price__book {
+  width: 100%;
+  margin-top: 37px;
+}
+
+.tour-page__right-block__price__list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #d9dbe9;
+  padding: 12px 0;
+}
+
+.tour-page__right-block__price__list__item:first-of-type {
+  border: none;
+  padding: 24px 0 0;
+}
+
+.tour-page__right-block__price__list__item__title, .tour-page__right-block__price__list__item__age {
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.tour-page__right-block__price__list__item__price {
+  color: #ffa048;
+  margin-bottom: 0;
+}
+
+.tour-page__right-block__days {
+  margin-top: 54px;
+}
+
+.tour-page__right-block__days__title {
+  color: #25294a;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #d9dbe9;
+}
+
+.tour-page__right-block__days__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.tour-page__right-block__days__list__item {
+  padding: 10px 14px 26px;
+  color: #6c718f;
+  background: #f9fafc;
+  -webkit-box-shadow: inset 0px -1px 0px #a2a4c2;
+          box-shadow: inset 0px -1px 0px #a2a4c2;
+  cursor: pointer;
+}
+
+.tour-page__right-block__days__list__item_active {
+  color: #25294a;
+  -webkit-box-shadow: inset 0px -3px 0px #0a1244;
+          box-shadow: inset 0px -3px 0px #0a1244;
+  cursor: default;
+  font-weight: 600;
+}
+
+.tour-page__right-block__days-content__list {
+  margin-top: 24px;
+}
+
+.tour-page__right-block__days-content__list__item {
+  display: none;
+}
+
+.tour-page__right-block__days-content__list__item__description {
+  color: #25294a;
+}
+
+.tour-page__right-block__days-content__list__item__description span {
+  font-weight: normal;
+}
+
+.tour-page__right-block__days-content__list__item_active {
+  display: block;
+}
+
+.gallery-page__title {
+  color: #25294a;
+  margin-top: 95px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.gallery-page__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gallery-page__list__item {
+  margin-bottom: 40px;
+}
+
+.gallery-page__list__item img {
+  max-width: 286px;
+  height: 230px;
+  border-radius: 20px;
+}
+
+.car-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 75px;
+}
+
+.car-page__left-block {
+  max-width: 766px;
+  width: 100%;
+}
+
+.car-page__left-block__title {
+  color: #0a183a;
+}
+
+.car-page__left-block__subtitle {
+  color: #000000;
+  margin-top: 8px;
+}
+
+.car-page__left-block__image {
+  width: 100%;
+  height: 288px;
+  margin-top: 32px;
+}
+
+.car-page__left-block__description {
+  color: #0a183a;
+  margin-top: 54px;
+}
+
+.car-page__left-block .car-swiper {
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.car-page__left-block .car-swiper .swiper-button-disabled {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.car-page__left-block .car-swiper-button-prev {
+  top: 45px !important;
+  left: 2px !important;
+  color: #a2a4c2 !important;
+}
+
+.car-page__left-block .car-swiper-button-prev__block {
+  position: absolute;
+  top: 40px !important;
+  left: 0px !important;
+  background: #a2a4c2;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  opacity: 0.1;
+}
+
+.car-page__left-block .car-swiper-button-next {
+  top: 45px !important;
+  right: 2px !important;
+  color: #ffffff !important;
+}
+
+.car-page__left-block .car-swiper-button-next__block {
+  position: absolute;
+  top: 40px !important;
+  right: 0px !important;
+  background: #007b8c;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+
+.car-page__left-block .car__slide img {
+  width: 100%;
+  height: 112px;
+}
+
+.car-page__right-block {
+  max-width: 367px;
+  width: 100%;
+}
+
+.car-page__right-block__title {
+  color: #25294a;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #d9dbe9;
+}
+
+.car-page__right-block__priceList {
+  background: #ffffff;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.car-page__right-block__priceList__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+
+.car-page__right-block__priceList__item__title {
+  color: #a2a4c2;
+}
+
+.car-page__right-block__priceList__item__specifications {
+  color: #0a183a;
+}
+
+.car-page__right-block__priceList__item__specifications span {
+  color: #a2a4c2;
+}
+
+.car-page__right-block__priceList__item__period {
+  color: #0a183a;
+}
+
+.car-page__right-block__priceList__item__price {
+  color: #0a183a;
+  font-weight: bold !important;
+}
+
+.car-page__right-block__priceList__item p {
+  padding: 16px;
+  margin-bottom: 0;
+}
+
+.car-page__right-block__priceList__item p:nth-child(1) {
+  width: 170px;
+}
+
+.car-page__right-block__priceList__item p:nth-child(2) {
+  width: 100px;
+}
+
+.car-page__right-block__priceList__item p:nth-child(3) {
+  width: 100px;
+}
+
+.car-page__right-block__order {
+  width: 100%;
+  margin: 32px 0;
+}
+
+.car-page__right-block__description {
+  color: #0a183a;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */

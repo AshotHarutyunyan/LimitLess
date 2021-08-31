@@ -62,4 +62,107 @@
       }
     }
   }
+
+  &__right-block {
+    max-width: 367px;
+    width: 100%;
+
+    &__price {
+      &__title {
+        @extend %medium-16;
+        color: #25294a;
+        padding-bottom: 8px;
+        margin-bottom: 0;
+        border-bottom: 1px solid #d9dbe9;
+      }
+
+      &__book {
+        @extend %blue_button;
+        width: 100%;
+        margin-top: 37px;
+      }
+
+      &__list {
+        &__item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid #d9dbe9;
+          padding: 12px 0;
+
+          &:first-of-type {
+            border: none;
+            padding: 24px 0 0;
+          }
+
+          &__title,
+          &__age {
+            @extend %regular-16;
+            color: #000000;
+            margin-bottom: 0;
+          }
+
+          &__price {
+            @extend %regular-16;
+            color: #ffa048;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    &__days {
+      margin-top: 54px;
+      &__title {
+        @extend %medium-16;
+        color: #25294a;
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+        border-bottom: 1px solid #d9dbe9;
+      }
+
+      &__list {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        &__item {
+          padding: 10px 14px 26px;
+          color: #6c718f;
+          @extend %regular-14;
+          background: #f9fafc;
+          box-shadow: inset 0px -1px 0px #a2a4c2;
+          cursor: pointer;
+        }
+
+        &__item_active {
+          color: #25294a;
+          box-shadow: inset 0px -3px 0px #0a1244;
+          cursor: default;
+          font-weight: 600;
+        }
+      }
+    }
+    &__days-content {
+      &__list {
+        margin-top: 24px;
+        &__item {
+          display: none;
+
+          &__description {
+            @extend %bold-16;
+            color: #25294a;
+
+            span {
+              font-weight: normal;
+            }
+          }
+        }
+
+        &__item_active {
+          display: block;
+        }
+      }
+    }
+  }
 }

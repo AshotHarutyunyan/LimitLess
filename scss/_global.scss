@@ -25,6 +25,10 @@ button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   max-width: 1440px !important;
   width: 100% !important;
@@ -51,6 +55,8 @@ button {
   border: none;
   color: #ffffff;
   @extend %bold-14;
+  position: relative;
+  z-index: 11;
 }
 
 %see_all_link {
@@ -82,7 +88,7 @@ button {
 }
 
 .swiper-button-next {
-  right: 0 !important;
+  right: 10px !important;
 }
 
 .swiper-button-prev {
