@@ -23,7 +23,9 @@
   <body>
     <header class="header">
       <div class="header__container">
-        <img src="./assets/icons/logo.svg" alt="logo" />
+        <a href="./index.html">
+          <img src="./assets/icons/logo.svg" class="header__logo" alt="logo" />
+        </a>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__list__item">
@@ -43,71 +45,75 @@
               <a class="nav__list__item__link" href="./galery.html">Gallery</a>
             </li>
             <li class="nav__list__item">
-              <a class="nav__list__item__link" href="#">Contact us</a>
+              <a class="nav__list__item__link" href="./contactus.html"
+                >Contact us</a
+              >
             </li>
           </ul>
         </nav>
-        <button class="get_started">Get started</button>
+        <div class="language-bar">
+          <button class="language-bar__item">Arm</button>
+          <button class="language-bar__item language-bar__item_active">
+            Eng
+          </button>
+          <button class="language-bar__item">Rus</button>
+        </div>
+        <div class="menu" role="button">
+          <div class="menu__item"></div>
+          <div class="menu__item"></div>
+          <div class="menu__item"></div>
+        </div>
       </div>
     </header>
+
+    <!-- mobile nav panel -->
+    <div class="mobile-nav">
+      <div class="mobile-nav__content">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./index.html">Home</a>
+            </li>
+            <li class="nav__list__item">
+              <a
+                class="nav__list__item__link nav__list__item__link_active"
+                href="#"
+                >Cars</a
+              >
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./tours.html">Tours</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./galery.html">Gallery</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./contactus.html"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="language-bar">
+          <button class="language-bar__item">Arm</button>
+          <button class="language-bar__item language-bar__item_active">
+            Eng
+          </button>
+          <button class="language-bar__item">Rus</button>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-nav__shadow"></div>
 
     <section class="hero-card container">
       <h2 class="hero-card__title">Car rentals for any kind of trip</h2>
       <p class="hero-card__subtitle">
         Compare deals from the biggest car rental companies
       </p>
-      <div class="search-bar">
-        <div class="search-bar__item">
-          <label class="search-bar__item__label" for="location">Location</label>
-          <input
-            class="search-bar__item__input"
-            placeholder="Where are you going?"
-            type="text"
-            name="location"
-            id="location"
-          />
-        </div>
-        <div class="search-bar__item">
-          <label class="search-bar__item__label" for="start_date"
-            >Start date</label
-          >
-          <input
-            class="search-bar__item__input"
-            placeholder="Add dates"
-            type="text"
-            name="start_date"
-            id="start_date"
-          />
-        </div>
-        <div class="search-bar__item">
-          <label class="search-bar__item__label" for="end_date">End date</label>
-          <input
-            class="search-bar__item__input"
-            placeholder="Add dates"
-            type="text"
-            name="end_date"
-            id="end_date"
-          />
-        </div>
-        <div class="search-bar__item">
-          <label class="search-bar__item__label" for="car">Car</label>
-          <input
-            class="search-bar__item__input"
-            placeholder="Select car"
-            type="text"
-            name="car"
-            id="car"
-          />
-        </div>
-        <button class="search-bar__submit">
-          <img src="./assets/icons/Search.svg" alt="Search" />
-        </button>
-      </div>
     </section>
 
-    <section class="cars container">
-      <h2 class="cars__title">Cars</h2>
-      <div class="cars__list">
+    <section class="cars cars__listsandevents container">
+      <div class="cars__list cars__left-block">
         <div class="cars__list__item">
           <a href="./car.html">
             <img src="./assets/images/sliderCar1Image.png" />
@@ -200,59 +206,106 @@
             </button>
           </div>
         </div>
-        <div class="cars__list__item">
-          <a href="./car.html">
-            <img src="./assets/images/sliderCar3Image.png" />
-          </a>
-          <div class="car__content">
-            <div class="car__content__top">
-              <h4 class="car__content__top__title">Хантер</h4>
-              <p class="car__content__top__price">55000 ֏</p>
+      </div>
+
+      <div class="cars__right-block events-list">
+        <h4 class="events-list__title">Events</h4>
+        <div class="events-list__list">
+          <div class="events-list__list__item">
+            <div class="events-list__list__item__number">
+              <img src="./assets/images/event1.png" alt="Event 1" />
             </div>
-            <p class="car__content__subtitle">без водителя</p>
-            <p class="car__content__description">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-            </p>
-            <button
-              class="car__content__book"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-              Book now
-            </button>
+            <div class="events-list__list__item__description">
+              Adventure tour in Armenia / <span>4 Days</span>
+            </div>
           </div>
-        </div>
-        <div class="cars__list__item">
-          <a href="./car.html">
-            <img src="./assets/images/sliderCar2Image.png" />
-          </a>
-          <div class="car__content">
-            <div class="car__content__top">
-              <h4 class="car__content__top__title">Toyota Land Cruiser</h4>
-              <p class="car__content__top__price">115000 ֏</p>
+          <div class="events-list__list__item">
+            <div class="events-list__list__item__number">
+              <img src="./assets/images/event2.png" alt="Event 2" />
             </div>
-            <p class="car__content__subtitle">без водителя</p>
-            <p class="car__content__description">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-            </p>
-            <button
-              class="car__content__book"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-              Book now
-            </button>
+            <div class="events-list__list__item__description">
+              Mount Ararat trip Climbing Mount Ararat / <span>6 Days </span>
+            </div>
+          </div>
+          <div class="events-list__list__item">
+            <div class="events-list__list__item__number">
+              <img src="./assets/images/event3.png" alt="Event 3" />
+            </div>
+            <div class="events-list__list__item__description">
+              Adventure tour in Armenia / <span>4 Days </span>
+            </div>
+          </div>
+          <div class="events-list__list__item">
+            <div class="events-list__list__item__number">
+              <img src="./assets/images/event4.png" alt="Event 4" />
+            </div>
+            <div class="events-list__list__item__description">
+              Mount Ararat trip Climbing Mount Ararat / <span> 6 Days </span>
+            </div>
+          </div>
+          <div class="events-list__list__item">
+            <div class="events-list__list__item__number">
+              <img src="./assets/images/event5.png" alt="Event 5" />
+            </div>
+            <div class="events-list__list__item__description">
+              Adventure tour in Armenia / <span>4 Days </span>
+            </div>
+          </div>
+          <div class="events-list__list__item">
+            <div class="events-list__list__item__number">
+              <img src="./assets/images/event6.png" alt="Event 6" />
+            </div>
+            <div class="events-list__list__item__description">
+              Mount Ararat trip Climbing Mount Ararat / <span>6 Days</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="cars-card container">
-      <h2 class="cars-card__title">OFFER CTA TEXT HERE</h2>
-      <p class="cars-card__subtitle">start for FREE, no credit card required</p>
-      <button class="cars-card__more">Learn More</button>
+    <section class="advantages container">
+      <div class="advantages__content">
+        <h2 class="advantages__content__title">В цене включено</h2>
+        <p class="advantages__content__subtitle">
+          Также предоставляются услуги по аренде внедорожника с водителем и без
+          посуточно:
+        </p>
+        <div class="advantages__content__list">
+          <div class="advantages__content__list__item">
+            <img src="./assets/icons/checkheavy.svg" alt="Check heavy" />
+            <p class="advantages__content__list__item__description">
+              Предоставление оснащенного внедорожника Тойота Лэнд Круйзер 78,
+              2020 с водителем на маршрут 350-500 км
+            </p>
+          </div>
+          <div class="advantages__content__list__item">
+            <img src="./assets/icons/checkheavy.svg" alt="Check heavy" />
+            <p class="advantages__content__list__item__description">
+              Встреча и Возврат в гостиницу или в определенное место туристов
+            </p>
+          </div>
+          <div class="advantages__content__list__item">
+            <img src="./assets/icons/checkheavy.svg" alt="Check heavy" />
+            <p class="advantages__content__list__item__description">
+              Во время передвижения и в течении всего времени тура
+              безалкогольные напитки без ограничения
+            </p>
+          </div>
+          <div class="advantages__content__list__item">
+            <img src="./assets/icons/checkheavy.svg" alt="Check heavy" />
+            <p class="advantages__content__list__item__description">
+              Ланч по плану мероприятия (бутерброды, закуски, бургеры)
+            </p>
+          </div>
+          <div class="advantages__content__list__item">
+            <img src="./assets/icons/checkheavy.svg" alt="Check heavy" />
+            <p class="advantages__content__list__item__description">
+              Ужин в региональных ресторанах традиционная и европейская кухня на
+              всех членов тура с алкогольными напитками (вино и пиво)
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="cars container">
@@ -871,17 +924,26 @@
             <a class="nav__list__item__link" href="./index.html">Home</a>
           </li>
           <li class="nav__list__item">
-            <a class="nav__list__item__link" href="#">Cars</a>
+            <a
+              class="nav__list__item__link nav__list__item__link_active"
+              href="#"
+              >Cars</a
+            >
           </li>
           <li class="nav__list__item">
             <a class="nav__list__item__link" href="./galery.html">Gallery</a>
           </li>
           <li class="nav__list__item">
-            <a class="nav__list__item__link" href="#">Contact us</a>
+            <a class="nav__list__item__link" href="./contactus.html"
+              >Contact us</a
+            >
+          </li>
+          <li class="nav__list__item">
+            <a class="nav__list__item__link" href="#">Terms and conditions</a>
           </li>
         </ul>
       </nav>
-      <img class="footer__logo" src="./assets/icons/LogoLight.svg" alt="logo" />
+      <img class="footer__logo" src="./assets/icons/logoLight.svg" alt="logo" />
       <p class="copyright">
         Copyright © 2020-2021 Greenhouse formula. All rights reserved.
       </p>

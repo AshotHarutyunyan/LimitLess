@@ -4,6 +4,12 @@
   justify-content: flex-start;
   align-items: stretch;
 
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-top: 24px;
+  }
+
   &__img {
     background: url("../../assets/images/activityImage.png");
     background-repeat: no-repeat;
@@ -12,6 +18,12 @@
     max-width: 500px;
     width: 100%;
     border-radius: 16px;
+
+    @media (max-width: 768px) {
+      max-width: unset;
+      height: calc((100vw - 40px) / 1.46);
+      margin-top: 32px;
+    }
   }
 
   &__content {
@@ -19,8 +31,13 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     margin-left: 105px;
+
+    @media (max-width: 768px) {
+      margin-left: 0px;
+      max-width: unset;
+    }
 
     &__title {
       @extend %bold-40;
@@ -30,11 +47,22 @@
     &__subtitle {
       @extend %regular-16-feature;
       color: #ffa048;
+
+      @media (max-width: 768px) {
+        margin-bottom: 8px;
+        font-size: 13px;
+        line-height: 19px;
+      }
     }
 
     &__description {
       @extend %regular-16;
       color: #0a183a;
+
+      @media (max-width: 768px) {
+        font-size: 13px;
+        line-height: 150%;
+      }
     }
 
     &__button {

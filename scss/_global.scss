@@ -6,6 +6,11 @@
 
 body {
   background: #f9fafc;
+  padding-top: 105px;
+
+  @media (max-width: 1024px) {
+    padding-top: 64px;
+  }
 }
 
 input {
@@ -34,6 +39,11 @@ a {
   width: 100% !important;
   padding: 0 100px !important;
   margin: 0 auto;
+
+  @media (max-width: 991px) {
+    max-width: 1280px !important;
+    padding: 0 20px !important;
+  }
 }
 
 .get_started {
@@ -57,6 +67,10 @@ a {
   @extend %bold-14;
   position: relative;
   z-index: 11;
+
+  &:hover {
+    background: #00a6bd;
+  }
 }
 
 %see_all_link {
@@ -93,4 +107,55 @@ a {
 
 .swiper-button-prev {
   left: 0 !important;
+}
+
+.language-bar {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    @extend %regular-16-feature;
+    color: #a2a4c2;
+    padding: 10px 19px;
+    box-shadow: inset 0px -2px 0px #ededf1;
+    background: none;
+
+    &:not(.language-bar__item_active):hover {
+      color: #535671;
+      box-shadow: inset 0px -2px 0px #535671;
+    }
+
+    &_active {
+      color: #007b8c;
+      box-shadow: inset 0px -2px 0px #007b8c;
+    }
+  }
+}
+
+.counter {
+  background: #f7f8fa;
+  border-radius: 4px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+
+  &__minus,
+  &__plus {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__value {
+    @extend %regular-14;
+    font-weight: 600;
+    color: #2d2c4c;
+    min-width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

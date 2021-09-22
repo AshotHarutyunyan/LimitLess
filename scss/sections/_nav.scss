@@ -26,3 +26,61 @@
     }
   }
 }
+
+.mobile-nav__shadow {
+  position: fixed;
+  display: none;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+
+  &_active {
+    @media (max-width: 1024px) {
+      display: block;
+    }
+  }
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 64px;
+  right: -280px;
+  bottom: 0;
+  z-index: 99999;
+  display: none;
+  justify-content: flex-end;
+  display: none;
+  transition: transform 0.7s ease-in-out 0s;
+  transform: translateX(0%);
+
+  &_active {
+    transform: translateX(-100%);
+  }
+
+  @media (max-width: 1024px) {
+    display: flex;
+  }
+
+  &__content {
+    background: #ffffff;
+    width: 280px;
+    height: 100%;
+    padding: 12px 35px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .nav__list {
+      flex-direction: column;
+
+      &__item {
+        margin-right: 0;
+        text-align: right;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

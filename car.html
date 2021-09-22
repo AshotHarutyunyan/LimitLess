@@ -23,7 +23,9 @@
   <body>
     <header class="header">
       <div class="header__container">
-        <img src="./assets/icons/logo.svg" alt="logo" />
+        <a href="./index.html">
+          <img src="./assets/icons/logo.svg" class="header__logo" alt="logo" />
+        </a>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__list__item">
@@ -43,13 +45,65 @@
               <a class="nav__list__item__link" href="./galery.html">Gallery</a>
             </li>
             <li class="nav__list__item">
-              <a class="nav__list__item__link" href="#">Contact us</a>
+              <a class="nav__list__item__link" href="./contactus.html"
+                >Contact us</a
+              >
             </li>
           </ul>
         </nav>
-        <button class="get_started">Get started</button>
+        <div class="language-bar">
+          <button class="language-bar__item">Arm</button>
+          <button class="language-bar__item language-bar__item_active">
+            Eng
+          </button>
+          <button class="language-bar__item">Rus</button>
+        </div>
+        <div class="menu" role="button">
+          <div class="menu__item"></div>
+          <div class="menu__item"></div>
+          <div class="menu__item"></div>
+        </div>
       </div>
     </header>
+
+    <!-- mobile nav panel -->
+    <div class="mobile-nav">
+      <div class="mobile-nav__content">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./index.html">Home</a>
+            </li>
+            <li class="nav__list__item">
+              <a
+                class="nav__list__item__link nav__list__item__link_active"
+                href="./cars.html"
+                >Cars</a
+              >
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./tours.html">Tours</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./galery.html">Gallery</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./contactus.html"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="language-bar">
+          <button class="language-bar__item">Arm</button>
+          <button class="language-bar__item language-bar__item_active">
+            Eng
+          </button>
+          <button class="language-bar__item">Rus</button>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-nav__shadow"></div>
 
     <section class="car-page container">
       <div class="car-page__left-block">
@@ -225,12 +279,414 @@
         </div>
       </div>
     </section>
+    <!-- Modal -->
+    <div
+      class="modal fade booking-modal"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog booking-modal__dialog">
+        <div class="modal-content">
+          <div class="modal-header booking-modal__header">
+            <button
+              type="button"
+              class="booking-modal__close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <img src="./assets/icons/close_big.svg" alt="close" />
+            </button>
+            <h5 class="modal-title" id="exampleModalLabel">Booking</h5>
+          </div>
+          <div class="modal-body booking-modal__body">
+            <div class="booking-modal__body__top">
+              <img
+                class="booking-modal__body__top__image"
+                src="./assets/images/SliderCar2Image.png"
+                alt="Car image"
+              />
+              <div class="car__content">
+                <div class="car__content__top">
+                  <h4 class="car__content__top__title">Toyota Land Cruiser</h4>
+                  <p class="car__content__top__price">125000 ֏</p>
+                </div>
+                <p class="car__content__subtitle">
+                  с водителем на 12 часов 125000
+                </p>
+                <p class="car__content__description">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+              </div>
+            </div>
+            <form class="booking-form">
+              <div class="booking-form__steps">
+                <div
+                  class="
+                    booking-form__steps__step booking-form__steps__step_active
+                  "
+                >
+                  <h4 class="booking-form__title">More</h4>
+                  <div class="booking-form__checklist">
+                    <div class="booking-form__checklist__item">
+                      <div class="booking-form__checklist__item__checkbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox1"
+                        />
+                        <label class="form-check-label" for="checkbox1">
+                          Спальный мешок с вкладкойСпальный мешок с вкладкой
+                        </label>
+                      </div>
+                      <p class="booking-form__checklist__item__price">1200֏</p>
+                    </div>
+                    <div class="booking-form__checklist__item">
+                      <div class="booking-form__checklist__item__checkbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox2"
+                        />
+                        <label class="form-check-label" for="checkbox2">
+                          Холодильник
+                        </label>
+                      </div>
+                      <p class="booking-form__checklist__item__price">700֏</p>
+                    </div>
+                    <div class="booking-form__checklist__item">
+                      <div class="booking-form__checklist__item__checkbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox3"
+                        />
+                        <label class="form-check-label" for="checkbox3">
+                          Посуда (котелки, кружки) на 4 чел
+                        </label>
+                      </div>
+                      <p class="booking-form__checklist__item__price">1200֏</p>
+                    </div>
+                    <div class="booking-form__checklist__item">
+                      <div class="booking-form__checklist__item__checkbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox4"
+                        />
+                        <label class="form-check-label" for="checkbox4">
+                          Шезлонг
+                        </label>
+                      </div>
+                      <p class="booking-form__checklist__item__price">600֏</p>
+                    </div>
+                    <div class="booking-form__checklist__item">
+                      <div class="booking-form__checklist__item__checkbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox5"
+                        />
+                        <label class="form-check-label" for="checkbox5">
+                          Складной стул
+                        </label>
+                      </div>
+                      <p class="booking-form__checklist__item__price">500֏</p>
+                    </div>
+                    <div class="booking-form__checklist__item">
+                      <div class="booking-form__checklist__item__checkbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox6"
+                        />
+                        <label class="form-check-label" for="checkbox6">
+                          Складной стол
+                        </label>
+                      </div>
+                      <p class="booking-form__checklist__item__price">800֏</p>
+                    </div>
+                    <div class="booking-form__checklist__item">
+                      <div class="booking-form__checklist__item__checkbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox7"
+                        />
+                        <label class="form-check-label" for="checkbox7">
+                          Рация 2 шт
+                        </label>
+                      </div>
+                      <p class="booking-form__checklist__item__price">1000֏</p>
+                    </div>
+                    <div class="booking-form__checklist__item">
+                      <div class="booking-form__checklist__item__checkbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox8"
+                        />
+                        <label class="form-check-label" for="checkbox8">
+                          Эл.Генератор 1 кВа бензин
+                        </label>
+                      </div>
+                      <p class="booking-form__checklist__item__price">1300֏</p>
+                    </div>
+                    <div class="booking-form__checklist__item">
+                      <div class="booking-form__checklist__item__checkbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox9"
+                        />
+                        <label class="form-check-label" for="checkbox9">
+                          Палатка на 2 чел
+                        </label>
+                      </div>
+                      <p class="booking-form__checklist__item__price">500֏</p>
+                    </div>
+                    <div class="booking-form__checklist__item">
+                      <div class="booking-form__checklist__item__checkbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox10"
+                        />
+                        <label class="form-check-label" for="checkbox10">
+                          Палатка на 4-6 человека
+                        </label>
+                      </div>
+                      <p class="booking-form__checklist__item__price">800֏</p>
+                    </div>
+                    <div class="booking-form__checklist__item">
+                      <div class="booking-form__checklist__item__checkbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox11"
+                        />
+                        <label class="form-check-label" for="checkbox11">
+                          Велосипед горный
+                        </label>
+                      </div>
+                      <p class="booking-form__checklist__item__price">700֏</p>
+                    </div>
+                    <div class="booking-form__checklist__item">
+                      <div class="booking-form__checklist__item__checkbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox12"
+                        />
+                        <label class="form-check-label" for="checkbox12">
+                          Лодка надувная резиновая на 2 чел
+                        </label>
+                      </div>
+                      <p class="booking-form__checklist__item__price">1000֏</p>
+                    </div>
+                    <div class="booking-form__checklist__item">
+                      <div class="booking-form__checklist__item__checkbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox13"
+                        />
+                        <label class="form-check-label" for="checkbox13">
+                          Рыбалка (снасти, удочки и т.д.)
+                        </label>
+                      </div>
+                      <p class="booking-form__checklist__item__price">1200֏</p>
+                    </div>
+                    <div class="booking-form__checklist__item">
+                      <div class="booking-form__checklist__item__checkbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox14"
+                        />
+                        <label class="form-check-label" for="checkbox14">
+                          Складной мангал с шампурами 6 шт
+                        </label>
+                      </div>
+                      <p class="booking-form__checklist__item__price">500֏</p>
+                    </div>
+                    <div class="booking-form__checklist__item">
+                      <div class="booking-form__checklist__item__checkbox">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="checkbox15"
+                        />
+                        <label class="form-check-label" for="checkbox15">
+                          Тент
+                        </label>
+                      </div>
+                      <p class="booking-form__checklist__item__price">1300֏</p>
+                    </div>
+                  </div>
+                  <div class="booking-form__amount">
+                    <p class="booking-form__amount__title">Amount paid</p>
+                    <p class="booking-form__amount__price">1.000.300֏</p>
+                  </div>
+                  <div class="booking-form__bottom">
+                    <p class="booking-form__bottom__description">
+                      Организация также предлагает в аренду без водителя
+                      специализированные автомобили с оснащением для пикника с
+                      ночевкой и рыбалки. Цена за день аренды от 55000֏
+                    </p>
+                    <div class="booking-form__bottom__buttons">
+                      <button
+                        class="booking-form__bottom__buttons__clear"
+                        type="button"
+                      >
+                        Clear all
+                      </button>
+                      <button
+                        class="
+                          booking-form__bottom__buttons__next
+                          booking-form__bottom__buttons__submit
+                        "
+                        type="button"
+                      >
+                        Next
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="booking-form__steps__step">
+                  <h4 class="booking-form__title">More</h4>
+                  <p class="booking-form__subtitle">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+
+                  <div class="booking-form__inputs">
+                    <div class="form-group">
+                      <label for="name">Your Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="name"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="Phone">Phone Number</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="Phone"
+                        placeholder="(915) 555 5555"
+                        name="Phone"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="city">Current City</label>
+                      <select
+                        class="form-select"
+                        aria-label="Yerevan"
+                        id="city"
+                      >
+                        <option selected value="Yerevan">Yerevan</option>
+                        <option value="Gyumri">Gyumri</option>
+                        <option value="Sevan">Sevan</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label>Calendar Picker</label>
+                      <div class="d-flex">
+                        <input
+                          type="date"
+                          class="form-control me-3"
+                          placeholder="dd/mm/yyyy"
+                          name="startDate"
+                        />
+                        <input
+                          type="date"
+                          class="form-control"
+                          placeholder="dd/mm/yyyy"
+                          name="endDate"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Enter email"
+                        name="email"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="note">Note</label>
+                      <textarea
+                        class="form-control"
+                        placeholder="Type here"
+                        id="note"
+                        style="height: 126px"
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  <div class="booking-form__bottom">
+                    <div class="booking-form__bottom__buttons">
+                      <button
+                        class="
+                          booking-form__bottom__buttons__clear
+                          booking-form__bottom__buttons__back
+                        "
+                        type="button"
+                      >
+                        <img
+                          src="./assets/icons/arrow_left.svg"
+                          alt="arrow left"
+                        />
+                        back
+                      </button>
+                      <button
+                        class="booking-form__bottom__buttons__submit"
+                        type="button"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
 
     <footer class="footer">
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__list__item">
-            <a class="nav__list__item__link" href="#">Home</a>
+            <a class="nav__list__item__link" href="./index.html">Home</a>
           </li>
           <li class="nav__list__item">
             <a class="nav__list__item__link" href="./cars.html">Cars</a>
@@ -239,11 +695,16 @@
             <a class="nav__list__item__link" href="./galery.html">Gallery</a>
           </li>
           <li class="nav__list__item">
-            <a class="nav__list__item__link" href="#">Contact us</a>
+            <a class="nav__list__item__link" href="./contactus.html"
+              >Contact us</a
+            >
+          </li>
+          <li class="nav__list__item">
+            <a class="nav__list__item__link" href="#">Terms and conditions</a>
           </li>
         </ul>
       </nav>
-      <img class="footer__logo" src="./assets/icons/LogoLight.svg" alt="logo" />
+      <img class="footer__logo" src="./assets/icons/logoLight.svg" alt="logo" />
       <p class="copyright">
         Copyright © 2020-2021 Greenhouse formula. All rights reserved.
       </p>

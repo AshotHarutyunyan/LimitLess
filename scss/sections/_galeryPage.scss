@@ -15,10 +15,19 @@
 
     &__item {
       margin-bottom: 40px;
+      position: relative;
       img {
         max-width: 286px;
         height: 230px;
         border-radius: 20px;
+      }
+
+      &__playicon {
+        width: 74px !important;
+        height: 74px !important;
+        position: absolute;
+        left: calc(50% - 37px);
+        top: calc(50% - 37px);
       }
     }
   }

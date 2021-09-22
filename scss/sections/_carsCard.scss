@@ -21,5 +21,9 @@
     @extend %blue_button;
     background: #ffa048;
     min-width: 128px;
+
+    &:hover {
+      background: #ffa048;
+    }
   }
 }

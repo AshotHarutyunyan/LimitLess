@@ -23,7 +23,9 @@
   <body>
     <header class="header">
       <div class="header__container">
-        <img src="./assets/icons/logo.svg" alt="logo" />
+        <a href="./index.html">
+          <img src="./assets/icons/logo.svg" class="header__logo" alt="logo" />
+        </a>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__list__item">
@@ -43,13 +45,65 @@
               <a class="nav__list__item__link" href="./galery.html">Gallery</a>
             </li>
             <li class="nav__list__item">
-              <a class="nav__list__item__link" href="#">Contact us</a>
+              <a class="nav__list__item__link" href="./contactus.html"
+                >Contact us</a
+              >
             </li>
           </ul>
         </nav>
-        <button class="get_started">Get started</button>
+        <div class="language-bar">
+          <button class="language-bar__item">Arm</button>
+          <button class="language-bar__item language-bar__item_active">
+            Eng
+          </button>
+          <button class="language-bar__item">Rus</button>
+        </div>
+        <div class="menu" role="button">
+          <div class="menu__item"></div>
+          <div class="menu__item"></div>
+          <div class="menu__item"></div>
+        </div>
       </div>
     </header>
+
+    <!-- mobile nav panel -->
+    <div class="mobile-nav">
+      <div class="mobile-nav__content">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./index.html">Home</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./cars.html">Cars</a>
+            </li>
+            <li class="nav__list__item">
+              <a
+                class="nav__list__item__link nav__list__item__link_active"
+                href="./tours.html"
+                >Tours</a
+              >
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./galery.html">Gallery</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./contactus.html"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="language-bar">
+          <button class="language-bar__item">Arm</button>
+          <button class="language-bar__item language-bar__item_active">
+            Eng
+          </button>
+          <button class="language-bar__item">Rus</button>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-nav__shadow"></div>
 
     <section class="tour-page container">
       <div class="tour-page__left-block">
@@ -487,7 +541,7 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__list__item">
-            <a class="nav__list__item__link" href="#">Home</a>
+            <a class="nav__list__item__link" href="./index.html">Home</a>
           </li>
           <li class="nav__list__item">
             <a class="nav__list__item__link" href="./cars.html">Cars</a>
@@ -496,11 +550,16 @@
             <a class="nav__list__item__link" href="./galery.html">Gallery</a>
           </li>
           <li class="nav__list__item">
-            <a class="nav__list__item__link" href="#">Contact us</a>
+            <a class="nav__list__item__link" href="./contactus.html"
+              >Contact us</a
+            >
+          </li>
+          <li class="nav__list__item">
+            <a class="nav__list__item__link" href="#">Terms and conditions</a>
           </li>
         </ul>
       </nav>
-      <img class="footer__logo" src="./assets/icons/LogoLight.svg" alt="logo" />
+      <img class="footer__logo" src="./assets/icons/logoLight.svg" alt="logo" />
       <p class="copyright">
         Copyright © 2020-2021 Greenhouse formula. All rights reserved.
       </p>

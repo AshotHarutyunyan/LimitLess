@@ -1,20 +1,36 @@
 .home-card {
-  background: url("../../assets/images/MaskGroup.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #007b8c;
-  border-radius: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 55px 0 50px !important;
   margin-top: 100px;
+
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
+
+  &__container {
+    background: url("../../assets/images/MaskGroup.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #007b8c;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 55px 0 50px !important;
+
+    @media (max-width: 768px) {
+      padding: 32px 0 !important;
+    }
+  }
 
   &__title {
     @extend %bold-36;
     margin-bottom: 0;
     color: #ffffff;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      line-height: 27px;
+    }
   }
 
   &__more {
@@ -22,11 +38,26 @@
     background: #ffa048;
     min-width: 128px;
     margin: 27px 0 34px;
+
+    &:hover {
+      background: #ffa048;
+    }
+
+    @media (max-width: 768px) {
+      margin: 16px 0;
+    }
   }
 
   &__description {
     @extend %regular-16-feature;
     color: #ffffff;
     text-align: center;
+
+    @media (max-width: 768px) {
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      margin-bottom: 0;
+    }
   }
 }

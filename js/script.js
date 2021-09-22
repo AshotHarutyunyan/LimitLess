@@ -4,8 +4,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const swiper = new Swiper("#swiper2", {
         watchSlidesProgress: true,
         slidesPerView: 3,
-        spaceBetween: 32,
-
+        spaceBetween: 41,
+        breakpoints: {
+            200: {
+                slidesPerView: 2,
+                spaceBetween: 50
+            },
+            991: {
+                slidesPerView: 3,
+                spaceBetween: 41,
+            },
+        },
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -14,10 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const swiper2 = new Swiper("#swiper3", {
         watchSlidesProgress: true,
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 32,
-        // centeredSlides: true,
-        // centeredSlidesBounds: true,
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
@@ -27,9 +34,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const swiper3 = new Swiper("#swiper4", {
         watchSlidesProgress: true,
         slidesPerView: 4,
-        spaceBetween: 32,
-        // centeredSlides: true,
-        // centeredSlidesBounds: true,
+        spaceBetween: 40,
+        breakpoints: {
+            200: {
+                slidesPerView: 1.2,
+                spaceBetween: 16
+            },
+            450: {
+                slidesPerView: 1.6,
+                spaceBetween: 16
+            },
+            569: {
+                slidesPerView: 2,
+                spaceBetween: 16
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 50
+            },
+            991: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+        },
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
@@ -52,6 +79,55 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const nextStepButton = document.querySelector('.booking-form__bottom__buttons__next');
+    const backToPrevStepButton = document.querySelector('.booking-form__bottom__buttons__back');
+    const clearAllButton = document.querySelector('.booking-form__bottom__buttons__clear')
+    const days = document.querySelectorAll('.tour-page__right-block__days__list__item');
+    const daysContents = document.querySelectorAll('.tour-page__right-block__days-content__list__item');
+    const languageItems = document.querySelectorAll('.language-bar__item');
+    const menu = document.querySelector('.menu');
+    const navbar = document.querySelector('.mobile-nav');
+    const navbarShadow = document.querySelector('.mobile-nav__shadow');
+    const counters = document.querySelectorAll('.counter__value');
+    const counterMinus = document.querySelectorAll('.counter__minus');
+    const counterPlus = document.querySelectorAll('.counter__plus');
+
+    const removeClassFromList = (elements, className) => {
+        elements.forEach((el) => {
+            el.classList.remove(className);
+        })
+    };
+    (counterMinus || []).forEach((el) => {
+        el.addEventListener('click', () => {
+            const index = el.getAttribute('data-id');
+            counters[index].innerText = +counters[index].innerText <= 1 ? counters[index].innerText : +counters[index].innerText - 1;
+        });
+    });
+
+    (counterPlus || []).forEach((el) => {
+        el.addEventListener('click', () => {
+            const index = el.getAttribute('data-id');
+            counters[index].innerText = +counters[index].innerText + 1;
+        });
+    });
+
+    menu?.addEventListener('click', (e) => {
+        menu.classList.toggle('menu__animation');
+        navbar.classList.toggle('mobile-nav_active')
+        navbarShadow.classList.toggle('mobile-nav__shadow_active')
+    });
+
+    navbarShadow?.addEventListener('click', () => {
+        menu.classList.remove('menu__animation');
+        navbar.classList.remove('mobile-nav_active')
+        navbarShadow.classList.remove('mobile-nav__shadow_active')
+    });
+
+    languageItems?.forEach((el) => {
+        el.addEventListener('click', (e) => {
+            removeClassFromList(languageItems, 'language-bar__item_active');
+            e.target.classList.add('language-bar__item_active')
+        });
+    });
 
     nextStepButton?.addEventListener('click', () => {
         const bookingFormSteps = document.querySelectorAll('.booking-form__steps__step');
@@ -59,15 +135,11 @@ document.addEventListener('DOMContentLoaded', () => {
         bookingFormSteps[1].classList.add('booking-form__steps__step_active');
     });
 
-    const backToPrevStepButton = document.querySelector('.booking-form__bottom__buttons__back')
-
     backToPrevStepButton?.addEventListener('click', () => {
         const bookingFormSteps = document.querySelectorAll('.booking-form__steps__step');
         bookingFormSteps[1].classList.remove('booking-form__steps__step_active');
         bookingFormSteps[0].classList.add('booking-form__steps__step_active');
     });
-
-    const clearAllButton = document.querySelector('.booking-form__bottom__buttons__clear')
 
     clearAllButton?.addEventListener('click', () => {
         const bookingFormCheckboxes = document.querySelectorAll('.form-check-input');
@@ -75,14 +147,6 @@ document.addEventListener('DOMContentLoaded', () => {
             el.checked = false;
         });
     });
-
-    const days = document.querySelectorAll('.tour-page__right-block__days__list__item');
-    const daysContents = document.querySelectorAll('.tour-page__right-block__days-content__list__item');
-    const removeClassFromList = (elements, className) => {
-        elements.forEach((el) => {
-            el.classList.remove(className);
-        })
-    }
 
     days?.forEach((day) => {
         day.addEventListener('click', () => {

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <meta name="googlebot" content="noindex" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Limitless</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="./index.html">
+          <img src="./assets/icons/logo.svg" class="header__logo" alt="logo" />
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./index.html">Home</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./cars.html">Cars</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./tours.html">Tours</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./galery.html">Gallery</a>
+            </li>
+            <li class="nav__list__item">
+              <a
+                class="nav__list__item__link nav__list__item__link_active"
+                href="#"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="language-bar">
+          <button class="language-bar__item">Arm</button>
+          <button class="language-bar__item language-bar__item_active">
+            Eng
+          </button>
+          <button class="language-bar__item">Rus</button>
+        </div>
+        <div class="menu" role="button">
+          <div class="menu__item"></div>
+          <div class="menu__item"></div>
+          <div class="menu__item"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- mobile nav panel -->
+    <div class="mobile-nav">
+      <div class="mobile-nav__content">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./index.html">Home</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./cars.html">Cars</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./tours.html">Tours</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./galery.html">Gallery</a>
+            </li>
+            <li class="nav__list__item">
+              <a
+                class="nav__list__item__link nav__list__item__link_active"
+                href="#"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="language-bar">
+          <button class="language-bar__item">Arm</button>
+          <button class="language-bar__item language-bar__item_active">
+            Eng
+          </button>
+          <button class="language-bar__item">Rus</button>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-nav__shadow"></div>
+
+    <section class="contact-us container">
+      <div class="contact-us__map">
+        <iframe
+          id="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97583.88432386226!2d44.418527477245064!3d40.15350050858628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406aa2dab8fc8b5b%3A0x3d1479ae87da526a!2z0JXRgNC10LLQsNC9LCDQkNGA0LzQtdC90LjRjw!5e0!3m2!1sru!2s!4v1632074827598!5m2!1sru!2s"
+          width="650"
+          height="470"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+        <p class="contact-us__map__address">
+          Calista Wise 7292 Dictum Av. San Antonio MI 47096
+        </p>
+        <a href="tel:+4927096392" class="contact-us__map__phone">
+          <img src="./assets/icons/phone.svg" alt="Phone Icon" />
+          (492) 709-6392
+        </a>
+      </div>
+      <form class="contact-us__form">
+        <h2 class="contact-us__form__title">Contacts us</h2>
+        <p class="contact-us__form__subtitle">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+          amet.
+        </p>
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" class="form-control" id="name" name="name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter email"
+            name="email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="note">Note</label>
+          <textarea
+            class="form-control"
+            placeholder="Type here"
+            id="note"
+            style="height: 126px"
+          ></textarea>
+        </div>
+        <button type="submit" class="contact-us__form__submit">Book now</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list__item">
+            <a class="nav__list__item__link" href="./index.html">Home</a>
+          </li>
+          <li class="nav__list__item">
+            <a class="nav__list__item__link" href="./cars.html">Cars</a>
+          </li>
+          <li class="nav__list__item">
+            <a class="nav__list__item__link" href="./galery.html">Gallery</a>
+          </li>
+          <li class="nav__list__item">
+            <a
+              class="nav__list__item__link nav__list__item__link_active"
+              href="#"
+              >Contact us</a
+            >
+          </li>
+          <li class="nav__list__item">
+            <a class="nav__list__item__link" href="#">Terms and conditions</a>
+          </li>
+        </ul>
+      </nav>
+      <img class="footer__logo" src="./assets/icons/logoLight.svg" alt="logo" />
+      <p class="copyright">
+        Copyright © 2020-2021 Greenhouse formula. All rights reserved.
+      </p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+      integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+      integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/script.js"></script>
+  </body>
+</html>

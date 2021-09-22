@@ -1,0 +1,61 @@
+.contact-us {
+  margin-top: 85px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  @media (max-width: 1240px) {
+    flex-direction: column-reverse;
+  }
+
+  &__map {
+    margin-right: 95px;
+    @media (max-width: 1240px) {
+      margin-right: 0px;
+      width: 100%;
+      #map {
+        width: 100%;
+      }
+    }
+
+    &__address {
+      @extend %regular-14;
+      color: #25294a;
+      margin: 20px 0 0;
+    }
+    &__phone {
+      @extend %bold-14;
+      color: #25294a;
+      margin: 14px 0 0;
+      display: block;
+    }
+  }
+
+  &__form {
+    max-width: 485px;
+    width: 100%;
+
+    @media (max-width: 1240px) {
+      max-width: unset;
+      margin-bottom: 32px;
+    }
+
+    &__title {
+      @extend %bold-40;
+      color: #0a183a;
+      margin: 0;
+    }
+    &__subtitle {
+      margin: 24px 0 0;
+      @extend %regular-14;
+      color: #a2a4c2;
+    }
+    .form-group {
+      margin-top: 24px;
+    }
+    &__submit {
+      @extend %blue_button;
+      min-width: 220px;
+      margin-top: 24px;
+    }
+  }
+}

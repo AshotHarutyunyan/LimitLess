@@ -12,7 +12,7 @@
   &__title {
     @extend %inter-20;
     color: #222222;
-    padding: 0px 50px;
+    padding: 0px 38px;
     margin-top: 24px;
     margin-bottom: 0;
   }
@@ -20,7 +20,7 @@
   &__subtitle {
     @extend %inter-16;
     color: #9ca3bf;
-    padding: 0px 50px;
+    padding: 0px 38px;
     margin-top: 16px;
     margin-bottom: 0;
   }
@@ -28,11 +28,11 @@
   &__checklist {
     // padding-bottom: 32px;
     border-bottom: 1px solid #ebebeb;
-    padding: 0 50px 32px;
+    padding: 0 38px 32px;
 
     &__item {
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: 75% 17% 8%;
       align-items: center;
       margin-top: 24px;
       label {
@@ -115,7 +115,7 @@
   }
 
   &__inputs {
-    padding: 0 50px;
+    padding: 0 38px;
 
     .form-group {
       margin-top: 32px;

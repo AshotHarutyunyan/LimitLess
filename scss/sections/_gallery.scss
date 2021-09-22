@@ -2,8 +2,20 @@
   margin-top: 117px;
   padding: 0 60px !important;
 
+  @media (max-width: 991px) {
+    padding: 0 20px !important;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 50px;
+    padding: 0 0 0 20px !important;
+  }
+
   .swiper {
-    padding: 0 20px;
+    padding: 0 40px;
+    @media (max-width: 991px) {
+      padding: 0;
+    }
   }
 
   &__title {
@@ -11,6 +23,13 @@
     @extend %bold-40;
     color: #25294a;
     margin-bottom: 39px;
+
+    @media (max-width: 768px) {
+      text-align: left;
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 24px;
+    }
   }
 
   &__slide {

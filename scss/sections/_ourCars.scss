@@ -2,8 +2,27 @@
   margin-top: 160px;
   padding: 0 60px !important;
 
+  @media (max-width: 991px) {
+    padding: 0 20px !important;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 60px;
+  }
+
   .swiper {
-    padding: 0 20px;
+    padding: 0 40px;
+    @media (max-width: 768px) {
+      display: none !important;
+    }
+  }
+
+  &__mobilelist {
+    display: none !important;
+
+    @media (max-width: 768px) {
+      display: flex !important;
+    }
   }
 
   &__title {
@@ -11,9 +30,22 @@
     @extend %bold-40;
     color: #25294a;
     margin-bottom: 53px;
+
+    @media (max-width: 768px) {
+      text-align: left;
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 24px;
+    }
   }
 
   &__slide {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    a {
+      display: block;
+    }
     img {
       max-width: 392px;
       width: 100%;
@@ -24,15 +56,25 @@
   &__see-all {
     display: flex;
     justify-content: space-between;
-    margin-top: 65px;
+    // margin-top: 65px;
+    margin: 65px 40px 0;
+
+    @media (max-width: 768px) {
+      margin: 0;
+      flex-direction: column-reverse;
+    }
 
     &__description {
       color: #a2a4c2;
       @extend %regular-14;
-
+      margin: 0;
       span {
         font-weight: 700;
         color: #25294a;
+      }
+
+      @media (max-width: 768px) {
+        margin-top: 32px;
       }
     }
 
@@ -44,19 +86,39 @@
 
 .car {
   &__content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     &__top {
       display: flex;
       justify-content: space-between;
       margin-top: 24px;
 
+      @media (max-width: 768px) {
+        margin: 16px 0;
+      }
+
       &__title {
         @extend %bold-20;
         color: #25294a;
+        margin-bottom: 0;
+
+        @media (max-width: 768px) {
+          font-size: 16px;
+          line-height: 24px;
+        }
       }
 
       &__price {
         @extend %bold-20;
         color: #ffa048;
+        margin-bottom: 0;
+
+        @media (max-width: 768px) {
+          font-size: 16px;
+          line-height: 24px;
+        }
       }
     }
 
@@ -70,11 +132,15 @@
       color: #0a183a;
       margin-top: 10px;
       margin-bottom: 16px;
+
+      @media (max-width: 768px) {
+        margin-top: 0;
+      }
     }
 
     &__book {
       @extend %blue_button;
-      min-width: 220px;
+      min-width: 200px;
     }
   }
 }

@@ -1,10 +1,32 @@
 .booking-modal {
+  @media (max-width: 991px) {
+    overflow-y: hidden;
+  }
+
   &__dialog {
     max-width: 780px !important;
+
+    @media (max-width: 991px) {
+      max-width: 100% !important;
+      margin: 63px 0 0 !important;
+      height: 100%;
+
+      .modal-content {
+        height: calc(100% - 63px);
+        border-radius: 0;
+        border: none;
+      }
+    }
   }
 
   &__header {
     justify-content: flex-start;
+    align-items: flex-start;
+
+    @media (max-width: 991px) {
+      margin: 0px 24px;
+      padding: 1rem 0;
+    }
 
     .btn-close {
       margin: 0;
@@ -15,6 +37,10 @@
       transform: translateX(-100%);
       color: #222222;
       @extend %inter-18;
+
+      @media (max-width: 991px) {
+        margin-left: 90px;
+      }
     }
   }
 
@@ -28,6 +54,10 @@
     overflow-y: auto;
     max-height: calc(100vh - 113px);
     min-height: 190px;
+
+    @media (max-width: 991px) {
+      max-height: unset;
+    }
 
     &::-webkit-scrollbar {
       width: 10px;
@@ -52,7 +82,7 @@
 
     &__top {
       display: flex;
-      padding: 18px 50px 6px;
+      padding: 18px 38px 6px;
       border-bottom: 1px solid #ebebeb;
 
       &__image {

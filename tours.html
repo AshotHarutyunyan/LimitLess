@@ -23,7 +23,9 @@
   <body>
     <header class="header">
       <div class="header__container">
-        <img src="./assets/icons/logo.svg" alt="logo" />
+        <a href="./index.html">
+          <img src="./assets/icons/logo.svg" class="header__logo" alt="logo" />
+        </a>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__list__item">
@@ -43,13 +45,65 @@
               <a class="nav__list__item__link" href="./galery.html">Gallery</a>
             </li>
             <li class="nav__list__item">
-              <a class="nav__list__item__link" href="#">Contact us</a>
+              <a class="nav__list__item__link" href="./contactus.html"
+                >Contact us</a
+              >
             </li>
           </ul>
         </nav>
-        <button class="get_started">Get started</button>
+        <div class="language-bar">
+          <button class="language-bar__item">Arm</button>
+          <button class="language-bar__item language-bar__item_active">
+            Eng
+          </button>
+          <button class="language-bar__item">Rus</button>
+        </div>
+        <div class="menu" role="button">
+          <div class="menu__item"></div>
+          <div class="menu__item"></div>
+          <div class="menu__item"></div>
+        </div>
       </div>
     </header>
+
+    <!-- mobile nav panel -->
+    <div class="mobile-nav">
+      <div class="mobile-nav__content">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./index.html">Home</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./cars.html">Cars</a>
+            </li>
+            <li class="nav__list__item">
+              <a
+                class="nav__list__item__link nav__list__item__link_active"
+                href="#"
+                >Tours</a
+              >
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./galery.html">Gallery</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./contactus.html"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="language-bar">
+          <button class="language-bar__item">Arm</button>
+          <button class="language-bar__item language-bar__item_active">
+            Eng
+          </button>
+          <button class="language-bar__item">Rus</button>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-nav__shadow"></div>
 
     <section class="hero-card container tours-list__card">
       <h2 class="hero-card__title">Tours</h2>
@@ -125,54 +179,54 @@
           </div>
         </a>
       </div>
-      <div class="tours-list__right-block">
-        <h4 class="tours-list__right-block__title">Events</h4>
-        <div class="tours-list__right-block__list">
-          <div class="tours-list__right-block__list__item">
-            <div class="tours-list__right-block__list__item__number">
+      <div class="tours-list__right-block events-list">
+        <h4 class="events-list__title">Events</h4>
+        <div class="events-list__list">
+          <div class="events-list__list__item">
+            <div class="events-list__list__item__number">
               <img src="./assets/images/event1.png" alt="Event 1" />
             </div>
-            <div class="tours-list__right-block__list__item__description">
+            <div class="events-list__list__item__description">
               Adventure tour in Armenia / <span>4 Days</span>
             </div>
           </div>
-          <div class="tours-list__right-block__list__item">
-            <div class="tours-list__right-block__list__item__number">
+          <div class="events-list__list__item">
+            <div class="events-list__list__item__number">
               <img src="./assets/images/event2.png" alt="Event 2" />
             </div>
-            <div class="tours-list__right-block__list__item__description">
+            <div class="events-list__list__item__description">
               Mount Ararat trip Climbing Mount Ararat / <span>6 Days </span>
             </div>
           </div>
-          <div class="tours-list__right-block__list__item">
-            <div class="tours-list__right-block__list__item__number">
+          <div class="events-list__list__item">
+            <div class="events-list__list__item__number">
               <img src="./assets/images/event3.png" alt="Event 3" />
             </div>
-            <div class="tours-list__right-block__list__item__description">
+            <div class="events-list__list__item__description">
               Adventure tour in Armenia / <span>4 Days </span>
             </div>
           </div>
-          <div class="tours-list__right-block__list__item">
-            <div class="tours-list__right-block__list__item__number">
+          <div class="events-list__list__item">
+            <div class="events-list__list__item__number">
               <img src="./assets/images/event4.png" alt="Event 4" />
             </div>
-            <div class="tours-list__right-block__list__item__description">
+            <div class="events-list__list__item__description">
               Mount Ararat trip Climbing Mount Ararat / <span> 6 Days </span>
             </div>
           </div>
-          <div class="tours-list__right-block__list__item">
-            <div class="tours-list__right-block__list__item__number">
+          <div class="events-list__list__item">
+            <div class="events-list__list__item__number">
               <img src="./assets/images/event5.png" alt="Event 5" />
             </div>
-            <div class="tours-list__right-block__list__item__description">
+            <div class="events-list__list__item__description">
               Adventure tour in Armenia / <span>4 Days </span>
             </div>
           </div>
-          <div class="tours-list__right-block__list__item">
-            <div class="tours-list__right-block__list__item__number">
+          <div class="events-list__list__item">
+            <div class="events-list__list__item__number">
               <img src="./assets/images/event6.png" alt="Event 6" />
             </div>
-            <div class="tours-list__right-block__list__item__description">
+            <div class="events-list__list__item__description">
               Mount Ararat trip Climbing Mount Ararat / <span>6 Days</span>
             </div>
           </div>
@@ -247,7 +301,7 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__list__item">
-            <a class="nav__list__item__link" href="#">Home</a>
+            <a class="nav__list__item__link" href="./index.html">Home</a>
           </li>
           <li class="nav__list__item">
             <a class="nav__list__item__link" href="./cars.html">Cars</a>
@@ -256,11 +310,16 @@
             <a class="nav__list__item__link" href="./galery.html">Gallery</a>
           </li>
           <li class="nav__list__item">
-            <a class="nav__list__item__link" href="#">Contact us</a>
+            <a class="nav__list__item__link" href="./contactus.html"
+              >Contact us</a
+            >
+          </li>
+          <li class="nav__list__item">
+            <a class="nav__list__item__link" href="#">Terms and conditions</a>
           </li>
         </ul>
       </nav>
-      <img class="footer__logo" src="./assets/icons/LogoLight.svg" alt="logo" />
+      <img class="footer__logo" src="./assets/icons/logoLight.svg" alt="logo" />
       <p class="copyright">
         Copyright © 2020-2021 Greenhouse formula. All rights reserved.
       </p>
