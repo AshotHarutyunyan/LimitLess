@@ -15,6 +15,10 @@
     padding: 0px 38px;
     margin-top: 24px;
     margin-bottom: 0;
+
+    @media (max-width: 991px) {
+      padding: 0px 24px;
+    }
   }
 
   &__subtitle {
@@ -23,6 +27,10 @@
     padding: 0px 38px;
     margin-top: 16px;
     margin-bottom: 0;
+
+    @media (max-width: 991px) {
+      padding: 0px 24px;
+    }
   }
 
   &__checklist {
@@ -30,21 +38,46 @@
     border-bottom: 1px solid #ebebeb;
     padding: 0 38px 32px;
 
+    @media (max-width: 991px) {
+      padding: 0px 24px 20px;
+    }
+
     &__item {
-      display: grid;
-      grid-template-columns: 75% 17% 8%;
+      // display: grid;
+      // grid-template-columns: 75% 17% 8%;
+      display: flex;
+      justify-content: space-between;
       align-items: center;
       margin-top: 24px;
+
+      @media (max-width: 991px) {
+        margin-top: 16px;
+        grid-template-columns: 60% 30% 8%;
+      }
+
       label {
         @extend %inter-16;
         color: #222222;
         margin-left: 16px;
+
+        @media (max-width: 768px) {
+          font-size: 13px;
+          line-height: 16px;
+        }
+      }
+
+      &__checkbox {
+        display: flex;
+        align-items: center;
       }
 
       &__price {
         @extend %bold-16;
         color: #ffa048;
         margin-bottom: 0;
+        max-width: 60px;
+        width: 100%;
+        text-align: right;
       }
     }
   }
@@ -53,7 +86,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 36px 50px 24px;
+    padding: 24px 50px 12px;
+    border-bottom: 1px solid #ebebeb;
+
+    @media (max-width: 991px) {
+      padding: 24px 24px 12px;
+      border-bottom: none;
+    }
+
+    @media (max-height: 635px) {
+      padding: 8px 24px 8px !important;
+    }
 
     &__title {
       @extend %nunito-18;
@@ -68,17 +111,50 @@
     }
   }
 
+  &__submit {
+    padding: 50px 24px;
+  }
+
   &__bottom {
-    padding: 24px 50px 50px;
     position: sticky;
     bottom: 0;
     background: #ffffff;
     border-top: 1px solid #ebebeb;
 
+    @media (max-width: 991px) {
+      border-top: none;
+      box-shadow: 4px 4px 20px rgba(0, 123, 140, 0.2);
+      border-radius: 8px;
+    }
+
+    &__content {
+      padding: 24px 50px 50px;
+
+      @media (max-width: 991px) {
+        padding: 24px 24px 30px;
+      }
+
+      @media (max-height: 635px) {
+        padding: 6px 24px 5px !important;
+      }
+
+      @media (max-width: 768px) and (max-height: 635px) {
+        padding: 0px 24px 5px !important;
+      }
+    }
+
     &__description {
       @extend %inter-16;
       color: #222222;
       margin-bottom: 36px;
+
+      @media (max-width: 991px) {
+        margin-bottom: 24px;
+      }
+
+      @media (max-height: 635px) {
+        margin-bottom: 8px;
+      }
     }
 
     &__buttons {
@@ -117,8 +193,24 @@
   &__inputs {
     padding: 0 38px;
 
+    @media (max-width: 991px) {
+      padding: 0px 24px;
+    }
+
     .form-group {
       margin-top: 32px;
+
+      @media (max-width: 991px) {
+        margin-top: 16px;
+
+        .form-group-dates {
+          flex-direction: column;
+          & input:first-child {
+            margin-bottom: 16px;
+            margin-right: 0;
+          }
+        }
+      }
     }
 
     label {
@@ -138,4 +230,9 @@
       border-width: thin;
     }
   }
+}
+.form-check-input[type="checkbox"] {
+  min-width: 18px;
+  min-height: 18px;
+  margin-top: 0;
 }

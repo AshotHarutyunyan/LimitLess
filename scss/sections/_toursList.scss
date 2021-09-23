@@ -1,12 +1,18 @@
 .tours-list {
   margin-top: 80px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 32px;
+
+  @media (max-width: 991px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 30px;
+  }
 
   .tours__list__item {
-    margin-bottom: 30px;
-
     &__content__price {
       @extend %medium-18;
       color: #ffa048;
@@ -20,13 +26,26 @@
   &__left-block {
     max-width: 818px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+    justify-items: center;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    @media (max-width: 991px) {
+      max-width: unset;
+    }
   }
 
   &__right-block {
     max-width: 367px;
     width: 100%;
+
+    @media (max-width: 991px) {
+      display: none;
+    }
   }
 }

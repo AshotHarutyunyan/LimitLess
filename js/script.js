@@ -7,7 +7,19 @@ document.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 41,
         breakpoints: {
             200: {
+                slidesPerView: 1.2,
+                spaceBetween: 20
+            },
+            480: {
+                slidesPerView: 1.6,
+                spaceBetween: 50
+            },
+            569: {
                 slidesPerView: 2,
+                spaceBetween: 50
+            },
+            768: {
+                slidesPerView: 2.5,
                 spaceBetween: 50
             },
             991: {
@@ -71,7 +83,16 @@ document.addEventListener('DOMContentLoaded', () => {
         watchSlidesProgress: true,
         slidesPerView: 3,
         spaceBetween: 32,
-
+        breakpoints: {
+            200: {
+                slidesPerView: 1,
+                spaceBetween: 32,
+            },
+            769: {
+                slidesPerView: 3,
+                spaceBetween: 32,
+            },
+        },
         navigation: {
             prevEl: ".car-swiper-button-prev",
             nextEl: ".car-swiper-button-next",
@@ -90,12 +111,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const counters = document.querySelectorAll('.counter__value');
     const counterMinus = document.querySelectorAll('.counter__minus');
     const counterPlus = document.querySelectorAll('.counter__plus');
+    const galleryButtons = document.querySelectorAll(`button[data-bs-target="#galeryModal"]`)
 
     const removeClassFromList = (elements, className) => {
         elements.forEach((el) => {
             el.classList.remove(className);
         })
     };
+
     (counterMinus || []).forEach((el) => {
         el.addEventListener('click', () => {
             const index = el.getAttribute('data-id');
@@ -107,6 +130,25 @@ document.addEventListener('DOMContentLoaded', () => {
         el.addEventListener('click', () => {
             const index = el.getAttribute('data-id');
             counters[index].innerText = +counters[index].innerText + 1;
+        });
+    });
+
+    (galleryButtons || []).forEach((el) => {
+        el.addEventListener('click', () => {
+            const gallerySwiper = new Swiper("#gallerySwiper", {
+                watchSlidesProgress: true,
+                slidesPerView: 1,
+                spaceBetween: 32,
+                initialSlide: +el.getAttribute('data-id'),
+                navigation: {
+                    prevEl: ".galeryModal-button-prev",
+                    nextEl: ".galeryModal-button-next",
+                },
+                pagination: {
+                    el: '.galeryModal-swiper-pagination',
+                    type: 'bullets',
+                }
+            });
         });
     });
 

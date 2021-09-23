@@ -6,19 +6,32 @@
   text-align: center;
   background: url("../../assets/images/searchBarBackground.png") no-repeat;
   background-size: cover;
-  margin-top: 37px;
+  background-position: center;
   padding: 60px 0 !important;
 
   &__title {
     @extend %bold-40;
     color: #0a183a;
+    text-align: center;
+    padding: 0 20px;
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+      line-height: 150%;
+    }
   }
 
   &__subtitle {
     @extend %regular-16;
     color: #0a183a;
     opacity: 0.8;
-    margin-bottom: 24px;
+    text-align: center;
+    padding: 0 20px;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 150%;
+    }
   }
 
   .search-bar {

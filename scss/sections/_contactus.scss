@@ -7,6 +7,10 @@
     flex-direction: column-reverse;
   }
 
+  @media (max-width: 768px) {
+    margin-top: 32px;
+  }
+
   &__map {
     margin-right: 95px;
     @media (max-width: 1240px) {
@@ -14,6 +18,12 @@
       width: 100%;
       #map {
         width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #map {
+        height: 210px;
       }
     }
 
@@ -43,15 +53,27 @@
       @extend %bold-40;
       color: #0a183a;
       margin: 0;
+
+      @media (max-width: 768px) {
+        font-size: 24px;
+        line-height: 150%;
+      }
     }
+
     &__subtitle {
       margin: 24px 0 0;
       @extend %regular-14;
       color: #a2a4c2;
+
+      @media (max-width: 768px) {
+        margin: 8px 0 0;
+      }
     }
+
     .form-group {
       margin-top: 24px;
     }
+
     &__submit {
       @extend %blue_button;
       min-width: 220px;

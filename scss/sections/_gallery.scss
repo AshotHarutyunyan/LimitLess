@@ -8,6 +8,9 @@
 
   @media (max-width: 768px) {
     margin-top: 50px;
+  }
+
+  @media (max-width: 568px) {
     padding: 0 0 0 20px !important;
   }
 
@@ -35,11 +38,64 @@
   &__slide {
     margin-bottom: 40px;
 
+    button {
+      width: 100%;
+      background: none;
+    }
+
     img {
       max-width: 286px;
-      height: 230px;
+      max-height: 230px;
       width: 100%;
       border-radius: 20px;
+    }
+  }
+}
+
+#galeryModal {
+  box-shadow: 0px 12px 40px rgba(192, 196, 234, 0.4);
+
+  .modal-dialog {
+    max-width: 71.5vw;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .modal-content {
+    max-height: calc(100% - 64px);
+  }
+  .modal-body {
+    padding: 0px;
+  }
+}
+
+#gallerySwiper {
+  padding: 32px;
+
+  img {
+    width: 100%;
+    border-radius: 12px;
+    --widthA: calc(71.5vw - 64px);
+    max-height: calc(100vh - 128px);
+    height: calc(var(--widthA) / 1.21815889);
+  }
+  .galeryModal-button-next {
+    right: 12px !important;
+  }
+  .galeryModal-button-prev {
+    left: 12px !important;
+  }
+  .galeryModal-button-prev,
+  .galeryModal-button-next {
+    background: #ffffff;
+    border-radius: 50px;
+    width: 44px;
+    height: 44px;
+    img {
+      width: 13px;
+      height: 7px;
+    }
+    &::after {
+      content: "";
     }
   }
 }

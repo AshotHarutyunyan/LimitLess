@@ -4,23 +4,54 @@
   background: url("../../assets/images/Luggage.png");
   background-repeat: no-repeat;
   background-size: 374px 448px;
-  background-position: right;
+  background-position: calc(100% - 100px) 100%;
+
+  @media (max-width: 1024px) {
+    background: none;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
 
   &__content {
     max-width: 538px;
     width: 100%;
     min-height: 448px;
 
+    @media (max-width: 1024px) {
+      min-height: unset;
+    }
+
     &__title {
       @extend %bold-40;
       margin-bottom: 0;
       color: #25294a;
+
+      @media (max-width: 768px) {
+        font-size: 24px;
+        line-height: 36px;
+      }
     }
 
     &__subtitle {
       @extend %nunito-14;
+      padding-bottom: 16px;
       margin-top: 16px;
       color: #7c8db0;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 32px;
+        height: 4px;
+        background: #5cd6c0;
+        opacity: 0.5;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
     }
 
     &__list {

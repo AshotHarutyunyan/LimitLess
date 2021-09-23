@@ -2,16 +2,35 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 80px;
+  margin-top: 16px;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+
+  &__back {
+    margin-top: 24px;
+  }
 
   &__left-block {
     max-width: 782px;
     width: 100%;
+    margin-right: 20px;
+
+    @media (max-width: 1024px) {
+      max-width: unset;
+    }
+
     &__title {
       @extend %bold-40;
       margin: 0;
-
       color: #0a183a;
+
+      @media (max-width: 768px) {
+        font-size: 24px;
+        line-height: 150%;
+      }
+
       span {
         color: #ffa048;
       }
@@ -21,18 +40,34 @@
       @extend %medium-16;
       color: #25294a;
       margin: 20px 0 8px;
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 17px;
+        margin: 12px 0 8px;
+      }
     }
 
     &__dates {
       @extend %regular-16;
       color: #000000;
       margin-bottom: 32px;
+      @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 150%;
+        margin-bottom: 12px;
+      }
     }
 
     &__description__block {
       @extend %regular-16;
       margin-bottom: 24px;
       color: #0a183a;
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 150%;
+      }
     }
 
     &__image {
@@ -45,9 +80,21 @@
       justify-content: space-between;
       align-items: flex-start;
 
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+
       &__list {
         max-width: 340px;
         width: 100%;
+
+        @media (max-width: 768px) {
+          max-width: unset;
+
+          &:not(:last-of-type) {
+            margin-bottom: 32px;
+          }
+        }
         &__title {
           @extend %medium-16;
           color: #25294a;
@@ -59,6 +106,10 @@
           @extend %regular-16;
           color: #000000;
           margin-top: 24px;
+
+          @media (max-width: 768px) {
+            margin-top: 16px;
+          }
         }
       }
     }
@@ -67,6 +118,11 @@
   &__right-block {
     max-width: 367px;
     width: 100%;
+
+    @media (max-width: 1024px) {
+      margin-top: 46px;
+      max-width: unset;
+    }
 
     &__price {
       &__title {
@@ -101,6 +157,10 @@
             @extend %regular-16;
             color: #000000;
             margin-bottom: 0;
+
+            @media (max-width: 768px) {
+              font-size: 12px;
+            }
           }
 
           &__price {
