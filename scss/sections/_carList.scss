@@ -1,14 +1,18 @@
 .cars {
+  &__similiar {
+    background: #f0f5fa;
+    margin-top: 50px;
+  }
   &__title {
     @extend %bold-32;
     color: #0a183a;
-    margin: 50px 0;
+    padding: 50px 0;
 
     @media (max-width: 768px) {
       font-size: 24px;
       line-height: 36px;
       text-align: left !important;
-      margin: 50px 0 24px;
+      padding: 50px 0 24px;
     }
   }
 

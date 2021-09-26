@@ -1,0 +1,106 @@
+.equipment {
+  &__title {
+    @extend %bold-40;
+    margin-top: 80px;
+    margin-bottom: 0;
+    text-align: center;
+
+    &__recomended {
+      @extend %bold-32;
+      text-align: left;
+      margin-top: 0px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: flex-start;
+    grid-gap: 32px;
+    margin-top: 32px;
+    min-height: 496px;
+
+    @media (max-width: 1240px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      background: #ffffff;
+      box-shadow: 0px 12px 40px rgba(192, 196, 234, 0.2);
+      border-radius: 12px;
+
+      & > img {
+        width: 100%;
+        max-height: 164px;
+
+        @media (max-width: 768px) {
+          height: calc((100vw - 40px) / 1.598);
+          max-height: unset;
+        }
+      }
+
+      &__content {
+        padding: 8px 8px 20px 20px;
+
+        &__top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        &__title {
+          @extend %medium-14;
+          color: #007b8c;
+          margin-bottom: 0;
+        }
+
+        &__subtitle {
+          @extend %regular-16;
+          color: #575670;
+          margin: 8px 0;
+        }
+
+        &__description {
+          @extend %regular-12;
+          color: #2d2c4c;
+          margin-bottom: 0;
+        }
+      }
+
+      &__form {
+        display: none;
+        margin-top: 10px;
+
+        &__botom {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 13px;
+
+          &__button {
+            @extend %blue_button;
+            max-width: 123px;
+            width: 100%;
+          }
+
+          .counter {
+            margin-left: 0;
+            max-width: 110px;
+            &__minus,
+            &__plus {
+              width: 40px;
+              height: 40px;
+            }
+          }
+        }
+      }
+
+      &:hover &__form {
+        display: block;
+      }
+    }
+  }
+}

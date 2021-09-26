@@ -108,7 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.menu');
     const navbar = document.querySelector('.mobile-nav');
     const navbarShadow = document.querySelector('.mobile-nav__shadow');
-    const counters = document.querySelectorAll('.counter__value');
     const counterMinus = document.querySelectorAll('.counter__minus');
     const counterPlus = document.querySelectorAll('.counter__plus');
     const galleryButtons = document.querySelectorAll(`button[data-bs-target="#galeryModal"]`)
@@ -122,14 +121,16 @@ document.addEventListener('DOMContentLoaded', () => {
     (counterMinus || []).forEach((el) => {
         el.addEventListener('click', () => {
             const index = el.getAttribute('data-id');
-            counters[index].innerText = +counters[index].innerText <= 1 ? counters[index].innerText : +counters[index].innerText - 1;
+            const counter = document.querySelector(`.counter__value[data-id="${index}"]`);
+            counter.innerText = +counter.innerText <= 1 ? counter.innerText : +counter.innerText - 1;
         });
     });
 
     (counterPlus || []).forEach((el) => {
         el.addEventListener('click', () => {
             const index = el.getAttribute('data-id');
-            counters[index].innerText = +counters[index].innerText + 1;
+            const counter = document.querySelector(`.counter__value[data-id="${index}"]`);
+            counter.innerText = +counter.innerText + 1;
         });
     });
 

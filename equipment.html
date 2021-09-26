@@ -38,16 +38,14 @@
               <a class="nav__list__item__link" href="./cars.html">Rent Car</a>
             </li>
             <li class="nav__list__item">
-              <a class="nav__list__item__link" href="./equipment.html"
+              <a
+                class="nav__list__item__link nav__list__item__link_active"
+                href="#"
                 >Rent equipment</a
               >
             </li>
             <li class="nav__list__item">
-              <a
-                class="nav__list__item__link nav__list__item__link_active"
-                href="#"
-                >Gallery</a
-              >
+              <a class="nav__list__item__link" href="./galery.html">Gallery</a>
             </li>
             <li class="nav__list__item">
               <a class="nav__list__item__link" href="./contactus.html"
@@ -92,16 +90,14 @@
               <a class="nav__list__item__link" href="./cars.html">Rent Car</a>
             </li>
             <li class="nav__list__item">
-              <a class="nav__list__item__link" href="./equipment.html"
+              <a
+                class="nav__list__item__link nav__list__item__link_active"
+                href="#"
                 >Rent equipment</a
               >
             </li>
             <li class="nav__list__item">
-              <a
-                class="nav__list__item__link nav__list__item__link_active"
-                href="#"
-                >Gallery</a
-              >
+              <a class="nav__list__item__link" href="./galery.html">Gallery</a>
             </li>
             <li class="nav__list__item">
               <a class="nav__list__item__link" href="./contactus.html"
@@ -114,196 +110,418 @@
     </div>
     <div class="mobile-nav__shadow"></div>
 
-    <!-- Galery Modal -->
-    <div
-      class="modal fade"
-      id="galeryModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="galeryModalTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="swiper" id="gallerySwiper" style="width: 100%">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img
-                    src="./assets/images/galleryBig1.png"
-                    alt="gallery image"
-                  />
+    <section class="equipment">
+      <div class="equipment__container container">
+        <h2 class="equipment__title">Equipment</h2>
+        <div class="equipment__list">
+          <div class="equipment__list__item">
+            <img src="./assets/images/equipment.png" alt="equipment" />
+            <div class="equipment__list__item__content">
+              <div class="equipment__list__item__content__top">
+                <div class="equipment__list__item__content__top__block">
+                  <h3 class="equipment__list__item__content__title">$40 DAY</h3>
+                  <h3 class="equipment__list__item__content__title">
+                    $60 WEEKEND
+                  </h3>
                 </div>
-                <div class="swiper-slide">
-                  <img
-                    src="./assets/images/galleryBig2.png"
-                    alt="gallery image"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="./assets/images/galleryBig3.png"
-                    alt="gallery image"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="./assets/images/galleryBig4.png"
-                    alt="gallery image"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="./assets/images/galleryBig5.png"
-                    alt="gallery image"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="./assets/images/galleryBig6.png"
-                    alt="gallery image"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="./assets/images/galleryBig7.png"
-                    alt="gallery image"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="./assets/images/galleryBig8.png"
-                    alt="gallery image"
-                  />
+                <div class="equipment__list__item__content__top__block">
+                  <h3 class="equipment__list__item__content__title">$40 DAY</h3>
+                  <h3 class="equipment__list__item__content__title">
+                    $60 WEEKEND
+                  </h3>
                 </div>
               </div>
-              <div class="swiper-button-prev galeryModal-button-prev">
-                <img src="./assets/icons/swipeLeft.svg" />
+              <p class="equipment__list__item__content__subtitle">
+                6-Person Tent
+              </p>
+              <p class="equipment__list__item__content__description">
+                Our rental tents are 3 season models that can be used with or
+                without the included rain fly. These tents are sturdy and
+                provide excellent protection from wind and rain. ...
+              </p>
+              <div class="equipment__list__item__form">
+                <div class="form-group">
+                  <select class="form-select" aria-label="datepicke">
+                    <option selected value="Day">Day</option>
+                    <option value="Week">Week</option>
+                    <option value="Month">Month</option>
+                  </select>
+                </div>
+                <div class="equipment__list__item__form__botom">
+                  <div class="counter">
+                    <button type="button" class="counter__minus" data-id="15">
+                      <img src="./assets/icons/minus.svg" />
+                    </button>
+                    <span class="counter__value" data-id="15">1</span>
+                    <button type="button" class="counter__plus" data-id="15">
+                      <img src="./assets/icons/plus.svg" />
+                    </button>
+                  </div>
+                  <button class="equipment__list__item__form__botom__button">
+                    80$ Buy now
+                  </button>
+                </div>
               </div>
-              <div class="swiper-button-next galeryModal-button-next">
-                <img src="./assets/icons/swipeRight.svg" />
+            </div>
+          </div>
+          <div class="equipment__list__item">
+            <img src="./assets/images/equipment.png" alt="equipment" />
+            <div class="equipment__list__item__content">
+              <div class="equipment__list__item__content__top">
+                <div class="equipment__list__item__content__top__block">
+                  <h3 class="equipment__list__item__content__title">$40 DAY</h3>
+                  <h3 class="equipment__list__item__content__title">
+                    $60 WEEKEND
+                  </h3>
+                </div>
+                <div class="equipment__list__item__content__top__block">
+                  <h3 class="equipment__list__item__content__title">$40 DAY</h3>
+                  <h3 class="equipment__list__item__content__title">
+                    $60 WEEKEND
+                  </h3>
+                </div>
               </div>
-              <div
-                class="swiper-pagination galeryModal-swiper-pagination"
-              ></div>
+              <p class="equipment__list__item__content__subtitle">
+                6-Person Tent
+              </p>
+              <p class="equipment__list__item__content__description">
+                Our rental tents are 3 season models that can be used with or
+                without the included rain fly. These tents are sturdy and
+                provide excellent protection from wind and rain. ...
+              </p>
+              <div class="equipment__list__item__form">
+                <div class="form-group">
+                  <select class="form-select" aria-label="datepicke">
+                    <option selected value="Day">Day</option>
+                    <option value="Week">Week</option>
+                    <option value="Month">Month</option>
+                  </select>
+                </div>
+                <div class="equipment__list__item__form__botom">
+                  <div class="counter">
+                    <button type="button" class="counter__minus" data-id="16">
+                      <img src="./assets/icons/minus.svg" />
+                    </button>
+                    <span class="counter__value" data-id="16">1</span>
+                    <button type="button" class="counter__plus" data-id="16">
+                      <img src="./assets/icons/plus.svg" />
+                    </button>
+                  </div>
+                  <button class="equipment__list__item__form__botom__button">
+                    80$ Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="equipment__list__item">
+            <img src="./assets/images/equipment.png" alt="equipment" />
+            <div class="equipment__list__item__content">
+              <div class="equipment__list__item__content__top">
+                <div class="equipment__list__item__content__top__block">
+                  <h3 class="equipment__list__item__content__title">$40 DAY</h3>
+                  <h3 class="equipment__list__item__content__title">
+                    $60 WEEKEND
+                  </h3>
+                </div>
+                <div class="equipment__list__item__content__top__block">
+                  <h3 class="equipment__list__item__content__title">$40 DAY</h3>
+                  <h3 class="equipment__list__item__content__title">
+                    $60 WEEKEND
+                  </h3>
+                </div>
+              </div>
+              <p class="equipment__list__item__content__subtitle">
+                6-Person Tent
+              </p>
+              <p class="equipment__list__item__content__description">
+                Our rental tents are 3 season models that can be used with or
+                without the included rain fly. These tents are sturdy and
+                provide excellent protection from wind and rain. ...
+              </p>
+              <div class="equipment__list__item__form">
+                <div class="form-group">
+                  <select class="form-select" aria-label="datepicke">
+                    <option selected value="Day">Day</option>
+                    <option value="Week">Week</option>
+                    <option value="Month">Month</option>
+                  </select>
+                </div>
+                <div class="equipment__list__item__form__botom">
+                  <div class="counter">
+                    <button type="button" class="counter__minus" data-id="17">
+                      <img src="./assets/icons/minus.svg" />
+                    </button>
+                    <span class="counter__value" data-id="17">1</span>
+                    <button type="button" class="counter__plus" data-id="17">
+                      <img src="./assets/icons/plus.svg" />
+                    </button>
+                  </div>
+                  <button class="equipment__list__item__form__botom__button">
+                    80$ Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="equipment__list__item">
+            <img src="./assets/images/equipment.png" alt="equipment" />
+            <div class="equipment__list__item__content">
+              <div class="equipment__list__item__content__top">
+                <div class="equipment__list__item__content__top__block">
+                  <h3 class="equipment__list__item__content__title">$40 DAY</h3>
+                  <h3 class="equipment__list__item__content__title">
+                    $60 WEEKEND
+                  </h3>
+                </div>
+                <div class="equipment__list__item__content__top__block">
+                  <h3 class="equipment__list__item__content__title">$40 DAY</h3>
+                  <h3 class="equipment__list__item__content__title">
+                    $60 WEEKEND
+                  </h3>
+                </div>
+              </div>
+              <p class="equipment__list__item__content__subtitle">
+                6-Person Tent
+              </p>
+              <p class="equipment__list__item__content__description">
+                Our rental tents are 3 season models that can be used with or
+                without the included rain fly. These tents are sturdy and
+                provide excellent protection from wind and rain. ...
+              </p>
+              <div class="equipment__list__item__form">
+                <div class="form-group">
+                  <select class="form-select" aria-label="datepicke">
+                    <option selected value="Day">Day</option>
+                    <option value="Week">Week</option>
+                    <option value="Month">Month</option>
+                  </select>
+                </div>
+                <div class="equipment__list__item__form__botom">
+                  <div class="counter">
+                    <button type="button" class="counter__minus" data-id="18">
+                      <img src="./assets/icons/minus.svg" />
+                    </button>
+                    <span class="counter__value" data-id="18">1</span>
+                    <button type="button" class="counter__plus" data-id="18">
+                      <img src="./assets/icons/plus.svg" />
+                    </button>
+                  </div>
+                  <button class="equipment__list__item__form__botom__button">
+                    80$ Buy now
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <section class="gallery-page container">
-      <h2 class="gallery-page__title">Gallery</h2>
-      <div class="gallery-page__list">
-        <div class="gallery-page__list__item">
-          <button
-            data-bs-toggle="modal"
-            data-bs-target="#galeryModal"
-            data-id="0"
-          >
-            <img src="./assets/images/galerySmall1.png" alt="Gallery Image" />
-          </button>
-        </div>
-        <div class="gallery-page__list__item">
-          <button
-            data-bs-toggle="modal"
-            data-bs-target="#galeryModal"
-            data-id="1"
-          >
-            <img src="./assets/images/galerySmall2.png" alt="Gallery Image" />
-          </button>
-        </div>
-        <div class="gallery-page__list__item">
-          <button
-            data-bs-toggle="modal"
-            data-bs-target="#galeryModal"
-            data-id="2"
-          >
-            <img src="./assets/images/galerySmall8.png" alt="Gallery Image" />
-          </button>
-        </div>
-        <div class="gallery-page__list__item">
-          <button
-            data-bs-toggle="modal"
-            data-bs-target="#galeryModal"
-            data-id="3"
-          >
-            <img src="./assets/images/galerySmall3.png" alt="Gallery Image" />
-          </button>
-        </div>
-        <div class="gallery-page__list__item">
-          <button
-            data-bs-toggle="modal"
-            data-bs-target="#galeryModal"
-            data-id="4"
-          >
-            <img src="./assets/images/galerySmall4.png" alt="Gallery Image" />
-          </button>
-        </div>
-        <div class="gallery-page__list__item">
-          <button
-            data-bs-toggle="modal"
-            data-bs-target="#galeryModal"
-            data-id="5"
-          >
-            <img src="./assets/images/galerySmall5.png" alt="Gallery Image" />
-          </button>
-        </div>
-        <div class="gallery-page__list__item">
-          <button
-            data-bs-toggle="modal"
-            data-bs-target="#galeryModal"
-            data-id="6"
-          >
-            <img src="./assets/images/galerySmall7.png" alt="Gallery Image" />
-          </button>
-        </div>
-        <div class="gallery-page__list__item">
-          <button
-            data-bs-toggle="modal"
-            data-bs-target="#galeryModal"
-            data-id="7"
-          >
-            <img src="./assets/images/galerySmall6.png" alt="Gallery Image" />
-          </button>
-        </div>
-      </div>
     </section>
 
-    <section class="gallery-page container">
-      <h2 class="gallery-page__title">Videos</h2>
-      <div class="gallery-page__list">
-        <div class="gallery-page__list__item">
-          <img src="./assets/images/galerySmall6.png" alt="Gallery Image" />
-          <img
-            class="gallery-page__list__item__playicon"
-            src="./assets/icons/playIcon.svg"
-            alt="Play Icon"
-          />
-        </div>
-        <div class="gallery-page__list__item">
-          <img src="./assets/images/gallery2.png" alt="Gallery Image" />
-          <img
-            class="gallery-page__list__item__playicon"
-            src="./assets/icons/playIcon.svg"
-            alt="Play Icon"
-          />
-        </div>
-        <div class="gallery-page__list__item">
-          <img src="./assets/images/galerySmall7.png" alt="Gallery Image" />
-          <img
-            class="gallery-page__list__item__playicon"
-            src="./assets/icons/playIcon.svg"
-            alt="Play Icon"
-          />
-        </div>
-        <div class="gallery-page__list__item">
-          <img src="./assets/images/gallery9.png" alt="Gallery Image" />
-          <img
-            class="gallery-page__list__item__playicon"
-            src="./assets/icons/playIcon.svg"
-            alt="Play Icon"
-          />
+    <section class="equipment">
+      <div class="equipment__container container">
+        <h3 class="equipment__title equipment__title__recomended">Reccomended</h3>
+        <div class="equipment__list">
+          <div class="equipment__list__item">
+            <img src="./assets/images/equipment.png" alt="equipment" />
+            <div class="equipment__list__item__content">
+              <div class="equipment__list__item__content__top">
+                <div class="equipment__list__item__content__top__block">
+                  <h3 class="equipment__list__item__content__title">$40 DAY</h3>
+                  <h3 class="equipment__list__item__content__title">
+                    $60 WEEKEND
+                  </h3>
+                </div>
+                <div class="equipment__list__item__content__top__block">
+                  <h3 class="equipment__list__item__content__title">$40 DAY</h3>
+                  <h3 class="equipment__list__item__content__title">
+                    $60 WEEKEND
+                  </h3>
+                </div>
+              </div>
+              <p class="equipment__list__item__content__subtitle">
+                6-Person Tent
+              </p>
+              <p class="equipment__list__item__content__description">
+                Our rental tents are 3 season models that can be used with or
+                without the included rain fly. These tents are sturdy and
+                provide excellent protection from wind and rain. ...
+              </p>
+              <div class="equipment__list__item__form">
+                <div class="form-group">
+                  <select class="form-select" aria-label="datepicke">
+                    <option selected value="Day">Day</option>
+                    <option value="Week">Week</option>
+                    <option value="Month">Month</option>
+                  </select>
+                </div>
+                <div class="equipment__list__item__form__botom">
+                  <div class="counter">
+                    <button type="button" class="counter__minus" data-id="19">
+                      <img src="./assets/icons/minus.svg" />
+                    </button>
+                    <span class="counter__value" data-id="19">1</span>
+                    <button type="button" class="counter__plus" data-id="19">
+                      <img src="./assets/icons/plus.svg" />
+                    </button>
+                  </div>
+                  <button class="equipment__list__item__form__botom__button">
+                    80$ Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="equipment__list__item">
+            <img src="./assets/images/equipment.png" alt="equipment" />
+            <div class="equipment__list__item__content">
+              <div class="equipment__list__item__content__top">
+                <div class="equipment__list__item__content__top__block">
+                  <h3 class="equipment__list__item__content__title">$40 DAY</h3>
+                  <h3 class="equipment__list__item__content__title">
+                    $60 WEEKEND
+                  </h3>
+                </div>
+                <div class="equipment__list__item__content__top__block">
+                  <h3 class="equipment__list__item__content__title">$40 DAY</h3>
+                  <h3 class="equipment__list__item__content__title">
+                    $60 WEEKEND
+                  </h3>
+                </div>
+              </div>
+              <p class="equipment__list__item__content__subtitle">
+                6-Person Tent
+              </p>
+              <p class="equipment__list__item__content__description">
+                Our rental tents are 3 season models that can be used with or
+                without the included rain fly. These tents are sturdy and
+                provide excellent protection from wind and rain. ...
+              </p>
+              <div class="equipment__list__item__form">
+                <div class="form-group">
+                  <select class="form-select" aria-label="datepicke">
+                    <option selected value="Day">Day</option>
+                    <option value="Week">Week</option>
+                    <option value="Month">Month</option>
+                  </select>
+                </div>
+                <div class="equipment__list__item__form__botom">
+                  <div class="counter">
+                    <button type="button" class="counter__minus" data-id="20">
+                      <img src="./assets/icons/minus.svg" />
+                    </button>
+                    <span class="counter__value" data-id="20">1</span>
+                    <button type="button" class="counter__plus" data-id="20">
+                      <img src="./assets/icons/plus.svg" />
+                    </button>
+                  </div>
+                  <button class="equipment__list__item__form__botom__button">
+                    80$ Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="equipment__list__item">
+            <img src="./assets/images/equipment.png" alt="equipment" />
+            <div class="equipment__list__item__content">
+              <div class="equipment__list__item__content__top">
+                <div class="equipment__list__item__content__top__block">
+                  <h3 class="equipment__list__item__content__title">$40 DAY</h3>
+                  <h3 class="equipment__list__item__content__title">
+                    $60 WEEKEND
+                  </h3>
+                </div>
+                <div class="equipment__list__item__content__top__block">
+                  <h3 class="equipment__list__item__content__title">$40 DAY</h3>
+                  <h3 class="equipment__list__item__content__title">
+                    $60 WEEKEND
+                  </h3>
+                </div>
+              </div>
+              <p class="equipment__list__item__content__subtitle">
+                6-Person Tent
+              </p>
+              <p class="equipment__list__item__content__description">
+                Our rental tents are 3 season models that can be used with or
+                without the included rain fly. These tents are sturdy and
+                provide excellent protection from wind and rain. ...
+              </p>
+              <div class="equipment__list__item__form">
+                <div class="form-group">
+                  <select class="form-select" aria-label="datepicke">
+                    <option selected value="Day">Day</option>
+                    <option value="Week">Week</option>
+                    <option value="Month">Month</option>
+                  </select>
+                </div>
+                <div class="equipment__list__item__form__botom">
+                  <div class="counter">
+                    <button type="button" class="counter__minus" data-id="21">
+                      <img src="./assets/icons/minus.svg" />
+                    </button>
+                    <span class="counter__value" data-id="21">1</span>
+                    <button type="button" class="counter__plus" data-id="21">
+                      <img src="./assets/icons/plus.svg" />
+                    </button>
+                  </div>
+                  <button class="equipment__list__item__form__botom__button">
+                    80$ Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="equipment__list__item">
+            <img src="./assets/images/equipment.png" alt="equipment" />
+            <div class="equipment__list__item__content">
+              <div class="equipment__list__item__content__top">
+                <div class="equipment__list__item__content__top__block">
+                  <h3 class="equipment__list__item__content__title">$40 DAY</h3>
+                  <h3 class="equipment__list__item__content__title">
+                    $60 WEEKEND
+                  </h3>
+                </div>
+                <div class="equipment__list__item__content__top__block">
+                  <h3 class="equipment__list__item__content__title">$40 DAY</h3>
+                  <h3 class="equipment__list__item__content__title">
+                    $60 WEEKEND
+                  </h3>
+                </div>
+              </div>
+              <p class="equipment__list__item__content__subtitle">
+                6-Person Tent
+              </p>
+              <p class="equipment__list__item__content__description">
+                Our rental tents are 3 season models that can be used with or
+                without the included rain fly. These tents are sturdy and
+                provide excellent protection from wind and rain. ...
+              </p>
+              <div class="equipment__list__item__form">
+                <div class="form-group">
+                  <select class="form-select" aria-label="datepicke">
+                    <option selected value="Day">Day</option>
+                    <option value="Week">Week</option>
+                    <option value="Month">Month</option>
+                  </select>
+                </div>
+                <div class="equipment__list__item__form__botom">
+                  <div class="counter">
+                    <button type="button" class="counter__minus" data-id="22">
+                      <img src="./assets/icons/minus.svg" />
+                    </button>
+                    <span class="counter__value" data-id="22">1</span>
+                    <button type="button" class="counter__plus" data-id="22">
+                      <img src="./assets/icons/plus.svg" />
+                    </button>
+                  </div>
+                  <button class="equipment__list__item__form__botom__button">
+                    80$ Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -1094,11 +1312,7 @@
             <a class="nav__list__item__link" href="./cars.html">Cars</a>
           </li>
           <li class="nav__list__item">
-            <a
-              class="nav__list__item__link nav__list__item__link_active"
-              href="#"
-              >Gallery</a
-            >
+            <a class="nav__list__item__link" href="./galery.html">Gallery</a>
           </li>
           <li class="nav__list__item">
             <a class="nav__list__item__link" href="./contactus.html"

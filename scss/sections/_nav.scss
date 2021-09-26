@@ -20,8 +20,21 @@
       }
 
       &__link_active {
-        color: #007b8c;
-        font-weight: bold;
+        color: #007b8c !important;
+        font-weight: bold !important;
+        position: relative !important;
+
+        @media (max-width: 1180px) {
+          &::after {
+            content: "";
+            background: url("../../assets/icons/Vector.svg");
+            position: absolute;
+            right: 0;
+            top: calc(50% - 8.2px);
+            width: 10px;
+            height: 16.5px;
+          }
+        }
       }
     }
   }
@@ -34,8 +47,10 @@
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
   z-index: 9990;
+  background: #ffffff;
+  opacity: 0.8;
+  backdrop-filter: blur(50px);
 
   &_active {
     @media (max-width: 1180px) {
@@ -47,7 +62,7 @@
 .mobile-nav {
   position: fixed;
   top: 64px;
-  right: -280px;
+  left: -280px;
   bottom: 0;
   z-index: 99999;
   display: none;
@@ -57,7 +72,7 @@
   transform: translateX(0%);
 
   &_active {
-    transform: translateX(-100%);
+    transform: translateX(100%);
   }
 
   @media (max-width: 1180px) {
@@ -68,18 +83,30 @@
     background: #ffffff;
     width: 280px;
     height: 100%;
-    padding: 12px 35px 0 0;
+    padding: 24px 24px 0 24px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
 
-    .nav__list {
-      flex-direction: column;
+    .nav {
+      width: 100%;
+      margin-top: 50px;
 
-      &__item {
-        margin-right: 0;
-        text-align: right;
-        margin-bottom: 16px;
+      &__list {
+        flex-direction: column;
+        width: 100%;
+
+        &__item {
+          margin-right: 0;
+          text-align: left;
+          margin-bottom: 16px;
+
+          &__link {
+            display: block;
+            color: #5d617e;
+            font-weight: normal;
+          }
+        }
       }
     }
   }

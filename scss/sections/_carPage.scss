@@ -195,19 +195,32 @@
           &:not(:first-of-type) {
             text-align: right;
           }
+
+          @media (max-width: 768px) {
+            &:last-of-type {
+              text-align: right;
+              justify-content: flex-end;
+            }
+            &:nth-child(2) {
+              opacity: 0;
+            }
+          }
         }
 
         &__specifications {
           color: #0a183a;
           // border: 1px solid rgba(162, 164, 194, 0.3);
           border-bottom: none;
-
           display: flex;
           align-items: center;
           justify-content: space-between;
           max-width: 180px;
-          span {
+          & span:last-of-type {
             color: #a2a4c2;
+            flex-grow: 1;
+            min-width: max-content;
+            text-align: right;
+            margin-left: 8px;
           }
         }
 
@@ -215,6 +228,10 @@
           color: #0a183a;
           // border-top: 1px solid rgba(162, 164, 194, 0.3);
           text-align: right;
+
+          @media (max-width: 768px) {
+            justify-content: flex-end;
+          }
         }
 
         &__price {
@@ -223,6 +240,10 @@
           border-bottom: none;
           font-weight: bold !important;
           text-align: right;
+
+          @media (max-width: 768px) {
+            justify-content: flex-end;
+          }
         }
 
         p {
@@ -234,6 +255,8 @@
           @media (max-width: 768px) {
             padding: 6px;
             height: 48px;
+            display: flex;
+            align-items: center;
           }
         }
         // & p:nth-child(1) {
