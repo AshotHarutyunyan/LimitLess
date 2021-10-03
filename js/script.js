@@ -111,6 +111,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const counterMinus = document.querySelectorAll('.counter__minus');
     const counterPlus = document.querySelectorAll('.counter__plus');
     const galleryButtons = document.querySelectorAll(`button[data-bs-target="#galeryModal"]`)
+    const basket = document.querySelector('.basket');
+    const orders = document.querySelector('.orders');
+    const ordersClose = document.querySelector('.orders__close');
+    const ordersShadow = document.querySelector('.order__shadow');
 
     const removeClassFromList = (elements, className) => {
         elements.forEach((el) => {
@@ -151,6 +155,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         });
+    });
+
+    basket.addEventListener('click', () => {
+        basket.classList.toggle('basket_active');
+        orders.classList.toggle('orders_active');
+        ordersShadow.classList.toggle('order__shadow_active');
+    });
+
+    ordersClose.addEventListener('click', () => {
+        basket.classList.remove('basket_active');
+        orders.classList.remove('orders_active');
+        ordersShadow.classList.remove('order__shadow_active');
+    });
+
+    ordersShadow.addEventListener('click', () => {
+        basket.classList.remove('basket_active');
+        orders.classList.remove('orders_active');
+        ordersShadow.classList.remove('order__shadow_active');
     });
 
     menu?.addEventListener('click', (e) => {

@@ -20,6 +20,14 @@
   font-feature-settings: "tnum" on, "lnum" on;
 }
 
+%bold-26 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 39px;
+}
+
 %bold-32 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -115,6 +123,14 @@
   font-weight: bold;
   font-size: 20px;
   line-height: 30px;
+}
+
+%medium-20 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 %bold-36 {
