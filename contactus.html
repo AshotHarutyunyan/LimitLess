@@ -54,20 +54,171 @@
             </li>
           </ul>
         </nav>
-        <div class="language-bar">
-          <button class="language-bar__item">Arm</button>
-          <button class="language-bar__item language-bar__item_active">
-            Eng
-          </button>
-          <button class="language-bar__item">Rus</button>
+        <div class="d-flex align-items-center">
+          <div class="basket">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="basket__icon"
+            >
+              <path
+                opacity="0.3"
+                d="M8.00002 3.04141L5.17883 6.42683C4.94312 6.70968 4.52274 6.7479 4.23989 6.51219C3.95704 6.27648 3.91883 5.8561 4.15454 5.57325L7.48787 1.57325C7.7544 1.25342 8.24563 1.25342 8.51216 1.57325L11.8455 5.57325C12.0812 5.8561 12.043 6.27648 11.7601 6.51219C11.4773 6.7479 11.0569 6.70968 10.8212 6.42683L8.00002 3.04141Z"
+                fill="#007B8C"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.33203 6C2.77975 6 2.33203 6.44772 2.33203 7V11C2.33203 12.6569 3.67517 14 5.33203 14H10.6659C12.3227 14 13.6659 12.6569 13.6659 11V7C13.6659 6.44772 13.2182 6 12.6659 6H3.33203ZM9.33255 10C9.33255 10.7364 8.7356 11.3333 7.99922 11.3333C7.26284 11.3333 6.66589 10.7364 6.66589 10C6.66589 9.26362 7.26284 8.66667 7.99922 8.66667C8.7356 8.66667 9.33255 9.26362 9.33255 10Z"
+                fill="#007B8C"
+              />
+            </svg>
+            <p class="basket__sum">$500</p>
+          </div>
+          <div class="language-bar">
+            <button class="language-bar__item">Arm</button>
+            <button class="language-bar__item language-bar__item_active">
+              Eng
+            </button>
+            <button class="language-bar__item">Rus</button>
+          </div>
+          <div class="menu" role="button">
+            <img src="./assets/icons/menu.svg" alt="Menu" />
+            <img src="./assets/icons/menuOpened.svg" alt="Menu Opened" />
+          </div>
         </div>
-        <div class="menu" role="button">
-          <img src="./assets/icons/menu.svg" alt="Menu" />
-          <img src="./assets/icons/menuOpened.svg" alt="Menu Opened" />
-        </div>
+      </div>
       </div>
     </header>
 
+    <!-- orders -->
+    <div class="orders">
+      <div class="orders__top">
+        <div class="basket basket_active">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="basket__icon"
+          >
+            <path
+              opacity="0.3"
+              d="M8.00002 3.04141L5.17883 6.42683C4.94312 6.70968 4.52274 6.7479 4.23989 6.51219C3.95704 6.27648 3.91883 5.8561 4.15454 5.57325L7.48787 1.57325C7.7544 1.25342 8.24563 1.25342 8.51216 1.57325L11.8455 5.57325C12.0812 5.8561 12.043 6.27648 11.7601 6.51219C11.4773 6.7479 11.0569 6.70968 10.8212 6.42683L8.00002 3.04141Z"
+              fill="#007B8C"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.33203 6C2.77975 6 2.33203 6.44772 2.33203 7V11C2.33203 12.6569 3.67517 14 5.33203 14H10.6659C12.3227 14 13.6659 12.6569 13.6659 11V7C13.6659 6.44772 13.2182 6 12.6659 6H3.33203ZM9.33255 10C9.33255 10.7364 8.7356 11.3333 7.99922 11.3333C7.26284 11.3333 6.66589 10.7364 6.66589 10C6.66589 9.26362 7.26284 8.66667 7.99922 8.66667C8.7356 8.66667 9.33255 9.26362 9.33255 10Z"
+              fill="#007B8C"
+            />
+          </svg>
+          <p class="basket__sum">$500</p>
+        </div>
+        <button class="orders__close">
+          <img src="./assets/icons/close_big.svg" />
+        </button>
+      </div>
+      <h2 class="orders__title">My Orders</h2>
+      <div class="orders__list">
+        <div class="orders__list__item">
+          <img
+            src="./assets/images/equipment.png"
+            class="orders__list__item__image"
+          />
+          <div class="orders__list__item__info">
+            <h3 class="orders__list__item__info__title">6-Person Tent</h3>
+            <p class="orders__list__item__info__description">
+              Our rental tents are 3 season models that can be used with or
+              without the included rain fly. These tents are sturdy and provid.
+            </p>
+          </div>
+          <div class="orders__list__item__price__info">
+            <p class="orders__list__item__price__info__period">1 Day</p>
+            <p class="orders__list__item__price__info__price">$14.99</p>
+          </div>
+          <div class="counter">
+            <button type="button" class="counter__minus" data-id="25">
+              <img src="./assets/icons/minus.svg" />
+            </button>
+            <span class="counter__value" data-id="25">1</span>
+            <button type="button" class="counter__plus" data-id="25">
+              <img src="./assets/icons/plus.svg" />
+            </button>
+          </div>
+        </div>
+        <div class="orders__list__item">
+          <img
+            src="./assets/images/equipment.png"
+            class="orders__list__item__image"
+          />
+          <div class="orders__list__item__info">
+            <h3 class="orders__list__item__info__title">6-Person Tent</h3>
+            <p class="orders__list__item__info__description">
+              Our rental tents are 3 season models that can be used with or
+              without the included rain fly. These tents are sturdy and provid.
+            </p>
+          </div>
+          <div class="orders__list__item__price__info">
+            <p class="orders__list__item__price__info__period">1 Day</p>
+            <p class="orders__list__item__price__info__price">$14.99</p>
+          </div>
+          <div class="counter">
+            <button type="button" class="counter__minus" data-id="26">
+              <img src="./assets/icons/minus.svg" />
+            </button>
+            <span class="counter__value" data-id="26">1</span>
+            <button type="button" class="counter__plus" data-id="26">
+              <img src="./assets/icons/plus.svg" />
+            </button>
+          </div>
+        </div>
+        <div class="orders__list__item">
+          <img
+            src="./assets/images/equipment.png"
+            class="orders__list__item__image"
+          />
+          <div class="orders__list__item__info">
+            <h3 class="orders__list__item__info__title">6-Person Tent</h3>
+            <p class="orders__list__item__info__description">
+              Our rental tents are 3 season models that can be used with or
+              without the included rain fly. These tents are sturdy and provid.
+            </p>
+          </div>
+          <div class="orders__list__item__price__info">
+            <p class="orders__list__item__price__info__period">1 Day</p>
+            <p class="orders__list__item__price__info__price">$14.99</p>
+          </div>
+          <div class="counter">
+            <button type="button" class="counter__minus" data-id="27">
+              <img src="./assets/icons/minus.svg" />
+            </button>
+            <span class="counter__value" data-id="27">1</span>
+            <button type="button" class="counter__plus" data-id="27">
+              <img src="./assets/icons/plus.svg" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="orders__footer">
+        <div class="orders__footer__info">
+          <p class="orders__footer__info__total">Total:</p>
+          <p class="orders__footer__info__price">$25.97</p>
+        </div>
+
+        <div class="orders__footer__checkout">
+          <p>Checkout</p>
+          <p>$25.97</p>
+        </div>
+      </div>
+    </div>
+    <div class="order__shadow"></div>
+    
     <!-- mobile nav panel -->
     <div class="mobile-nav">
       <div class="mobile-nav__content">
