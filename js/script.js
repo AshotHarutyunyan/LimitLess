@@ -110,6 +110,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const navbarShadow = document.querySelector('.mobile-nav__shadow');
     const counterMinus = document.querySelectorAll('.counter__minus');
     const counterPlus = document.querySelectorAll('.counter__plus');
+    const bookingFormCheckboxes = document.querySelectorAll('.booking-form .form-check-input');
+    const bookingFormCunterPlus = document.querySelectorAll('.booking-form .counter__plus');
+    const bookingFormCunterMinus = document.querySelectorAll('.booking-form .counter__minus');
     const galleryButtons = document.querySelectorAll(`button[data-bs-target="#galeryModal"]`)
     const basket = document.querySelector('.basket');
     const orders = document.querySelector('.orders');
@@ -121,22 +124,6 @@ document.addEventListener('DOMContentLoaded', () => {
             el.classList.remove(className);
         })
     };
-
-    (counterMinus || []).forEach((el) => {
-        el.addEventListener('click', () => {
-            const index = el.getAttribute('data-id');
-            const counter = document.querySelector(`.counter__value[data-id="${index}"]`);
-            counter.innerText = +counter.innerText <= 1 ? counter.innerText : +counter.innerText - 1;
-        });
-    });
-
-    (counterPlus || []).forEach((el) => {
-        el.addEventListener('click', () => {
-            const index = el.getAttribute('data-id');
-            const counter = document.querySelector(`.counter__value[data-id="${index}"]`);
-            counter.innerText = +counter.innerText + 1;
-        });
-    });
 
     (galleryButtons || []).forEach((el) => {
         el.addEventListener('click', () => {
@@ -206,13 +193,6 @@ document.addEventListener('DOMContentLoaded', () => {
         bookingFormSteps[0].classList.add('booking-form__steps__step_active');
     });
 
-    clearAllButton?.addEventListener('click', () => {
-        const bookingFormCheckboxes = document.querySelectorAll('.form-check-input');
-        bookingFormCheckboxes.forEach((el) => {
-            el.checked = false;
-        });
-    });
-
     days?.forEach((day) => {
         day.addEventListener('click', () => {
             const selectedIndex = Number(day.getAttribute('data-day'));
@@ -220,6 +200,90 @@ document.addEventListener('DOMContentLoaded', () => {
             removeClassFromList(daysContents, 'tour-page__right-block__days-content__list__item_active');
             days[selectedIndex].classList.add('tour-page__right-block__days__list__item_active');
             daysContents[selectedIndex].classList.add('tour-page__right-block__days-content__list__item_active');
+        });
+    });
+
+
+
+    clearAllButton?.addEventListener('click', () => {
+        const counters = document.querySelectorAll('.booking-form .counter__value');
+        const amount = document.querySelector('.booking-form .booking-form__amount__price')
+        const carPrice = document.querySelector('.booking-modal .car__content__top__price').getAttribute('data-car-price')
+        amount.innerHTML = `${carPrice} ֏`
+        amount.setAttribute('data-car-price', carPrice)
+
+
+        bookingFormCheckboxes.forEach((el) => {
+            el.checked = false;
+        });
+        counters.forEach(el => {
+            el.setAttribute('data-count', 1)
+            el.innerHTML = 1
+        });
+
+    });
+
+    (bookingFormCunterPlus || []).forEach((el) => {
+        el.addEventListener('click', () => {
+            const dataId = el.getAttribute('data-id');
+            const checked = document.querySelector(`#${dataId}`).checked;
+
+            if (checked) {
+                const dataPrice = +el.getAttribute('data-price');
+                const amount = document.querySelector('.booking-form__amount__price')
+                const newPrice = +amount.getAttribute('data-car-price') + dataPrice
+                amount.innerHTML = `${newPrice} ֏`
+                amount.setAttribute('data-car-price', newPrice)
+            }
+        })
+    });
+
+    (bookingFormCunterMinus || []).forEach((el) => {
+        el.addEventListener('click', () => {
+            const dataId = el.getAttribute('data-id');
+            const checked = document.querySelector(`#${dataId}`).checked;
+            const count = +document.querySelector(`.booking-form .counter__value[data-id='${dataId}']`).getAttribute('data-count')
+
+            if (checked && count > 1) {
+                const dataPrice = +el.getAttribute('data-price');
+                const amount = document.querySelector('.booking-form__amount__price');
+                const newPrice = +amount.getAttribute('data-car-price') - dataPrice
+                amount.innerHTML = `${newPrice} ֏`
+                amount.setAttribute('data-car-price', newPrice)
+            }
+        })
+    });
+
+    (bookingFormCheckboxes || []).forEach((el) => {
+        el.addEventListener('change', (e) => {
+            const checked = e.target.checked;
+            const id = e.target.getAttribute('id')
+            const counter = document.querySelector(`.counter__value[data-id='${id}']`);
+            const price = +counter.getAttribute('data-price');
+            const count = +counter.getAttribute('data-count');
+            const amount = document.querySelector('.booking-form__amount__price')
+            const newPrice = checked ? +amount.getAttribute('data-car-price') + (count * price) : +amount.getAttribute('data-car-price') - (count * price);
+
+            amount.innerHTML = `${newPrice} ֏`
+            amount.setAttribute('data-car-price', newPrice)
+        })
+    });
+
+    (counterMinus || []).forEach((el) => {
+        el.addEventListener('click', () => {
+            const index = el.getAttribute('data-id');
+            const counter = document.querySelector(`.counter__value[data-id="${index}"]`);
+            counter.innerText = +counter.innerText <= 1 ? counter.innerText : +counter.innerText - 1;
+            counter.setAttribute('data-count', counter.innerText)
+        });
+    });
+
+    (counterPlus || []).forEach((el) => {
+        el.addEventListener('click', () => {
+            const dataId = el.getAttribute('data-id');
+            const counter = document.querySelector(`.counter__value[data-id="${dataId}"]`);
+            counter.innerText = +counter.innerText + 1;
+            counter.setAttribute('data-count', counter.innerText)
         });
     });
 

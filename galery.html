@@ -143,39 +143,18 @@
             <p class="orders__list__item__price__info__period">1 Day</p>
             <p class="orders__list__item__price__info__price">$14.99</p>
           </div>
-          <div class="counter">
-            <button type="button" class="counter__minus" data-id="25">
-              <img src="./assets/icons/minus.svg" />
-            </button>
-            <span class="counter__value" data-id="25">1</span>
-            <button type="button" class="counter__plus" data-id="25">
-              <img src="./assets/icons/plus.svg" />
-            </button>
-          </div>
-        </div>
-        <div class="orders__list__item">
-          <img
-            src="./assets/images/equipment.png"
-            class="orders__list__item__image"
-          />
-          <div class="orders__list__item__info">
-            <h3 class="orders__list__item__info__title">6-Person Tent</h3>
-            <p class="orders__list__item__info__description">
-              Our rental tents are 3 season models that can be used with or
-              without the included rain fly. These tents are sturdy and provid.
-            </p>
-          </div>
-          <div class="orders__list__item__price__info">
-            <p class="orders__list__item__price__info__period">1 Day</p>
-            <p class="orders__list__item__price__info__price">$14.99</p>
-          </div>
-          <div class="counter">
-            <button type="button" class="counter__minus" data-id="26">
-              <img src="./assets/icons/minus.svg" />
-            </button>
-            <span class="counter__value" data-id="26">1</span>
-            <button type="button" class="counter__plus" data-id="26">
-              <img src="./assets/icons/plus.svg" />
+          <div class="d-flex">
+            <div class="counter">
+              <button type="button" class="counter__minus" data-id="25">
+                <img src="./assets/icons/minus.svg" />
+              </button>
+              <span class="counter__value" data-id="25">1</span>
+              <button type="button" class="counter__plus" data-id="25">
+                <img src="./assets/icons/plus.svg" />
+              </button>
+            </div>
+            <button class="orders__list__item__delete">
+              <img src="./assets/icons/Delete.svg" alt="Delete" />
             </button>
           </div>
         </div>
@@ -195,13 +174,49 @@
             <p class="orders__list__item__price__info__period">1 Day</p>
             <p class="orders__list__item__price__info__price">$14.99</p>
           </div>
-          <div class="counter">
-            <button type="button" class="counter__minus" data-id="27">
-              <img src="./assets/icons/minus.svg" />
+          <div class="d-flex">
+            <div class="counter">
+              <button type="button" class="counter__minus" data-id="26">
+                <img src="./assets/icons/minus.svg" />
+              </button>
+              <span class="counter__value" data-id="26">1</span>
+              <button type="button" class="counter__plus" data-id="26">
+                <img src="./assets/icons/plus.svg" />
+              </button>
+            </div>
+            <button class="orders__list__item__delete">
+              <img src="./assets/icons/Delete.svg" alt="Delete" />
             </button>
-            <span class="counter__value" data-id="27">1</span>
-            <button type="button" class="counter__plus" data-id="27">
-              <img src="./assets/icons/plus.svg" />
+          </div>
+        </div>
+        <div class="orders__list__item">
+          <img
+            src="./assets/images/equipment.png"
+            class="orders__list__item__image"
+          />
+          <div class="orders__list__item__info">
+            <h3 class="orders__list__item__info__title">6-Person Tent</h3>
+            <p class="orders__list__item__info__description">
+              Our rental tents are 3 season models that can be used with or
+              without the included rain fly. These tents are sturdy and provid.
+            </p>
+          </div>
+          <div class="orders__list__item__price__info">
+            <p class="orders__list__item__price__info__period">1 Day</p>
+            <p class="orders__list__item__price__info__price">$14.99</p>
+          </div>
+          <div class="d-flex">
+            <div class="counter">
+              <button type="button" class="counter__minus" data-id="27">
+                <img src="./assets/icons/minus.svg" />
+              </button>
+              <span class="counter__value" data-id="27">1</span>
+              <button type="button" class="counter__plus" data-id="27">
+                <img src="./assets/icons/plus.svg" />
+              </button>
+            </div>
+            <button class="orders__list__item__delete">
+              <img src="./assets/icons/Delete.svg" alt="Delete" />
             </button>
           </div>
         </div>
@@ -645,7 +660,9 @@
               <div class="car__content">
                 <div class="car__content__top">
                   <h4 class="car__content__top__title">Toyota Land Cruiser</h4>
-                  <p class="car__content__top__price">125000 ֏</p>
+                  <p class="car__content__top__price" data-car-price="125000">
+                    125000 ֏
+                  </p>
                 </div>
                 <p class="car__content__subtitle">
                   с водителем на 12 часов 125000
@@ -681,12 +698,24 @@
                         <button
                           type="button"
                           class="counter__minus"
-                          data-id="0"
+                          data-id="checkbox1"
+                          data-price="1200"
                         >
                           <img src="./assets/icons/minus.svg" />
                         </button>
-                        <span class="counter__value" data-id="0">1</span>
-                        <button type="button" class="counter__plus" data-id="0">
+                        <span
+                          class="counter__value"
+                          data-id="checkbox1"
+                          data-price="1200"
+                          data-count="1"
+                          >1</span
+                        >
+                        <button
+                          type="button"
+                          class="counter__plus"
+                          data-id="checkbox1"
+                          data-price="1200"
+                        >
                           <img src="./assets/icons/plus.svg" />
                         </button>
                       </div>
@@ -708,12 +737,24 @@
                         <button
                           type="button"
                           class="counter__minus"
-                          data-id="1"
+                          data-id="checkbox2"
+                          data-price="700"
                         >
                           <img src="./assets/icons/minus.svg" />
                         </button>
-                        <span class="counter__value" data-id="1">1</span>
-                        <button type="button" class="counter__plus" data-id="1">
+                        <span
+                          class="counter__value"
+                          data-id="checkbox2"
+                          data-price="700"
+                          data-count="1"
+                          >1</span
+                        >
+                        <button
+                          type="button"
+                          class="counter__plus"
+                          data-id="checkbox2"
+                          data-price="700"
+                        >
                           <img src="./assets/icons/plus.svg" />
                         </button>
                       </div>
@@ -735,12 +776,24 @@
                         <button
                           type="button"
                           class="counter__minus"
-                          data-id="2"
+                          data-id="checkbox3"
+                          data-price="1200"
                         >
                           <img src="./assets/icons/minus.svg" />
                         </button>
-                        <span class="counter__value" data-id="2">1</span>
-                        <button type="button" class="counter__plus" data-id="2">
+                        <span
+                          class="counter__value"
+                          data-id="checkbox3"
+                          data-price="1200"
+                          data-count="1"
+                          >1</span
+                        >
+                        <button
+                          type="button"
+                          class="counter__plus"
+                          data-id="checkbox3"
+                          data-price="1200"
+                        >
                           <img src="./assets/icons/plus.svg" />
                         </button>
                       </div>
@@ -762,12 +815,24 @@
                         <button
                           type="button"
                           class="counter__minus"
-                          data-id="3"
+                          data-id="checkbox4"
+                          data-price="600"
                         >
                           <img src="./assets/icons/minus.svg" />
                         </button>
-                        <span class="counter__value" data-id="3">1</span>
-                        <button type="button" class="counter__plus" data-id="3">
+                        <span
+                          class="counter__value"
+                          data-id="checkbox4"
+                          data-price="600"
+                          data-count="1"
+                          >1</span
+                        >
+                        <button
+                          type="button"
+                          class="counter__plus"
+                          data-id="checkbox4"
+                          data-price="600"
+                        >
                           <img src="./assets/icons/plus.svg" />
                         </button>
                       </div>
@@ -789,12 +854,24 @@
                         <button
                           type="button"
                           class="counter__minus"
-                          data-id="4"
+                          data-id="checkbox5"
+                          data-price="500"
                         >
                           <img src="./assets/icons/minus.svg" />
                         </button>
-                        <span class="counter__value" data-id="4">1</span>
-                        <button type="button" class="counter__plus" data-id="4">
+                        <span
+                          class="counter__value"
+                          data-id="checkbox5"
+                          data-price="500"
+                          data-count="1"
+                          >1</span
+                        >
+                        <button
+                          type="button"
+                          class="counter__plus"
+                          data-id="checkbox5"
+                          data-price="500"
+                        >
                           <img src="./assets/icons/plus.svg" />
                         </button>
                       </div>
@@ -816,12 +893,24 @@
                         <button
                           type="button"
                           class="counter__minus"
-                          data-id="5"
+                          data-id="checkbox6"
+                          data-price="800"
                         >
                           <img src="./assets/icons/minus.svg" />
                         </button>
-                        <span class="counter__value" data-id="5">1</span>
-                        <button type="button" class="counter__plus" data-id="5">
+                        <span
+                          class="counter__value"
+                          data-id="checkbox6"
+                          data-price="800"
+                          data-count="1"
+                          >1</span
+                        >
+                        <button
+                          type="button"
+                          class="counter__plus"
+                          data-id="checkbox6"
+                          data-price="800"
+                        >
                           <img src="./assets/icons/plus.svg" />
                         </button>
                       </div>
@@ -843,12 +932,24 @@
                         <button
                           type="button"
                           class="counter__minus"
-                          data-id="6"
+                          data-id="checkbox7"
+                          data-price="1000"
                         >
                           <img src="./assets/icons/minus.svg" />
                         </button>
-                        <span class="counter__value" data-id="6">1</span>
-                        <button type="button" class="counter__plus" data-id="6">
+                        <span
+                          class="counter__value"
+                          data-id="checkbox7"
+                          data-price="1000"
+                          data-count="1"
+                          >1</span
+                        >
+                        <button
+                          type="button"
+                          class="counter__plus"
+                          data-id="checkbox7"
+                          data-price="1000"
+                        >
                           <img src="./assets/icons/plus.svg" />
                         </button>
                       </div>
@@ -866,16 +967,29 @@
                           Эл.Генератор 1 кВа бензин
                         </label>
                       </div>
+
                       <div class="counter">
                         <button
                           type="button"
                           class="counter__minus"
-                          data-id="7"
+                          data-id="checkbox8"
+                          data-price="1300"
                         >
                           <img src="./assets/icons/minus.svg" />
                         </button>
-                        <span class="counter__value" data-id="7">1</span>
-                        <button type="button" class="counter__plus" data-id="7">
+                        <span
+                          class="counter__value"
+                          data-id="checkbox8"
+                          data-price="1300"
+                          data-count="1"
+                          >1</span
+                        >
+                        <button
+                          type="button"
+                          class="counter__plus"
+                          data-id="checkbox8"
+                          data-price="1300"
+                        >
                           <img src="./assets/icons/plus.svg" />
                         </button>
                       </div>
@@ -897,12 +1011,24 @@
                         <button
                           type="button"
                           class="counter__minus"
-                          data-id="8"
+                          data-id="checkbox9"
+                          data-price="500"
                         >
                           <img src="./assets/icons/minus.svg" />
                         </button>
-                        <span class="counter__value" data-id="8">1</span>
-                        <button type="button" class="counter__plus" data-id="8">
+                        <span
+                          class="counter__value"
+                          data-id="checkbox9"
+                          data-price="500"
+                          data-count="1"
+                          >1</span
+                        >
+                        <button
+                          type="button"
+                          class="counter__plus"
+                          data-id="checkbox9"
+                          data-price="500"
+                        >
                           <img src="./assets/icons/plus.svg" />
                         </button>
                       </div>
@@ -924,12 +1050,24 @@
                         <button
                           type="button"
                           class="counter__minus"
-                          data-id="9"
+                          data-id="checkbox10"
+                          data-price="800"
                         >
                           <img src="./assets/icons/minus.svg" />
                         </button>
-                        <span class="counter__value" data-id="9">1</span>
-                        <button type="button" class="counter__plus" data-id="9">
+                        <span
+                          class="counter__value"
+                          data-id="checkbox10"
+                          data-price="800"
+                          data-count="1"
+                          >1</span
+                        >
+                        <button
+                          type="button"
+                          class="counter__plus"
+                          data-id="checkbox10"
+                          data-price="800"
+                        >
                           <img src="./assets/icons/plus.svg" />
                         </button>
                       </div>
@@ -951,15 +1089,23 @@
                         <button
                           type="button"
                           class="counter__minus"
-                          data-id="10"
+                          data-id="checkbox11"
+                          data-price="700"
                         >
                           <img src="./assets/icons/minus.svg" />
                         </button>
-                        <span class="counter__value" data-id="10">1</span>
+                        <span
+                          class="counter__value"
+                          data-id="checkbox11"
+                          data-price="700"
+                          data-count="1"
+                          >1</span
+                        >
                         <button
                           type="button"
                           class="counter__plus"
-                          data-id="10"
+                          data-id="checkbox11"
+                          data-price="700"
                         >
                           <img src="./assets/icons/plus.svg" />
                         </button>
@@ -982,15 +1128,23 @@
                         <button
                           type="button"
                           class="counter__minus"
-                          data-id="11"
+                          data-id="checkbox12"
+                          data-price="1000"
                         >
                           <img src="./assets/icons/minus.svg" />
                         </button>
-                        <span class="counter__value" data-id="11">1</span>
+                        <span
+                          class="counter__value"
+                          data-id="checkbox12"
+                          data-price="1000"
+                          data-count="1"
+                          >1</span
+                        >
                         <button
                           type="button"
                           class="counter__plus"
-                          data-id="11"
+                          data-id="checkbox12"
+                          data-price="1000"
                         >
                           <img src="./assets/icons/plus.svg" />
                         </button>
@@ -1009,7 +1163,33 @@
                           Рыбалка (снасти, удочки и т.д.)
                         </label>
                       </div>
+
                       <div class="counter">
+                        <button
+                          type="button"
+                          class="counter__minus"
+                          data-id="checkbox13"
+                          data-price="1200"
+                        >
+                          <img src="./assets/icons/minus.svg" />
+                        </button>
+                        <span
+                          class="counter__value"
+                          data-id="checkbox13"
+                          data-price="1200"
+                          data-count="1"
+                          >1</span
+                        >
+                        <button
+                          type="button"
+                          class="counter__plus"
+                          data-id="checkbox13"
+                          data-price="1200"
+                        >
+                          <img src="./assets/icons/plus.svg" />
+                        </button>
+                      </div>
+                      <!-- <div class="counter">
                         <button
                           type="button"
                           class="counter__minus"
@@ -1025,7 +1205,7 @@
                         >
                           <img src="./assets/icons/plus.svg" />
                         </button>
-                      </div>
+                      </div> -->
                       <p class="booking-form__checklist__item__price">1200֏</p>
                     </div>
                     <div class="booking-form__checklist__item">
@@ -1044,15 +1224,23 @@
                         <button
                           type="button"
                           class="counter__minus"
-                          data-id="13"
+                          data-id="checkbox14"
+                          data-price="500"
                         >
                           <img src="./assets/icons/minus.svg" />
                         </button>
-                        <span class="counter__value" data-id="13">1</span>
+                        <span
+                          class="counter__value"
+                          data-id="checkbox14"
+                          data-price="500"
+                          data-count="1"
+                          >1</span
+                        >
                         <button
                           type="button"
                           class="counter__plus"
-                          data-id="13"
+                          data-id="checkbox14"
+                          data-price="500"
                         >
                           <img src="./assets/icons/plus.svg" />
                         </button>
@@ -1075,15 +1263,23 @@
                         <button
                           type="button"
                           class="counter__minus"
-                          data-id="14"
+                          data-id="checkbox15"
+                          data-price="1300"
                         >
                           <img src="./assets/icons/minus.svg" />
                         </button>
-                        <span class="counter__value" data-id="14">1</span>
+                        <span
+                          class="counter__value"
+                          data-id="checkbox15"
+                          data-price="1300"
+                          data-count="1"
+                          >1</span
+                        >
                         <button
                           type="button"
                           class="counter__plus"
-                          data-id="14"
+                          data-id="checkbox15"
+                          data-price="1300"
                         >
                           <img src="./assets/icons/plus.svg" />
                         </button>
@@ -1094,7 +1290,12 @@
                   <div class="booking-form__bottom">
                     <div class="booking-form__amount">
                       <p class="booking-form__amount__title">Amount paid</p>
-                      <p class="booking-form__amount__price">1.000.300֏</p>
+                      <p
+                        class="booking-form__amount__price"
+                        data-car-price="125000"
+                      >
+                        125000 ֏
+                      </p>
                     </div>
                     <div class="booking-form__bottom__content">
                       <p class="booking-form__bottom__description">
@@ -1227,9 +1428,6 @@
               </div>
             </form>
           </div>
-          <!-- <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div> -->
         </div>
       </div>
     </div>

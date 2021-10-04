@@ -36,7 +36,7 @@
 
   .nav {
     &__list__item__link {
-      color: #ffffff;
+      color: #ffffff !important;
     }
     @media (max-width: 768px) {
       order: 1;
