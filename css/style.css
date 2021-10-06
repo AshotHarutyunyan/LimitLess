@@ -495,6 +495,22 @@ a {
   }
 }
 
+.is-invalid::-webkit-input-placeholder {
+  color: #dc3545 !important;
+}
+
+.is-invalid:-ms-input-placeholder {
+  color: #dc3545 !important;
+}
+
+.is-invalid::-ms-input-placeholder {
+  color: #dc3545 !important;
+}
+
+.is-invalid::placeholder {
+  color: #dc3545 !important;
+}
+
 .header {
   padding: 16px 48px;
   background: #ffffff;

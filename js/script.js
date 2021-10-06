@@ -113,6 +113,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const bookingFormCheckboxes = document.querySelectorAll('.booking-form .form-check-input');
     const bookingFormCunterPlus = document.querySelectorAll('.booking-form .counter__plus');
     const bookingFormCunterMinus = document.querySelectorAll('.booking-form .counter__minus');
+    const closeBookingModal = document.querySelector('.booking-modal__close');
+    const bookingModal = document.querySelector('.booking-modal');
     const galleryButtons = document.querySelectorAll(`button[data-bs-target="#galeryModal"]`)
     const basket = document.querySelector('.basket');
     const orders = document.querySelector('.orders');
@@ -203,9 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-
-
-    clearAllButton?.addEventListener('click', () => {
+    const handleClearBookFormCheckLists = () => {
         const counters = document.querySelectorAll('.booking-form .counter__value');
         const amount = document.querySelector('.booking-form .booking-form__amount__price')
         const carPrice = document.querySelector('.booking-modal .car__content__top__price').getAttribute('data-car-price')
@@ -220,7 +220,27 @@ document.addEventListener('DOMContentLoaded', () => {
             el.setAttribute('data-count', 1)
             el.innerHTML = 1
         });
+    };
 
+    const handleResetBookingForm = () => {
+        const bookingFormSteps = document.querySelectorAll('.booking-form__steps__step');
+        bookingFormSteps[1].classList.remove('booking-form__steps__step_active');
+        bookingFormSteps[0].classList.add('booking-form__steps__step_active');
+
+        handleClearBookFormCheckLists();
+        removeClassFromList(document.querySelectorAll('.booking-form .is-invalid'), 'is-invalid');
+        removeClassFromList(document.querySelectorAll('.booking-form .text-danger'), 'text-danger');
+        document.querySelectorAll('.booking-form .form-error-message').forEach(el => el?.remove());
+    };
+
+    clearAllButton?.addEventListener('click', handleClearBookFormCheckLists);
+
+    closeBookingModal?.addEventListener('click', handleResetBookingForm);
+
+    bookingModal?.addEventListener('click', (e) => {
+        if (e.target.classList.contains('booking-modal')) {
+            handleResetBookingForm()
+        }
     });
 
     (bookingFormCunterPlus || []).forEach((el) => {
