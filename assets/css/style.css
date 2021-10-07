@@ -624,6 +624,10 @@ a {
 
 .nav__list__item__link {
   color: #161827;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  display: block;
   text-decoration: none;
 }
 
@@ -636,7 +640,7 @@ a {
 @media (max-width: 1280px) {
   .nav__list__item__link_active::after {
     content: "";
-    background: url("../assets/icons/Vector.svg");
+    background: url("../icons/Vector.svg");
     position: absolute;
     right: 0;
     top: calc(50% - 8.2px);
@@ -973,13 +977,17 @@ a {
 }
 
 .activity__img {
-  background: url("../assets/images/activityImage.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   height: 402px;
   max-width: 500px;
   width: 100%;
   border-radius: 16px;
+}
+
+@media (max-width: 991px) {
+  .activity__img {
+    height: 302px;
+    max-width: 402px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1006,6 +1014,12 @@ a {
   margin-left: 105px;
 }
 
+@media (max-width: 1180px) {
+  .activity__content {
+    margin-left: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   .activity__content {
     margin-left: 0px;
@@ -1019,6 +1033,7 @@ a {
 
 .activity__content__subtitle {
   color: #ffa048;
+  margin-bottom: 14px;
 }
 
 @media (max-width: 768px) {
@@ -1283,6 +1298,7 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-top: 32px;
 }
 
 @media (max-width: 768px) {
@@ -1294,7 +1310,7 @@ a {
 .advantages {
   margin-top: 103px;
   margin-bottom: 120px;
-  background: url("../assets/images/Luggage.png");
+  background: url("../images/Luggage.png");
   background-repeat: no-repeat;
   background-size: 374px 448px;
   background-position: calc(100% - 100px) 100%;
@@ -1458,19 +1474,15 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin: 65px 40px 0;
 }
 
 @media (max-width: 768px) {
   .our-cars__see-all {
     margin: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
   }
 }
 
@@ -1580,7 +1592,7 @@ a {
 }
 
 .home-card__container {
-  background: url("../assets/images/MaskGroup.png");
+  background: url("../images/MaskGroup.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #007b8c;
@@ -2393,7 +2405,7 @@ a {
   color: rgba(0, 0, 0, 0);
   opacity: 1;
   display: block;
-  background: url("../assets/icons/Calendar.svg") no-repeat;
+  background: url("../icons/Calendar.svg") no-repeat;
   width: 20px;
   height: 20px;
   margin-top: 5px;
@@ -2559,7 +2571,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: url("../assets/images/searchBarBackground.png") no-repeat;
+  background: url("../images/searchBarBackground.png") no-repeat;
   background-size: cover;
   background-position: center;
   padding: 60px 0 !important;
@@ -2598,7 +2610,7 @@ a {
 }
 
 .cars-card {
-  background: url("../assets/images/carsCardBackground.png") no-repeat;
+  background: url("../images/carsCardBackground.png") no-repeat;
   background-size: contain;
   background-position: right;
   padding: 63px 85px !important;
@@ -3384,7 +3396,7 @@ a {
   line-height: 150%;
 }
 
-.events-list__list__item__description span {
+.events-list__list__item__description .duration {
   color: #2c2a7b;
   opacity: 0.6;
 }

@@ -59,13 +59,11 @@
 
   &__see-all {
     display: flex;
-    justify-content: space-between;
-    // margin-top: 65px;
+    justify-content: flex-end;
     margin: 65px 40px 0;
 
     @media (max-width: 768px) {
       margin: 0;
-      flex-direction: column-reverse;
     }
 
     &__description {

@@ -34,7 +34,6 @@
   }
 
   &__checklist {
-    // padding-bottom: 32px;
     border-bottom: 1px solid #ebebeb;
     padding: 0 38px 32px;
 
@@ -43,8 +42,6 @@
     }
 
     &__item {
-      // display: grid;
-      // grid-template-columns: 75% 17% 8%;
       display: flex;
       justify-content: space-between;
       align-items: center;

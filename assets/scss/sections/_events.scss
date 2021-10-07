@@ -22,11 +22,6 @@
         height: 43px;
         border-radius: 4px;
         margin-right: 15px;
-        // @extend %barlow-18;
-        // padding: 10px 20px;
-        // border-radius: 4px;
-        // padding: 10px 20px;
-        // color: #fcfcfc;
       }
 
       &__description {
@@ -34,7 +29,7 @@
         color: #0a1244;
         line-height: 150%;
 
-        span {
+        .duration {
           color: #2c2a7b;
           opacity: 0.6;
         }

@@ -113,6 +113,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const bookingFormCheckboxes = document.querySelectorAll('.booking-form .form-check-input');
     const bookingFormCunterPlus = document.querySelectorAll('.booking-form .counter__plus');
     const bookingFormCunterMinus = document.querySelectorAll('.booking-form .counter__minus');
+    const orderListCunterPlus = document.querySelectorAll('.orders__list .counter__plus');
+    const orderListCunterMinus = document.querySelectorAll('.orders__list .counter__minus');
+    const orderListAmounts = document.querySelectorAll('[data-selector="orders-list-sum"]');
     const closeBookingModal = document.querySelector('.booking-modal__close');
     const bookingModal = document.querySelector('.booking-modal');
     const galleryButtons = document.querySelectorAll(`button[data-bs-target="#galeryModal"]`)
@@ -271,6 +274,49 @@ document.addEventListener('DOMContentLoaded', () => {
                 amount.innerHTML = `${newPrice} ֏`
                 amount.setAttribute('data-car-price', newPrice)
             }
+        })
+    });
+
+    var fpArithmetic = function (op, x, y) {
+        var n = {
+            '*': x * y,
+            '-': x - y,
+            '+': x + y,
+            '/': x / y
+        }[op];
+
+        return Math.round(n * 100) / 100;
+    };
+
+    (orderListCunterMinus || []).forEach((el) => {
+        el.addEventListener('click', () => {
+            const dataId = el.getAttribute('data-id');
+            const count = +document.querySelector(`.orders__list .counter__value[data-id='${dataId}']`).getAttribute('data-count')
+
+            if (count > 1) {
+                const dataPrice = +el.getAttribute('data-price');
+                const total = document.querySelector('.ordersListTotalAmount');
+                const newAmount = fpArithmetic('-', +total.value, dataPrice);
+                orderListAmounts.forEach(el => {
+                    el.textContent = `$ ${newAmount}`
+                });
+                total.setAttribute('value', newAmount)
+            }
+        })
+    });
+
+    (orderListCunterPlus || []).forEach((el) => {
+        el.addEventListener('click', () => {
+            const dataId = el.getAttribute('data-id');
+            const count = +document.querySelector(`.orders__list .counter__value[data-id='${dataId}']`).getAttribute('data-count')
+
+            const dataPrice = +el.getAttribute('data-price');
+            const total = document.querySelector('.ordersListTotalAmount');
+            const newAmount = fpArithmetic('+', +total.value, dataPrice);
+            orderListAmounts.forEach(el => {
+                el.textContent = `$ ${newAmount}`
+            });
+            total.setAttribute('value', newAmount)
         })
     });
 

@@ -15,6 +15,8 @@
 
       &__link {
         color: #161827;
+        min-width: max-content;
+        display: block;
         text-decoration: none;
         @extend %regular-16-feature;
       }

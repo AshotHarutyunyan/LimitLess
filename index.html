@@ -16,8 +16,8 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Limitless</title>
   </head>
   <body>
@@ -78,14 +78,14 @@
                 fill="#007B8C"
               />
             </svg>
-            <p class="basket__sum">$44.97</p>
+            <p class="basket__sum" data-selector="orders-list-sum">$44.97</p>
           </div>
           <div class="language-bar">
-            <button class="language-bar__item">Arm</button>
-            <button class="language-bar__item language-bar__item_active">
+            <a href="#" class="language-bar__item">Arm</a>
+            <a href="#" class="language-bar__item language-bar__item_active">
               Eng
-            </button>
-            <button class="language-bar__item">Rus</button>
+            </a>
+            <a href="#" class="language-bar__item">Rus</a>
           </div>
           <div class="menu" role="button">
             <img src="./assets/icons/menu.svg" alt="Menu" />
@@ -119,7 +119,7 @@
               fill="#007B8C"
             />
           </svg>
-          <p class="basket__sum">$44.97</p>
+          <p class="basket__sum" data-selector="orders-list-sum">$44.97</p>
         </div>
         <button class="orders__close">
           <img src="./assets/icons/close_big.svg" />
@@ -145,11 +145,21 @@
           </div>
           <div class="d-flex">
             <div class="counter">
-              <button type="button" class="counter__minus" data-id="25">
+              <button
+                type="button"
+                class="counter__minus"
+                data-id="product1"
+                data-price="14.99"
+              >
                 <img src="./assets/icons/minus.svg" />
               </button>
-              <span class="counter__value" data-id="25">1</span>
-              <button type="button" class="counter__plus" data-id="25">
+              <span class="counter__value" data-id="product1">1</span>
+              <button
+                type="button"
+                class="counter__plus"
+                data-id="product1"
+                data-price="14.99"
+              >
                 <img src="./assets/icons/plus.svg" />
               </button>
             </div>
@@ -176,11 +186,21 @@
           </div>
           <div class="d-flex">
             <div class="counter">
-              <button type="button" class="counter__minus" data-id="26">
+              <button
+                type="button"
+                class="counter__minus"
+                data-id="product2"
+                data-price="14.99"
+              >
                 <img src="./assets/icons/minus.svg" />
               </button>
-              <span class="counter__value" data-id="26">1</span>
-              <button type="button" class="counter__plus" data-id="26">
+              <span class="counter__value" data-id="product2">1</span>
+              <button
+                type="button"
+                class="counter__plus"
+                data-id="product2"
+                data-price="14.99"
+              >
                 <img src="./assets/icons/plus.svg" />
               </button>
             </div>
@@ -207,11 +227,21 @@
           </div>
           <div class="d-flex">
             <div class="counter">
-              <button type="button" class="counter__minus" data-id="27">
+              <button
+                type="button"
+                class="counter__minus"
+                data-id="product3"
+                data-price="14.99"
+              >
                 <img src="./assets/icons/minus.svg" />
               </button>
-              <span class="counter__value" data-id="27">1</span>
-              <button type="button" class="counter__plus" data-id="27">
+              <span class="counter__value" data-id="product3">1</span>
+              <button
+                type="button"
+                class="counter__plus"
+                data-id="product3"
+                data-price="14.99"
+              >
                 <img src="./assets/icons/plus.svg" />
               </button>
             </div>
@@ -224,12 +254,18 @@
       <div class="orders__footer">
         <div class="orders__footer__info">
           <p class="orders__footer__info__total">Total:</p>
-          <p class="orders__footer__info__price">$25.97</p>
+          <p
+            class="orders__footer__info__price"
+            data-selector="orders-list-sum"
+          >
+            $44.97
+          </p>
         </div>
 
         <div class="orders__footer__checkout">
           <p>Checkout</p>
-          <p>$25.97</p>
+          <p data-selector="orders-list-sum">$44.97</p>
+          <input type="hidden" value="44.97" class="ordersListTotalAmount" />
         </div>
       </div>
     </div>
@@ -239,11 +275,11 @@
     <div class="mobile-nav">
       <div class="mobile-nav__content">
         <div class="language-bar">
-          <button class="language-bar__item">Arm</button>
-          <button class="language-bar__item language-bar__item_active">
+          <a href="#" class="language-bar__item">Arm</a>
+          <a href="#" class="language-bar__item language-bar__item_active">
             Eng
-          </button>
-          <button class="language-bar__item">Rus</button>
+          </a>
+          <a href="#" class="language-bar__item">Rus</a>
         </div>
         <nav class="nav">
           <ul class="nav__list">
@@ -311,18 +347,22 @@
     </section>
 
     <section class="activity container">
-      <div class="activity__img"></div>
+      <img
+        src="../assets/images/activityImage.png"
+        class="activity__img"
+        alt="Cars"
+      />
       <div class="activity__content">
         <div>
-          <div class="activity__content__subtitle">
+          <h3 class="activity__content__subtitle">
             Армения, это горная страна с бурными горными реками
-          </div>
+          </h3>
           <div class="activity__content__description">
             Армения, это горная страна с бурными горными реками, лесами,
             глубокими ущельями и высокими плоскогорьями, пересеченными глубокими
             оврагами с большим выбором для любителей активного и экстремального
             отдыха. Для разнообразия и интересного времяпровождения предлагаем
-            оф-роуд туры (туры по бездорожью) <strong>more</strong>
+            оф-роуд туры (туры по бездорожью)
           </div>
         </div>
       </div>
@@ -669,10 +709,6 @@
         </div>
       </div>
       <div class="our-cars__see-all">
-        <p class="our-cars__see-all__description">
-          Также предоставляются услуги по аренде внедорожника
-          <span>с водителем и без посуточно:</span>
-        </p>
         <a href="./cars.html" class="our-cars__see-all__link">
           <span>See all</span>
           <img src="./assets/icons/seeAllarrow.svg" alt="" />
@@ -1986,7 +2022,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script type="module" src="./js/script.js"></script>
-    <script type="module" src="./js/forms.js"></script>
+    <script type="module" src="./assets/js/script.js"></script>
+    <script type="module" src="./assets/js/forms.js"></script>
   </body>
 </html>
