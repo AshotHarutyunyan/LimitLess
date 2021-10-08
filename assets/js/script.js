@@ -298,7 +298,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const total = document.querySelector('.ordersListTotalAmount');
                 const newAmount = fpArithmetic('-', +total.value, dataPrice);
                 orderListAmounts.forEach(el => {
-                    el.textContent = `$ ${newAmount}`
+                    el.textContent = `${newAmount}  ֏`
                 });
                 total.setAttribute('value', newAmount)
             }
@@ -314,7 +314,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const total = document.querySelector('.ordersListTotalAmount');
             const newAmount = fpArithmetic('+', +total.value, dataPrice);
             orderListAmounts.forEach(el => {
-                el.textContent = `$ ${newAmount}`
+                el.textContent = `${newAmount} ֏`
             });
             total.setAttribute('value', newAmount)
         })

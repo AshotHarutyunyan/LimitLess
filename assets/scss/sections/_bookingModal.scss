@@ -86,7 +86,7 @@
   &__close {
     background: none;
 
-    img {
+    &__image {
       &:first-of-type {
         display: block;
         @media (max-width: 1280px) {

@@ -85,6 +85,7 @@
           @extend %regular-18;
           color: #25294a;
           margin-bottom: 0;
+          min-width: max-content;
         }
 
         &__description {

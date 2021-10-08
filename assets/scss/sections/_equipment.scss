@@ -32,7 +32,7 @@
       box-shadow: 0px 12px 40px rgba(192, 196, 234, 0.2);
       border-radius: 12px;
 
-      & > img {
+      &__image {
         width: 100%;
         max-height: 164px;
 
@@ -60,7 +60,7 @@
         &__subtitle {
           @extend %regular-16;
           color: #575670;
-          margin: 8px 0;
+          margin: 0 0 8px 0;
         }
 
         &__description {
@@ -82,7 +82,8 @@
 
           &__button {
             @extend %blue_button;
-            max-width: 123px;
+            max-width: 140px;
+            min-width: 140px;
             width: 100%;
           }
 

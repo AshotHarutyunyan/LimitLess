@@ -78,7 +78,7 @@
                 fill="#007B8C"
               />
             </svg>
-            <p class="basket__sum">$44.97</p>
+            <p class="basket__sum" data-selector="orders-list-sum">33500 ֏</p>
           </div>
           <div class="language-bar">
             <a href="#" class="language-bar__item">Arm</a>
@@ -119,7 +119,7 @@
               fill="#007B8C"
             />
           </svg>
-          <p class="basket__sum">$44.97</p>
+          <p class="basket__sum" data-selector="orders-list-sum">33500 ֏</p>
         </div>
         <button class="orders__close">
           <img src="./assets/icons/close_big.svg" />
@@ -141,15 +141,25 @@
           </div>
           <div class="orders__list__item__price__info">
             <p class="orders__list__item__price__info__period">1 Day</p>
-            <p class="orders__list__item__price__info__price">$14.99</p>
+            <p class="orders__list__item__price__info__price">10500 ֏</p>
           </div>
           <div class="d-flex">
             <div class="counter">
-              <button type="button" class="counter__minus" data-id="25">
+              <button
+                type="button"
+                class="counter__minus"
+                data-id="product1"
+                data-price="10500"
+              >
                 <img src="./assets/icons/minus.svg" />
               </button>
-              <span class="counter__value" data-id="25">1</span>
-              <button type="button" class="counter__plus" data-id="25">
+              <span class="counter__value" data-id="product1">1</span>
+              <button
+                type="button"
+                class="counter__plus"
+                data-id="product1"
+                data-price="10500"
+              >
                 <img src="./assets/icons/plus.svg" />
               </button>
             </div>
@@ -172,15 +182,25 @@
           </div>
           <div class="orders__list__item__price__info">
             <p class="orders__list__item__price__info__period">1 Day</p>
-            <p class="orders__list__item__price__info__price">$14.99</p>
+            <p class="orders__list__item__price__info__price">10500 ֏</p>
           </div>
           <div class="d-flex">
             <div class="counter">
-              <button type="button" class="counter__minus" data-id="26">
+              <button
+                type="button"
+                class="counter__minus"
+                data-id="product2"
+                data-price="10500"
+              >
                 <img src="./assets/icons/minus.svg" />
               </button>
-              <span class="counter__value" data-id="26">1</span>
-              <button type="button" class="counter__plus" data-id="26">
+              <span class="counter__value" data-id="product2">1</span>
+              <button
+                type="button"
+                class="counter__plus"
+                data-id="product2"
+                data-price="10500"
+              >
                 <img src="./assets/icons/plus.svg" />
               </button>
             </div>
@@ -203,15 +223,25 @@
           </div>
           <div class="orders__list__item__price__info">
             <p class="orders__list__item__price__info__period">1 Day</p>
-            <p class="orders__list__item__price__info__price">$14.99</p>
+            <p class="orders__list__item__price__info__price">10500 ֏</p>
           </div>
           <div class="d-flex">
             <div class="counter">
-              <button type="button" class="counter__minus" data-id="27">
+              <button
+                type="button"
+                class="counter__minus"
+                data-id="product3"
+                data-price="10500"
+              >
                 <img src="./assets/icons/minus.svg" />
               </button>
-              <span class="counter__value" data-id="27">1</span>
-              <button type="button" class="counter__plus" data-id="27">
+              <span class="counter__value" data-id="product3">1</span>
+              <button
+                type="button"
+                class="counter__plus"
+                data-id="product3"
+                data-price="10500"
+              >
                 <img src="./assets/icons/plus.svg" />
               </button>
             </div>
@@ -224,12 +254,18 @@
       <div class="orders__footer">
         <div class="orders__footer__info">
           <p class="orders__footer__info__total">Total:</p>
-          <p class="orders__footer__info__price">$25.97</p>
+          <p
+            class="orders__footer__info__price"
+            data-selector="orders-list-sum"
+          >
+            33500 ֏
+          </p>
         </div>
 
         <div class="orders__footer__checkout">
           <p>Checkout</p>
-          <p>$25.97</p>
+          <p data-selector="orders-list-sum">33500 ֏</p>
+          <input type="hidden" value="33500" class="ordersListTotalAmount" />
         </div>
       </div>
     </div>
@@ -390,7 +426,7 @@
               <img src="./assets/images/event1.png" alt="Event 1" />
             </div>
             <div class="events-list__list__item__description">
-              Adventure tour in Armenia / <span class='duration'>4 Days</span>
+              Adventure tour in Armenia / <span class="duration">4 Days</span>
             </div>
           </div>
           <div class="events-list__list__item">
@@ -398,7 +434,8 @@
               <img src="./assets/images/event2.png" alt="Event 2" />
             </div>
             <div class="events-list__list__item__description">
-              Mount Ararat trip Climbing Mount Ararat / <span class='duration'>6 Days </span>
+              Mount Ararat trip Climbing Mount Ararat /
+              <span class="duration">6 Days </span>
             </div>
           </div>
           <div class="events-list__list__item">
@@ -406,7 +443,7 @@
               <img src="./assets/images/event3.png" alt="Event 3" />
             </div>
             <div class="events-list__list__item__description">
-              Adventure tour in Armenia / <span class='duration'>4 Days </span>
+              Adventure tour in Armenia / <span class="duration">4 Days </span>
             </div>
           </div>
           <div class="events-list__list__item">
@@ -414,7 +451,8 @@
               <img src="./assets/images/event4.png" alt="Event 4" />
             </div>
             <div class="events-list__list__item__description">
-              Mount Ararat trip Climbing Mount Ararat / <span class='duration'> 6 Days </span>
+              Mount Ararat trip Climbing Mount Ararat /
+              <span class="duration"> 6 Days </span>
             </div>
           </div>
           <div class="events-list__list__item">
@@ -422,7 +460,7 @@
               <img src="./assets/images/event5.png" alt="Event 5" />
             </div>
             <div class="events-list__list__item__description">
-              Adventure tour in Armenia / <span class='duration'>4 Days </span>
+              Adventure tour in Armenia / <span class="duration">4 Days </span>
             </div>
           </div>
           <div class="events-list__list__item">
@@ -430,7 +468,8 @@
               <img src="./assets/images/event6.png" alt="Event 6" />
             </div>
             <div class="events-list__list__item__description">
-              Mount Ararat trip Climbing Mount Ararat / <span class='duration'>6 Days</span>
+              Mount Ararat trip Climbing Mount Ararat /
+              <span class="duration">6 Days</span>
             </div>
           </div>
         </div>
@@ -446,33 +485,53 @@
         </p>
         <div class="advantages__content__list">
           <div class="advantages__content__list__item">
-            <img src="./assets/icons/checkheavy.svg" alt="Check heavy" />
+            <img
+              src="./assets/icons/checkheavy.svg"
+              alt="Check heavy"
+              class="advantages__content__list__item__image"
+            />
             <p class="advantages__content__list__item__description">
               Предоставление оснащенного внедорожника Тойота Лэнд Круйзер 78,
               2020 с водителем на маршрут 350-500 км
             </p>
           </div>
           <div class="advantages__content__list__item">
-            <img src="./assets/icons/checkheavy.svg" alt="Check heavy" />
+            <img
+              src="./assets/icons/checkheavy.svg"
+              alt="Check heavy"
+              class="advantages__content__list__item__image"
+            />
             <p class="advantages__content__list__item__description">
               Встреча и Возврат в гостиницу или в определенное место туристов
             </p>
           </div>
           <div class="advantages__content__list__item">
-            <img src="./assets/icons/checkheavy.svg" alt="Check heavy" />
+            <img
+              src="./assets/icons/checkheavy.svg"
+              alt="Check heavy"
+              class="advantages__content__list__item__image"
+            />
             <p class="advantages__content__list__item__description">
               Во время передвижения и в течении всего времени тура
               безалкогольные напитки без ограничения
             </p>
           </div>
           <div class="advantages__content__list__item">
-            <img src="./assets/icons/checkheavy.svg" alt="Check heavy" />
+            <img
+              src="./assets/icons/checkheavy.svg"
+              alt="Check heavy"
+              class="advantages__content__list__item__image"
+            />
             <p class="advantages__content__list__item__description">
               Ланч по плану мероприятия (бутерброды, закуски, бургеры)
             </p>
           </div>
           <div class="advantages__content__list__item">
-            <img src="./assets/icons/checkheavy.svg" alt="Check heavy" />
+            <img
+              src="./assets/icons/checkheavy.svg"
+              alt="Check heavy"
+              class="advantages__content__list__item__image"
+            />
             <p class="advantages__content__list__item__description">
               Ужин в региональных ресторанах традиционная и европейская кухня на
               всех членов тура с алкогольными напитками (вино и пиво)
@@ -642,8 +701,16 @@
               data-bs-dismiss="modal"
               aria-label="Close"
             >
-              <img src="./assets/icons/close_big.svg" alt="close" />
-              <img src="./assets/icons/back.svg" alt="close" />
+              <img
+                src="./assets/icons/close_big.svg"
+                alt="close"
+                class="booking-modal__close__image"
+              />
+              <img
+                src="./assets/icons/back.svg"
+                alt="close"
+                class="booking-modal__close__image"
+              />
             </button>
             <h5 class="modal-title" id="exampleModalLabel">Booking</h5>
           </div>
