@@ -54,11 +54,11 @@
       @extend %regular-16-feature;
       color: #ffa048;
       margin-bottom: 14px;
+      font-size: 26px;
+      line-height: 28px;
 
       @media (max-width: 768px) {
         margin-bottom: 8px;
-        font-size: 13px;
-        line-height: 19px;
       }
     }
 

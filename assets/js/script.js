@@ -99,7 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     });
 
-    const nextStepButton = document.querySelector('.booking-form__bottom__buttons__next');
     const backToPrevStepButton = document.querySelector('.booking-form__bottom__buttons__back');
     const clearAllButton = document.querySelector('.booking-form__bottom__buttons__clear')
     const days = document.querySelectorAll('.tour-page__right-block__days__list__item');
@@ -117,12 +116,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const orderListCunterMinus = document.querySelectorAll('.orders__list .counter__minus');
     const orderListAmounts = document.querySelectorAll('[data-selector="orders-list-sum"]');
     const closeBookingModal = document.querySelector('.booking-modal__close');
+    const addToCart = document.querySelector('.booking-form__add-to-cart');
     const bookingModal = document.querySelector('.booking-modal');
     const galleryButtons = document.querySelectorAll(`button[data-bs-target="#galeryModal"]`)
     const basket = document.querySelector('.basket');
     const orders = document.querySelector('.orders');
     const ordersClose = document.querySelector('.orders__close');
     const ordersShadow = document.querySelector('.order__shadow');
+    const carPageSwipeImages = document.querySelectorAll('#swiper5 .car__slide');
+    const carPageBigImage = document.querySelector('.car-page__left-block__image');
+    const ordersRemoveItems = document.querySelectorAll('.orders__list__item__delete')
 
     const removeClassFromList = (elements, className) => {
         elements.forEach((el) => {
@@ -138,13 +141,49 @@ document.addEventListener('DOMContentLoaded', () => {
                 spaceBetween: 32,
                 initialSlide: +el.getAttribute('data-id'),
                 navigation: {
-                    prevEl: ".galeryModal-button-prev",
-                    nextEl: ".galeryModal-button-next",
+                    prevEl: "#gallerySwiper .galeryModal-button-prev",
+                    nextEl: "#gallerySwiper .galeryModal-button-next",
                 },
                 pagination: {
-                    el: '.galeryModal-swiper-pagination',
+                    el: '#gallerySwiper .galeryModal-swiper-pagination',
                     type: 'bullets',
                 }
+            });
+        });
+    });
+
+    const viedoButtons = document.querySelectorAll('button[data-bs-target="#videoModal"]');
+
+    const removeAllIframes = () => {
+        document.querySelectorAll('#videoSwiper .swiper-slide iframe').forEach(el => el?.remove());
+    }
+
+
+    (viedoButtons || []).forEach((el) => {
+        el.addEventListener('click', () => {
+            const index = +el.getAttribute('data-id');
+            const activeSlide = document.querySelectorAll('#videoSwiper .swiper-slide')[index];
+            removeAllIframes();
+            activeSlide.innerHTML = activeSlide.getAttribute('data-iframe');
+            const videoSwiper = new Swiper("#videoSwiper", {
+                watchSlidesProgress: true,
+                slidesPerView: 1,
+                spaceBetween: 32,
+                initialSlide: index,
+                navigation: {
+                    prevEl: "#videoSwiper .galeryModal-button-prev",
+                    nextEl: "#videoSwiper .galeryModal-button-next",
+                },
+                pagination: {
+                    el: '#videoSwiper .galeryModal-swiper-pagination',
+                    type: 'bullets',
+                }
+            });
+
+            videoSwiper.on('slideChange', function () {
+                removeAllIframes();
+                const activeSlide = document.querySelectorAll('#videoSwiper .swiper-slide')[videoSwiper.activeIndex];
+                activeSlide.innerHTML = activeSlide.getAttribute('data-iframe');
             });
         });
     });
@@ -186,11 +225,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    nextStepButton?.addEventListener('click', () => {
-        const bookingFormSteps = document.querySelectorAll('.booking-form__steps__step');
-        bookingFormSteps[0].classList.remove('booking-form__steps__step_active');
-        bookingFormSteps[1].classList.add('booking-form__steps__step_active');
-    });
+    // const nextStepButton = document.querySelector('.booking-form__bottom__buttons__next');
+
+    // nextStepButton?.addEventListener('click', () => {
+    //     const bookingFormSteps = document.querySelectorAll('.booking-form__steps__step');
+    //     bookingFormSteps[0].classList.remove('booking-form__steps__step_active');
+    //     bookingFormSteps[1].classList.add('booking-form__steps__step_active');
+    // });
 
     backToPrevStepButton?.addEventListener('click', () => {
         const bookingFormSteps = document.querySelectorAll('.booking-form__steps__step');
@@ -213,8 +254,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const amount = document.querySelector('.booking-form .booking-form__amount__price')
         const carPrice = document.querySelector('.booking-modal .car__content__top__price').getAttribute('data-car-price')
         amount.innerHTML = `${carPrice} ֏`
-        amount.setAttribute('data-car-price', carPrice)
-
+        amount.setAttribute('data-car-price', carPrice);
+        amount.setAttribute('data-days', 1);
+        document.querySelector('.booking-modal .startDate').value = ''
+        document.querySelector('.booking-modal .endDate').value = ''
 
         bookingFormCheckboxes.forEach((el) => {
             el.checked = false;
@@ -226,19 +269,21 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const handleResetBookingForm = () => {
-        const bookingFormSteps = document.querySelectorAll('.booking-form__steps__step');
-        bookingFormSteps[1].classList.remove('booking-form__steps__step_active');
-        bookingFormSteps[0].classList.add('booking-form__steps__step_active');
+        // const bookingFormSteps = document.querySelectorAll('.booking-form__steps__step');
+        // bookingFormSteps[1].classList.remove('booking-form__steps__step_active');
+        // bookingFormSteps[0].classList.add('booking-form__steps__step_active');
 
         handleClearBookFormCheckLists();
-        removeClassFromList(document.querySelectorAll('.booking-form .is-invalid'), 'is-invalid');
-        removeClassFromList(document.querySelectorAll('.booking-form .text-danger'), 'text-danger');
-        document.querySelectorAll('.booking-form .form-error-message').forEach(el => el?.remove());
+        // removeClassFromList(document.querySelectorAll('.booking-form .is-invalid'), 'is-invalid');
+        // removeClassFromList(document.querySelectorAll('.booking-form .text-danger'), 'text-danger');
+        // document.querySelectorAll('.booking-form .form-error-message').forEach(el => el?.remove());
     };
 
     clearAllButton?.addEventListener('click', handleClearBookFormCheckLists);
 
     closeBookingModal?.addEventListener('click', handleResetBookingForm);
+
+    addToCart?.addEventListener('click', handleClearBookFormCheckLists);
 
     bookingModal?.addEventListener('click', (e) => {
         if (e.target.classList.contains('booking-modal')) {
@@ -255,7 +300,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const dataPrice = +el.getAttribute('data-price');
                 const amount = document.querySelector('.booking-form__amount__price')
                 const newPrice = +amount.getAttribute('data-car-price') + dataPrice
-                amount.innerHTML = `${newPrice} ֏`
+                amount.innerHTML = `${newPrice * +amount.getAttribute('data-days')} ֏`
                 amount.setAttribute('data-car-price', newPrice)
             }
         })
@@ -271,7 +316,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const dataPrice = +el.getAttribute('data-price');
                 const amount = document.querySelector('.booking-form__amount__price');
                 const newPrice = +amount.getAttribute('data-car-price') - dataPrice
-                amount.innerHTML = `${newPrice} ֏`
+                amount.innerHTML = `${newPrice * +amount.getAttribute('data-days')} ֏`
                 amount.setAttribute('data-car-price', newPrice)
             }
         })
@@ -305,6 +350,21 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     });
 
+    (ordersRemoveItems || []).forEach((el) => {
+        el.addEventListener('click', (e) => {
+            const parent = $(e.target).parents('.orders__list__item')[0]
+            const count = +parent.querySelector('.counter__value').innerText;
+            const price = +parent.querySelector('.counter__minus').getAttribute('data-price');
+            const total = document.querySelector('.ordersListTotalAmount');
+            const newAmount = fpArithmetic('-', +total.value, count * price);
+            orderListAmounts.forEach(el => {
+                el.textContent = `${newAmount}  ֏`
+            });
+            total.setAttribute('value', newAmount)
+            parent.remove();
+        });
+    });
+
     (orderListCunterPlus || []).forEach((el) => {
         el.addEventListener('click', () => {
             const dataId = el.getAttribute('data-id');
@@ -330,7 +390,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const amount = document.querySelector('.booking-form__amount__price')
             const newPrice = checked ? +amount.getAttribute('data-car-price') + (count * price) : +amount.getAttribute('data-car-price') - (count * price);
 
-            amount.innerHTML = `${newPrice} ֏`
+            amount.innerHTML = `${newPrice * +amount.getAttribute('data-days')} ֏`
             amount.setAttribute('data-car-price', newPrice)
         })
     });
@@ -353,4 +413,57 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    (carPageSwipeImages || []).forEach((el) => {
+        el.addEventListener('click', (e) => {
+            console.log(e.target.src);
+            carPageBigImage.setAttribute('src', e.target.src)
+        });
+    });
+
+    const startDates = document.querySelectorAll('.startDate');
+    const endDate = document.querySelectorAll('.endDate');
+
+    (startDates || []).forEach((el) => {
+        $(el)?.datepicker({
+            dateFormat: "yy-mm-dd",
+            minDate: new Date(),
+            onSelect: (start) => {
+                const amount = document.querySelector('.booking-form__amount__price');
+                const end = document.querySelector('.booking-modal .endDate').value;
+                const difference = Math.abs((new Date(end) - new Date(start)) / 86400000);
+                if (difference) {
+                    const newPrice = +amount.getAttribute('data-car-price') * difference
+                    amount.innerHTML = `${newPrice} ֏`
+                    amount.setAttribute('data-days', difference)
+                }
+            },
+            beforeShowDay: function (date) {
+                const formatedDate = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`
+                const disabledDays = el.getAttribute('data-disabled-days').split(", ")
+                return disabledDays.includes(formatedDate) ? [false, '.disabled'] : [true, ".enabled"];
+            }
+        })
+    });
+
+    (endDate || []).forEach((el) => {
+        $(el)?.datepicker({
+            dateFormat: "yy-mm-dd",
+            minDate: new Date(),
+            onSelect: (end) => {
+                const amount = document.querySelector('.booking-form__amount__price');
+                const start = document.querySelector('.booking-modal .startDate').value;
+                const difference = Math.abs((new Date(end) - new Date(start)) / 86400000);
+                if (difference) {
+                    const newPrice = +amount.getAttribute('data-car-price') * difference
+                    amount.innerHTML = `${newPrice} ֏`
+                    amount.setAttribute('data-days', difference)
+                }
+            },
+            beforeShowDay: function (date) {
+                const formatedDate = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`
+                const disabledDays = el.getAttribute('data-disabled-days').split(", ")
+                return disabledDays.includes(formatedDate) ? [false, '.disabled'] : [true, ".enabled"];
+            }
+        })
+    });
 });

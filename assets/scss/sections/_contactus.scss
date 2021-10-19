@@ -1,8 +1,8 @@
 .contact-us {
   margin-top: 85px;
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
+  align-items: center;
   @media (max-width: 1240px) {
     flex-direction: column-reverse;
   }
@@ -78,6 +78,37 @@
       @extend %blue_button;
       min-width: 220px;
       margin-top: 24px;
+    }
+  }
+
+  &__success {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    max-width: 480px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 0px 1px 13px #9f9494;
+
+    &__image {
+      width: 80px;
+      height: 80px;
+      background: none;
+    }
+
+    &__title,
+    &__subtitle {
+      color: #0a183a;
+    }
+
+    &__title {
+      @extend %bold-32;
+      margin: 0;
     }
   }
 }

@@ -6,10 +6,10 @@
 
 body {
   background: #f9fafc;
-  padding-top: 105px;
+  padding-top: 130px;
 
   @media (max-width: 1280px) {
-    padding-top: 64px;
+    padding-top: 90px;
   }
 }
 
@@ -31,7 +31,7 @@ button {
 }
 
 select {
-  background-image: url("../assets/icons/Rectangle.svg") !important;
+  background-image: url("../icons/Rectangle.svg") !important;
   @extend %inter-14;
 }
 
@@ -193,6 +193,15 @@ a {
     @media (max-width: 768px) {
       font-size: 13px;
     }
+  }
+}
+
+.events-list-wrapper {
+  display: block !important;
+
+  .events-list-wrapper__content {
+    max-width: unset !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
   }
 }
 

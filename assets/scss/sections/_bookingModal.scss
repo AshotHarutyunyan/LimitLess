@@ -8,13 +8,26 @@
 
     @media (max-width: 1280px) {
       max-width: 100% !important;
-      margin: 63px 0 0 !important;
+      margin: 90px 0 0 !important;
       height: 100%;
 
       .modal-content {
-        height: calc(100% - 63px);
+        height: calc(100% - 90px);
         border-radius: 0;
         border: none;
+      }
+    }
+  }
+
+  &__dates {
+    display: flex;
+    margin-bottom: 24px;
+
+    .form-control {
+      max-width: 125px;
+
+      &:first-of-type {
+        margin-right: 30px;
       }
     }
   }

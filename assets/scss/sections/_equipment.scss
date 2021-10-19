@@ -71,8 +71,16 @@
       }
 
       &__form {
-        display: none;
+        display: block;
         margin-top: 10px;
+
+        &__dates {
+          display: flex;
+
+          input {
+            width: 50%;
+          }
+        }
 
         &__botom {
           display: flex;
@@ -80,11 +88,16 @@
           justify-content: space-between;
           margin-top: 13px;
 
+          &__select {
+            width: 108px;
+          }
+
           &__button {
             @extend %blue_button;
             max-width: 140px;
             min-width: 140px;
             width: 100%;
+            z-index: 0;
           }
 
           .counter {
@@ -97,10 +110,6 @@
             }
           }
         }
-      }
-
-      &:hover &__form {
-        display: block;
       }
     }
   }

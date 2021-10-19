@@ -16,8 +16,14 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"
+    />
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script async src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script async src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
     <title>Limitless</title>
   </head>
   <body>
@@ -78,7 +84,7 @@
                 fill="#007B8C"
               />
             </svg>
-            <p class="basket__sum" data-selector="orders-list-sum">33500 ֏</p>
+            <p class="basket__sum" data-selector="orders-list-sum">31500 ֏</p>
           </div>
           <div class="language-bar">
             <a href="#" class="language-bar__item">Arm</a>
@@ -119,7 +125,7 @@
               fill="#007B8C"
             />
           </svg>
-          <p class="basket__sum" data-selector="orders-list-sum">33500 ֏</p>
+          <p class="basket__sum" data-selector="orders-list-sum">31500 ֏</p>
         </div>
         <button class="orders__close">
           <img src="./assets/icons/close_big.svg" />
@@ -258,14 +264,14 @@
             class="orders__footer__info__price"
             data-selector="orders-list-sum"
           >
-            33500 ֏
+            31500 ֏
           </p>
         </div>
 
         <div class="orders__footer__checkout">
           <p>Checkout</p>
-          <p data-selector="orders-list-sum">33500 ֏</p>
-          <input type="hidden" value="33500" class="ordersListTotalAmount" />
+          <p data-selector="orders-list-sum">31500 ֏</p>
+          <input type="hidden" value="31500" class="ordersListTotalAmount" />
         </div>
       </div>
     </div>
@@ -376,6 +382,44 @@
                     src="./assets/images/galleryBig8.png"
                     alt="gallery image"
                   />
+                </div>
+              </div>
+              <div class="swiper-button-prev galeryModal-button-prev">
+                <img src="./assets/icons/swipeLeft.svg" />
+              </div>
+              <div class="swiper-button-next galeryModal-button-next">
+                <img src="./assets/icons/swipeRight.svg" />
+              </div>
+              <div
+                class="swiper-pagination galeryModal-swiper-pagination"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Galery Modal -->
+    <div
+      class="modal fade"
+      id="videoModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="videoModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="swiper" id="videoSwiper" style="width: 100%">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" data-iframe='<iframe width="560" height="315" src="https://www.youtube.com/embed/_bkX5VkZg8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>''>
+                </div>
+                <div class="swiper-slide" data-iframe='<iframe width="560" height="315" src="https://www.youtube.com/embed/_bkX5VkZg8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>''>
+                </div>
+                <div class="swiper-slide" data-iframe='<iframe width="560" height="315" src="https://www.youtube.com/embed/_bkX5VkZg8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>''>
+                </div>
+                <div class="swiper-slide" data-iframe='<iframe width="560" height="315" src="https://www.youtube.com/embed/_bkX5VkZg8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>''>
                 </div>
               </div>
               <div class="swiper-button-prev galeryModal-button-prev">
@@ -506,7 +550,12 @@
     <section class="gallery-page container">
       <h2 class="gallery-page__title">Videos</h2>
       <div class="gallery-page__list">
-        <div class="gallery-page__list__item">
+        <button
+          data-bs-toggle="modal"
+          data-bs-target="#videoModal"
+          data-id="0"
+          class="gallery-page__list__item"
+        >
           <img
             src="./assets/images/galerySmall6.png"
             alt="Gallery Image"
@@ -517,8 +566,13 @@
             src="./assets/icons/playIcon.svg"
             alt="Play Icon"
           />
-        </div>
-        <div class="gallery-page__list__item">
+        </button>
+        <button
+          data-bs-toggle="modal"
+          data-bs-target="#videoModal"
+          data-id="1"
+          class="gallery-page__list__item"
+        >
           <img
             src="./assets/images/gallery2.png"
             alt="Gallery Image"
@@ -529,8 +583,13 @@
             src="./assets/icons/playIcon.svg"
             alt="Play Icon"
           />
-        </div>
-        <div class="gallery-page__list__item">
+        </button>
+        <button
+          data-bs-toggle="modal"
+          data-bs-target="#videoModal"
+          data-id="2"
+          class="gallery-page__list__item"
+        >
           <img
             src="./assets/images/galerySmall7.png"
             alt="Gallery Image"
@@ -541,8 +600,13 @@
             src="./assets/icons/playIcon.svg"
             alt="Play Icon"
           />
-        </div>
-        <div class="gallery-page__list__item">
+        </button>
+        <button
+          data-bs-toggle="modal"
+          data-bs-target="#videoModal"
+          data-id="3"
+          class="gallery-page__list__item"
+        >
           <img
             src="./assets/images/gallery9.png"
             alt="Gallery Image"
@@ -553,983 +617,9 @@
             src="./assets/icons/playIcon.svg"
             alt="Play Icon"
           />
-        </div>
+        </button>
       </div>
     </section>
-
-    <section class="cars cars__similiar">
-      <div class="cars__swiper container">
-        <h2 class="cars__title text-center">Cars</h2>
-        <div class="swiper" id="swiper2" style="width: 100%">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide active-slider our-cars__slide">
-              <a href="./car.html">
-                <img src="./assets/images/sliderCar1Image.png" />
-              </a>
-              <div class="car__content">
-                <div class="car__content__top">
-                  <h4 class="car__content__top__title">Toyota Land Cruiser</h4>
-                  <p class="car__content__top__price">125000 ֏</p>
-                </div>
-                <p class="car__content__subtitle">
-                  с водителем на 12 часов 125000
-                </p>
-                <p class="car__content__description">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                </p>
-                <button
-                  class="car__content__book"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Book now
-                </button>
-              </div>
-            </div>
-            <div class="swiper-slide our-cars__slide">
-              <a href="./car.html">
-                <img src="./assets/images/sliderCar2Image.png" />
-              </a>
-              <div class="car__content">
-                <div class="car__content__top">
-                  <h4 class="car__content__top__title">Toyota Land Cruiser</h4>
-                  <p class="car__content__top__price">115000 ֏</p>
-                </div>
-                <p class="car__content__subtitle">без водителя</p>
-                <p class="car__content__description">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                </p>
-                <button
-                  class="car__content__book"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Book now
-                </button>
-              </div>
-            </div>
-            <div class="swiper-slide our-cars__slide">
-              <a href="./car.html">
-                <img src="./assets/images/sliderCar3Image.png" />
-              </a>
-              <div class="car__content">
-                <div class="car__content__top">
-                  <h4 class="car__content__top__title">Хантер</h4>
-                  <p class="car__content__top__price">55000 ֏</p>
-                </div>
-                <p class="car__content__subtitle">без водителя</p>
-                <p class="car__content__description">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                </p>
-                <button
-                  class="car__content__book"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Book now
-                </button>
-              </div>
-            </div>
-            <div class="swiper-slide active-slider our-cars__slide">
-              <a href="./car.html">
-                <img src="./assets/images/sliderCar1Image.png" />
-              </a>
-              <div class="car__content">
-                <div class="car__content__top">
-                  <h4 class="car__content__top__title">Toyota Land Cruiser</h4>
-                  <p class="car__content__top__price">125000 ֏</p>
-                </div>
-                <p class="car__content__subtitle">
-                  с водителем на 12 часов 125000
-                </p>
-                <p class="car__content__description">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                </p>
-                <button
-                  class="car__content__book"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Book now
-                </button>
-              </div>
-            </div>
-            <div class="swiper-slide our-cars__slide">
-              <a href="./car.html">
-                <img src="./assets/images/sliderCar2Image.png" />
-              </a>
-              <div class="car__content">
-                <div class="car__content__top">
-                  <h4 class="car__content__top__title">Toyota Land Cruiser</h4>
-                  <p class="car__content__top__price">115000 ֏</p>
-                </div>
-                <p class="car__content__subtitle">без водителя</p>
-                <p class="car__content__description">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                </p>
-                <button
-                  class="car__content__book"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Book now
-                </button>
-              </div>
-            </div>
-            <div class="swiper-slide our-cars__slide">
-              <a href="./car.html">
-                <img src="./assets/images/sliderCar3Image.png" />
-              </a>
-              <div class="car__content">
-                <div class="car__content__top">
-                  <h4 class="car__content__top__title">Хантер</h4>
-                  <p class="car__content__top__price">55000 ֏</p>
-                </div>
-                <p class="car__content__subtitle">без водителя</p>
-                <p class="car__content__description">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                </p>
-                <button
-                  class="car__content__book"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Book now
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-button-prev swiper-button"></div>
-          <div class="swiper-button-next swiper-button"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Modal -->
-    <div
-      class="modal fade booking-modal"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog booking-modal__dialog">
-        <div class="modal-content">
-          <div class="modal-header booking-modal__header">
-            <button
-              type="button"
-              class="booking-modal__close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            >
-              <img
-                src="./assets/icons/close_big.svg"
-                alt="close"
-                class="booking-modal__close__image"
-              />
-              <img
-                src="./assets/icons/back.svg"
-                alt="close"
-                class="booking-modal__close__image"
-              />
-            </button>
-            <h5 class="modal-title" id="exampleModalLabel">Booking</h5>
-          </div>
-          <div class="modal-body booking-modal__body">
-            <div class="booking-modal__body__top">
-              <img
-                class="booking-modal__body__top__image"
-                src="./assets/images/SliderCar2Image.png"
-                alt="Car image"
-              />
-              <div class="car__content">
-                <div class="car__content__top">
-                  <h4 class="car__content__top__title">Toyota Land Cruiser</h4>
-                  <p class="car__content__top__price" data-car-price="125000">
-                    125000 ֏
-                  </p>
-                </div>
-                <p class="car__content__subtitle">
-                  с водителем на 12 часов 125000
-                </p>
-                <p class="car__content__description">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                </p>
-              </div>
-            </div>
-            <form class="booking-form">
-              <div class="booking-form__steps">
-                <div
-                  class="
-                    booking-form__steps__step booking-form__steps__step_active
-                  "
-                >
-                  <h4 class="booking-form__title">More</h4>
-                  <div class="booking-form__checklist">
-                    <div class="booking-form__checklist__item">
-                      <div class="booking-form__checklist__item__checkbox">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="checkbox1"
-                        />
-                        <label class="form-check-label" for="checkbox1">
-                          Спальный мешок с вкладкой
-                        </label>
-                      </div>
-                      <div class="counter">
-                        <button
-                          type="button"
-                          class="counter__minus"
-                          data-id="checkbox1"
-                          data-price="1200"
-                        >
-                          <img src="./assets/icons/minus.svg" />
-                        </button>
-                        <span
-                          class="counter__value"
-                          data-id="checkbox1"
-                          data-price="1200"
-                          data-count="1"
-                          >1</span
-                        >
-                        <button
-                          type="button"
-                          class="counter__plus"
-                          data-id="checkbox1"
-                          data-price="1200"
-                        >
-                          <img src="./assets/icons/plus.svg" />
-                        </button>
-                      </div>
-                      <p class="booking-form__checklist__item__price">1200֏</p>
-                    </div>
-                    <div class="booking-form__checklist__item">
-                      <div class="booking-form__checklist__item__checkbox">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="checkbox2"
-                        />
-                        <label class="form-check-label" for="checkbox2">
-                          Холодильник
-                        </label>
-                      </div>
-                      <div class="counter">
-                        <button
-                          type="button"
-                          class="counter__minus"
-                          data-id="checkbox2"
-                          data-price="700"
-                        >
-                          <img src="./assets/icons/minus.svg" />
-                        </button>
-                        <span
-                          class="counter__value"
-                          data-id="checkbox2"
-                          data-price="700"
-                          data-count="1"
-                          >1</span
-                        >
-                        <button
-                          type="button"
-                          class="counter__plus"
-                          data-id="checkbox2"
-                          data-price="700"
-                        >
-                          <img src="./assets/icons/plus.svg" />
-                        </button>
-                      </div>
-                      <p class="booking-form__checklist__item__price">700֏</p>
-                    </div>
-                    <div class="booking-form__checklist__item">
-                      <div class="booking-form__checklist__item__checkbox">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="checkbox3"
-                        />
-                        <label class="form-check-label" for="checkbox3">
-                          Посуда (котелки, кружки) на 4 чел
-                        </label>
-                      </div>
-                      <div class="counter">
-                        <button
-                          type="button"
-                          class="counter__minus"
-                          data-id="checkbox3"
-                          data-price="1200"
-                        >
-                          <img src="./assets/icons/minus.svg" />
-                        </button>
-                        <span
-                          class="counter__value"
-                          data-id="checkbox3"
-                          data-price="1200"
-                          data-count="1"
-                          >1</span
-                        >
-                        <button
-                          type="button"
-                          class="counter__plus"
-                          data-id="checkbox3"
-                          data-price="1200"
-                        >
-                          <img src="./assets/icons/plus.svg" />
-                        </button>
-                      </div>
-                      <p class="booking-form__checklist__item__price">1200֏</p>
-                    </div>
-                    <div class="booking-form__checklist__item">
-                      <div class="booking-form__checklist__item__checkbox">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="checkbox4"
-                        />
-                        <label class="form-check-label" for="checkbox4">
-                          Шезлонг
-                        </label>
-                      </div>
-                      <div class="counter">
-                        <button
-                          type="button"
-                          class="counter__minus"
-                          data-id="checkbox4"
-                          data-price="600"
-                        >
-                          <img src="./assets/icons/minus.svg" />
-                        </button>
-                        <span
-                          class="counter__value"
-                          data-id="checkbox4"
-                          data-price="600"
-                          data-count="1"
-                          >1</span
-                        >
-                        <button
-                          type="button"
-                          class="counter__plus"
-                          data-id="checkbox4"
-                          data-price="600"
-                        >
-                          <img src="./assets/icons/plus.svg" />
-                        </button>
-                      </div>
-                      <p class="booking-form__checklist__item__price">600֏</p>
-                    </div>
-                    <div class="booking-form__checklist__item">
-                      <div class="booking-form__checklist__item__checkbox">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="checkbox5"
-                        />
-                        <label class="form-check-label" for="checkbox5">
-                          Складной стул
-                        </label>
-                      </div>
-                      <div class="counter">
-                        <button
-                          type="button"
-                          class="counter__minus"
-                          data-id="checkbox5"
-                          data-price="500"
-                        >
-                          <img src="./assets/icons/minus.svg" />
-                        </button>
-                        <span
-                          class="counter__value"
-                          data-id="checkbox5"
-                          data-price="500"
-                          data-count="1"
-                          >1</span
-                        >
-                        <button
-                          type="button"
-                          class="counter__plus"
-                          data-id="checkbox5"
-                          data-price="500"
-                        >
-                          <img src="./assets/icons/plus.svg" />
-                        </button>
-                      </div>
-                      <p class="booking-form__checklist__item__price">500֏</p>
-                    </div>
-                    <div class="booking-form__checklist__item">
-                      <div class="booking-form__checklist__item__checkbox">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="checkbox6"
-                        />
-                        <label class="form-check-label" for="checkbox6">
-                          Складной стол
-                        </label>
-                      </div>
-                      <div class="counter">
-                        <button
-                          type="button"
-                          class="counter__minus"
-                          data-id="checkbox6"
-                          data-price="800"
-                        >
-                          <img src="./assets/icons/minus.svg" />
-                        </button>
-                        <span
-                          class="counter__value"
-                          data-id="checkbox6"
-                          data-price="800"
-                          data-count="1"
-                          >1</span
-                        >
-                        <button
-                          type="button"
-                          class="counter__plus"
-                          data-id="checkbox6"
-                          data-price="800"
-                        >
-                          <img src="./assets/icons/plus.svg" />
-                        </button>
-                      </div>
-                      <p class="booking-form__checklist__item__price">800֏</p>
-                    </div>
-                    <div class="booking-form__checklist__item">
-                      <div class="booking-form__checklist__item__checkbox">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="checkbox7"
-                        />
-                        <label class="form-check-label" for="checkbox7">
-                          Рация 2 шт
-                        </label>
-                      </div>
-                      <div class="counter">
-                        <button
-                          type="button"
-                          class="counter__minus"
-                          data-id="checkbox7"
-                          data-price="1000"
-                        >
-                          <img src="./assets/icons/minus.svg" />
-                        </button>
-                        <span
-                          class="counter__value"
-                          data-id="checkbox7"
-                          data-price="1000"
-                          data-count="1"
-                          >1</span
-                        >
-                        <button
-                          type="button"
-                          class="counter__plus"
-                          data-id="checkbox7"
-                          data-price="1000"
-                        >
-                          <img src="./assets/icons/plus.svg" />
-                        </button>
-                      </div>
-                      <p class="booking-form__checklist__item__price">1000֏</p>
-                    </div>
-                    <div class="booking-form__checklist__item">
-                      <div class="booking-form__checklist__item__checkbox">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="checkbox8"
-                        />
-                        <label class="form-check-label" for="checkbox8">
-                          Эл.Генератор 1 кВа бензин
-                        </label>
-                      </div>
-
-                      <div class="counter">
-                        <button
-                          type="button"
-                          class="counter__minus"
-                          data-id="checkbox8"
-                          data-price="1300"
-                        >
-                          <img src="./assets/icons/minus.svg" />
-                        </button>
-                        <span
-                          class="counter__value"
-                          data-id="checkbox8"
-                          data-price="1300"
-                          data-count="1"
-                          >1</span
-                        >
-                        <button
-                          type="button"
-                          class="counter__plus"
-                          data-id="checkbox8"
-                          data-price="1300"
-                        >
-                          <img src="./assets/icons/plus.svg" />
-                        </button>
-                      </div>
-                      <p class="booking-form__checklist__item__price">1300֏</p>
-                    </div>
-                    <div class="booking-form__checklist__item">
-                      <div class="booking-form__checklist__item__checkbox">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="checkbox9"
-                        />
-                        <label class="form-check-label" for="checkbox9">
-                          Палатка на 2 чел
-                        </label>
-                      </div>
-                      <div class="counter">
-                        <button
-                          type="button"
-                          class="counter__minus"
-                          data-id="checkbox9"
-                          data-price="500"
-                        >
-                          <img src="./assets/icons/minus.svg" />
-                        </button>
-                        <span
-                          class="counter__value"
-                          data-id="checkbox9"
-                          data-price="500"
-                          data-count="1"
-                          >1</span
-                        >
-                        <button
-                          type="button"
-                          class="counter__plus"
-                          data-id="checkbox9"
-                          data-price="500"
-                        >
-                          <img src="./assets/icons/plus.svg" />
-                        </button>
-                      </div>
-                      <p class="booking-form__checklist__item__price">500֏</p>
-                    </div>
-                    <div class="booking-form__checklist__item">
-                      <div class="booking-form__checklist__item__checkbox">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="checkbox10"
-                        />
-                        <label class="form-check-label" for="checkbox10">
-                          Палатка на 4-6 человека
-                        </label>
-                      </div>
-                      <div class="counter">
-                        <button
-                          type="button"
-                          class="counter__minus"
-                          data-id="checkbox10"
-                          data-price="800"
-                        >
-                          <img src="./assets/icons/minus.svg" />
-                        </button>
-                        <span
-                          class="counter__value"
-                          data-id="checkbox10"
-                          data-price="800"
-                          data-count="1"
-                          >1</span
-                        >
-                        <button
-                          type="button"
-                          class="counter__plus"
-                          data-id="checkbox10"
-                          data-price="800"
-                        >
-                          <img src="./assets/icons/plus.svg" />
-                        </button>
-                      </div>
-                      <p class="booking-form__checklist__item__price">800֏</p>
-                    </div>
-                    <div class="booking-form__checklist__item">
-                      <div class="booking-form__checklist__item__checkbox">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="checkbox11"
-                        />
-                        <label class="form-check-label" for="checkbox11">
-                          Велосипед горный
-                        </label>
-                      </div>
-                      <div class="counter">
-                        <button
-                          type="button"
-                          class="counter__minus"
-                          data-id="checkbox11"
-                          data-price="700"
-                        >
-                          <img src="./assets/icons/minus.svg" />
-                        </button>
-                        <span
-                          class="counter__value"
-                          data-id="checkbox11"
-                          data-price="700"
-                          data-count="1"
-                          >1</span
-                        >
-                        <button
-                          type="button"
-                          class="counter__plus"
-                          data-id="checkbox11"
-                          data-price="700"
-                        >
-                          <img src="./assets/icons/plus.svg" />
-                        </button>
-                      </div>
-                      <p class="booking-form__checklist__item__price">700֏</p>
-                    </div>
-                    <div class="booking-form__checklist__item">
-                      <div class="booking-form__checklist__item__checkbox">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="checkbox12"
-                        />
-                        <label class="form-check-label" for="checkbox12">
-                          Лодка надувная резиновая на 2 чел
-                        </label>
-                      </div>
-                      <div class="counter">
-                        <button
-                          type="button"
-                          class="counter__minus"
-                          data-id="checkbox12"
-                          data-price="1000"
-                        >
-                          <img src="./assets/icons/minus.svg" />
-                        </button>
-                        <span
-                          class="counter__value"
-                          data-id="checkbox12"
-                          data-price="1000"
-                          data-count="1"
-                          >1</span
-                        >
-                        <button
-                          type="button"
-                          class="counter__plus"
-                          data-id="checkbox12"
-                          data-price="1000"
-                        >
-                          <img src="./assets/icons/plus.svg" />
-                        </button>
-                      </div>
-                      <p class="booking-form__checklist__item__price">1000֏</p>
-                    </div>
-                    <div class="booking-form__checklist__item">
-                      <div class="booking-form__checklist__item__checkbox">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="checkbox13"
-                        />
-                        <label class="form-check-label" for="checkbox13">
-                          Рыбалка (снасти, удочки и т.д.)
-                        </label>
-                      </div>
-
-                      <div class="counter">
-                        <button
-                          type="button"
-                          class="counter__minus"
-                          data-id="checkbox13"
-                          data-price="1200"
-                        >
-                          <img src="./assets/icons/minus.svg" />
-                        </button>
-                        <span
-                          class="counter__value"
-                          data-id="checkbox13"
-                          data-price="1200"
-                          data-count="1"
-                          >1</span
-                        >
-                        <button
-                          type="button"
-                          class="counter__plus"
-                          data-id="checkbox13"
-                          data-price="1200"
-                        >
-                          <img src="./assets/icons/plus.svg" />
-                        </button>
-                      </div>
-                      <!-- <div class="counter">
-                        <button
-                          type="button"
-                          class="counter__minus"
-                          data-id="12"
-                        >
-                          <img src="./assets/icons/minus.svg" />
-                        </button>
-                        <span class="counter__value" data-id="12">1</span>
-                        <button
-                          type="button"
-                          class="counter__plus"
-                          data-id="12"
-                        >
-                          <img src="./assets/icons/plus.svg" />
-                        </button>
-                      </div> -->
-                      <p class="booking-form__checklist__item__price">1200֏</p>
-                    </div>
-                    <div class="booking-form__checklist__item">
-                      <div class="booking-form__checklist__item__checkbox">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="checkbox14"
-                        />
-                        <label class="form-check-label" for="checkbox14">
-                          Складной мангал с шампурами 6 шт
-                        </label>
-                      </div>
-                      <div class="counter">
-                        <button
-                          type="button"
-                          class="counter__minus"
-                          data-id="checkbox14"
-                          data-price="500"
-                        >
-                          <img src="./assets/icons/minus.svg" />
-                        </button>
-                        <span
-                          class="counter__value"
-                          data-id="checkbox14"
-                          data-price="500"
-                          data-count="1"
-                          >1</span
-                        >
-                        <button
-                          type="button"
-                          class="counter__plus"
-                          data-id="checkbox14"
-                          data-price="500"
-                        >
-                          <img src="./assets/icons/plus.svg" />
-                        </button>
-                      </div>
-                      <p class="booking-form__checklist__item__price">500֏</p>
-                    </div>
-                    <div class="booking-form__checklist__item">
-                      <div class="booking-form__checklist__item__checkbox">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="checkbox15"
-                        />
-                        <label class="form-check-label" for="checkbox15">
-                          Тент
-                        </label>
-                      </div>
-                      <div class="counter">
-                        <button
-                          type="button"
-                          class="counter__minus"
-                          data-id="checkbox15"
-                          data-price="1300"
-                        >
-                          <img src="./assets/icons/minus.svg" />
-                        </button>
-                        <span
-                          class="counter__value"
-                          data-id="checkbox15"
-                          data-price="1300"
-                          data-count="1"
-                          >1</span
-                        >
-                        <button
-                          type="button"
-                          class="counter__plus"
-                          data-id="checkbox15"
-                          data-price="1300"
-                        >
-                          <img src="./assets/icons/plus.svg" />
-                        </button>
-                      </div>
-                      <p class="booking-form__checklist__item__price">1300֏</p>
-                    </div>
-                  </div>
-                  <div class="booking-form__bottom">
-                    <div class="booking-form__amount">
-                      <p class="booking-form__amount__title">Amount paid</p>
-                      <p
-                        class="booking-form__amount__price"
-                        data-car-price="125000"
-                      >
-                        125000 ֏
-                      </p>
-                    </div>
-                    <div class="booking-form__bottom__content">
-                      <p class="booking-form__bottom__description">
-                        Организация также предлагает в аренду без водителя
-                        специализированные автомобили с оснащением для пикника с
-                        ночевкой и рыбалки. Цена за день аренды от 55000֏
-                      </p>
-                      <div class="booking-form__bottom__buttons">
-                        <button
-                          class="booking-form__bottom__buttons__clear"
-                          type="button"
-                        >
-                          Clear all
-                        </button>
-                        <button
-                          class="
-                            booking-form__bottom__buttons__next
-                            booking-form__bottom__buttons__submit
-                          "
-                          type="button"
-                        >
-                          Next
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="booking-form__steps__step">
-                  <h4 class="booking-form__title">More</h4>
-                  <p class="booking-form__subtitle">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-
-                  <div class="booking-form__inputs">
-                    <div class="form-group">
-                      <label for="name">Your Name</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="name"
-                        name="name"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="phone">Phone Number</label>
-                      <input
-                        type="tel"
-                        class="form-control"
-                        id="phone"
-                        placeholder="(915) 555 5555"
-                        name="phone"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="city">Current City</label>
-                      <select
-                        class="form-select"
-                        aria-label="Yerevan"
-                        name="city"
-                        id="city"
-                      >
-                        <option selected value="Yerevan">Yerevan</option>
-                        <option value="Gyumri">Gyumri</option>
-                        <option value="Sevan">Sevan</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label for="startDate">Calendar Picker</label>
-                      <div class="d-flex form-group-dates">
-                        <div class="w-50 me-3">
-                          <input
-                            type="date"
-                            class="form-control"
-                            placeholder="dd/mm/yyyy"
-                            id="startDate"
-                            name="startDate"
-                          />
-                        </div>
-                        <div class="w-50">
-                          <input
-                            type="date"
-                            class="form-control"
-                            placeholder="dd/mm/yyyy"
-                            name="endDate"
-                          />
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="form-group">
-                      <label for="email">Email:</label>
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        placeholder="Enter email"
-                        name="email"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="note">Note</label>
-                      <textarea
-                        class="form-control"
-                        placeholder="Type here"
-                        id="note"
-                        name="note"
-                        style="height: 126px"
-                      ></textarea>
-                    </div>
-                  </div>
-
-                  <div class="booking-form__bottom booking-form__submit">
-                    <div class="booking-form__bottom__buttons">
-                      <button
-                        class="
-                          booking-form__bottom__buttons__clear
-                          booking-form__bottom__buttons__back
-                        "
-                        type="button"
-                      >
-                        <img
-                          src="./assets/icons/arrow_left.svg"
-                          alt="arrow left"
-                        />
-                        back
-                      </button>
-                      <button
-                        class="booking-form__bottom__buttons__submit"
-                        type="submit"
-                      >
-                        Submit
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <footer class="footer">
       <nav class="nav">

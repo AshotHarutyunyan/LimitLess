@@ -19,6 +19,10 @@
         display: block;
         text-decoration: none;
         @extend %regular-16-feature;
+
+        &:hover {
+          color: #007b8c !important;
+        }
       }
 
       &__link_active {

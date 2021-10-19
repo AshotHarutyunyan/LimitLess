@@ -16,8 +16,14 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"
+    />
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script async src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script async src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
     <title>Limitless</title>
   </head>
   <body>
@@ -76,7 +82,7 @@
                 fill="#007B8C"
               />
             </svg>
-            <p class="basket__sum" data-selector="orders-list-sum">33500 ֏</p>
+            <p class="basket__sum" data-selector="orders-list-sum">31500 ֏</p>
           </div>
           <div class="language-bar">
             <a href="#" class="language-bar__item">Arm</a>
@@ -118,7 +124,7 @@
               fill="#007B8C"
             />
           </svg>
-          <p class="basket__sum" data-selector="orders-list-sum">33500 ֏</p>
+          <p class="basket__sum" data-selector="orders-list-sum">31500 ֏</p>
         </div>
         <button class="orders__close">
           <img src="./assets/icons/close_big.svg" />
@@ -257,14 +263,14 @@
             class="orders__footer__info__price"
             data-selector="orders-list-sum"
           >
-            33500 ֏
+            31500 ֏
           </p>
         </div>
 
         <div class="orders__footer__checkout">
           <p>Checkout</p>
-          <p data-selector="orders-list-sum">33500 ֏</p>
-          <input type="hidden" value="33500" class="ordersListTotalAmount" />
+          <p data-selector="orders-list-sum">31500 ֏</p>
+          <input type="hidden" value="31500" class="ordersListTotalAmount" />
         </div>
       </div>
     </div>
@@ -331,7 +337,12 @@
           (492) 709-6392
         </a>
       </div>
-      <form class="contact-us__form">
+      <div class="contact-us__success">
+        <img src='./assets/icons/check.png'  class="contact-us__success__image" />
+        <h3  class="contact-us__success__title">Thank you</h3>
+        <h4  class="contact-us__success__subtitle">Your request sent successfully</h4>
+      </div>
+      <!-- <form class="contact-us__form">
         <h2 class="contact-us__form__title">Contacts us</h2>
         <p class="contact-us__form__subtitle">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -361,8 +372,11 @@
           ></textarea>
         </div>
         <button type="submit" class="contact-us__form__submit">Book now</button>
-      </form>
+      </form> -->
     </section>
+
+    
+   
 
     <footer class="footer">
       <nav class="nav">

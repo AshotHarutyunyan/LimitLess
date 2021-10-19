@@ -16,8 +16,14 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"
+    />
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script async src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script async src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
     <title>Limitless</title>
   </head>
   <body>
@@ -78,7 +84,7 @@
                 fill="#007B8C"
               />
             </svg>
-            <p class="basket__sum" data-selector="orders-list-sum">33500 ֏</p>
+            <p class="basket__sum" data-selector="orders-list-sum">31500 ֏</p>
           </div>
           <div class="language-bar">
             <a href="#" class="language-bar__item">Arm</a>
@@ -119,7 +125,7 @@
               fill="#007B8C"
             />
           </svg>
-          <p class="basket__sum" data-selector="orders-list-sum">33500 ֏</p>
+          <p class="basket__sum" data-selector="orders-list-sum">31500 ֏</p>
         </div>
         <button class="orders__close">
           <img src="./assets/icons/close_big.svg" />
@@ -258,14 +264,14 @@
             class="orders__footer__info__price"
             data-selector="orders-list-sum"
           >
-            33500 ֏
+            31500 ֏
           </p>
         </div>
 
         <div class="orders__footer__checkout">
           <p>Checkout</p>
-          <p data-selector="orders-list-sum">33500 ֏</p>
-          <input type="hidden" value="33500" class="ordersListTotalAmount" />
+          <p data-selector="orders-list-sum">31500 ֏</p>
+          <input type="hidden" value="31500" class="ordersListTotalAmount" />
         </div>
       </div>
     </div>
@@ -477,6 +483,7 @@
     </section>
 
     <section class="advantages container">
+      <img class="advantages__image" src="./assets/images/Luggage.png" alt="" />
       <div class="advantages__content">
         <h2 class="advantages__content__title">В цене включено</h2>
         <p class="advantages__content__subtitle">
@@ -731,10 +738,27 @@
                 <p class="car__content__subtitle">
                   с водителем на 12 часов 125000
                 </p>
-                <p class="car__content__description">
+                <p class="car__content__subtitle mb-0">Select days</p>
+                <div class="booking-modal__dates">
+                  <input
+                    data-disabled-days="2021-10-31, 2021-10-30"
+                    class="form-control"
+                    placeholder="dd/mm/yyyy"
+                    type="text"
+                    id="startDate"
+                  />
+                  <input
+                    class="form-control"
+                    data-disabled-days="2021-10-31, 2021-10-30"
+                    placeholder="dd/mm/yyyy"
+                    type="text"
+                    id="endDate"
+                  />
+                </div>
+                <!-- <p class="car__content__description">
                   Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                   amet sint. Velit officia consequat duis enim velit mollit.
-                </p>
+                </p> -->
               </div>
             </div>
             <form class="booking-form">
@@ -1253,23 +1277,6 @@
                           <img src="./assets/icons/plus.svg" />
                         </button>
                       </div>
-                      <!-- <div class="counter">
-                        <button
-                          type="button"
-                          class="counter__minus"
-                          data-id="12"
-                        >
-                          <img src="./assets/icons/minus.svg" />
-                        </button>
-                        <span class="counter__value" data-id="12">1</span>
-                        <button
-                          type="button"
-                          class="counter__plus"
-                          data-id="12"
-                        >
-                          <img src="./assets/icons/plus.svg" />
-                        </button>
-                      </div> -->
                       <p class="booking-form__checklist__item__price">1200֏</p>
                     </div>
                     <div class="booking-form__checklist__item">
@@ -1362,11 +1369,6 @@
                       </p>
                     </div>
                     <div class="booking-form__bottom__content">
-                      <p class="booking-form__bottom__description">
-                        Организация также предлагает в аренду без водителя
-                        специализированные автомобили с оснащением для пикника с
-                        ночевкой и рыбалки. Цена за день аренды от 55000֏
-                      </p>
                       <div class="booking-form__bottom__buttons">
                         <button
                           class="booking-form__bottom__buttons__clear"
@@ -1378,16 +1380,19 @@
                           class="
                             booking-form__bottom__buttons__next
                             booking-form__bottom__buttons__submit
+                            booking-form__add-to-cart
                           "
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
                           type="button"
                         >
-                          Next
+                          Add to Cart
                         </button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="booking-form__steps__step">
+                <!-- <div class="booking-form__steps__step">
                   <h4 class="booking-form__title">More</h4>
                   <p class="booking-form__subtitle">
                     Lorem Ipsum is simply dummy text of the printing and
@@ -1495,7 +1500,7 @@
                       </button>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
             </form>
           </div>

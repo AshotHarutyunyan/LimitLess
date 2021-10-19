@@ -52,7 +52,8 @@
   }
 }
 
-#galeryModal {
+#galeryModal,
+#videoModal {
   .modal-dialog {
     max-width: 71.5vw;
     height: 100%;
@@ -75,14 +76,16 @@
   }
 }
 
-#gallerySwiper {
+#gallerySwiper,
+#videoSwiper {
   padding: 32px;
 
   @media (max-width: 700px) {
     padding: 10px 10px 32px;
   }
 
-  img {
+  img,
+  iframe {
     width: 100%;
     border-radius: 12px;
     --widthA: calc(71.5vw - 64px);
@@ -97,14 +100,12 @@
 
   .galeryModal-button-next {
     right: 12px !important;
-
     @media (max-width: 700px) {
       right: 0px !important;
     }
   }
   .galeryModal-button-prev {
     left: 12px !important;
-
     @media (max-width: 700px) {
       left: 0px !important;
     }

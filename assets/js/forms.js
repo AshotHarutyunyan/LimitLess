@@ -123,7 +123,7 @@ const validateForm = (formProps, validationSchema, formSelector, event) => {
     });
 
     if (!isFormInvalid) {
-        event?.target?.reset();
+        event?.target?.submit();
     }
 }
 

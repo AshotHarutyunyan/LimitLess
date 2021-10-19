@@ -1,13 +1,17 @@
 .advantages {
   margin-top: 103px;
   margin-bottom: 120px;
-  background: url("../../assets/images/Luggage.png");
-  background-repeat: no-repeat;
-  background-size: 374px 448px;
-  background-position: calc(100% - 100px) 100%;
+  position: relative;
+  &__image {
+    width: 374px;
+    height: 448px;
+    position: absolute;
+    right: 0;
+    top: 0;
 
-  @media (max-width: 1024px) {
-    background: none;
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
 
   @media (max-width: 768px) {
