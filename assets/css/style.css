@@ -54,7 +54,7 @@
           font-feature-settings: "tnum" on, "lnum" on;
 }
 
-.header-contacts__phone, .header-contacts__link, .equipment__list__item__content__title, .basket__sum, .orders__footer__checkout p {
+.pagination__list__item, .header-contacts__phone, .header-contacts__link, .equipment__list__item__content__title, .basket__sum, .orders__footer__checkout p {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -136,7 +136,7 @@
   line-height: 30px;
 }
 
-.hero .hero__container__left-block__buttons__first, .activity__content__button, .car__content__book, .home-card__more, .cars-card__more, .tour-page__right-block__price__book, .car-page__right-block__order, .contact-us__form__submit, .equipment__list__item__form__botom__button, .tours__see__all__link, .our-cars__see-all__link, .backToPage, .hero .hero__container__left-block__buttons__second, .contact-us__map__phone {
+.hero .hero__container__left-block__buttons__first, .activity__content__button, .car__content__book, .home-card__more, .book-form-page__submit, .cars-card__more, .tour-page__right-block__price__book, .car-page__right-block__order, .contact-us__form__submit, .equipment__list__item__form__botom__button, .tours__see__all__link, .our-cars__see-all__link, .backToPage, .hero .hero__container__left-block__buttons__second, .contact-us__map__phone {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -316,7 +316,7 @@ a {
   background: none;
 }
 
-.hero .hero__container__left-block__buttons__first, .activity__content__button, .car__content__book, .home-card__more, .cars-card__more, .tour-page__right-block__price__book, .car-page__right-block__order, .contact-us__form__submit, .equipment__list__item__form__botom__button {
+.hero .hero__container__left-block__buttons__first, .activity__content__button, .car__content__book, .home-card__more, .book-form-page__submit, .cars-card__more, .tour-page__right-block__price__book, .car-page__right-block__order, .contact-us__form__submit, .equipment__list__item__form__botom__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,7 +335,7 @@ a {
   z-index: 11;
 }
 
-.hero .hero__container__left-block__buttons__first:hover, .activity__content__button:hover, .car__content__book:hover, .home-card__more:hover, .cars-card__more:hover, .tour-page__right-block__price__book:hover, .car-page__right-block__order:hover, .contact-us__form__submit:hover, .equipment__list__item__form__botom__button:hover {
+.hero .hero__container__left-block__buttons__first:hover, .activity__content__button:hover, .car__content__book:hover, .home-card__more:hover, .book-form-page__submit:hover, .cars-card__more:hover, .tour-page__right-block__price__book:hover, .car-page__right-block__order:hover, .contact-us__form__submit:hover, .equipment__list__item__form__botom__button:hover {
   background: #00a6bd;
 }
 
@@ -503,6 +503,98 @@ a {
   max-width: unset !important;
   -ms-grid-columns: 1fr 1fr 1fr !important;
       grid-template-columns: 1fr 1fr 1fr !important;
+}
+
+@media (max-width: 991px) {
+  .events-list-wrapper .events-list-wrapper__content {
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .events-list-wrapper .events-list-wrapper__content {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
+}
+
+.pagination {
+  background-color: #ffffff;
+  padding: 12px 0px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: 0 auto;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 2px 4px rgba(28, 5, 77, 0.1), 0px 12px 32px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 4px rgba(28, 5, 77, 0.1), 0px 12px 32px rgba(0, 0, 0, 0.05);
+  margin-top: 32px;
+}
+
+.pagination__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pagination__list__item {
+  padding: 0px 12px;
+  color: #a2a4c2;
+}
+
+.pagination__list__item:hover {
+  color: #007b8c;
+}
+
+.pagination__list__item_active {
+  background-color: #007b8c;
+  border-radius: 8px;
+  color: #ffffff;
+  pointer-events: none;
+}
+
+.pagination__list__item_active:hover {
+  color: #ffffff;
+}
+
+.pagination__prev {
+  width: 28px;
+  margin-left: 16px;
+  margin-right: 8px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagination__next {
+  width: 28px;
+  margin-right: 16px;
+  margin-left: 8px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagination .disabled {
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 .is-invalid::-webkit-input-placeholder {
@@ -1558,6 +1650,7 @@ a {
 .our-cars__slide img {
   max-width: 392px;
   width: 100%;
+  border-radius: 20px;
   height: 230px;
 }
 
@@ -1634,6 +1727,14 @@ a {
 .car__content__top__title {
   color: #25294a;
   margin-bottom: 0;
+}
+
+.car__content__top__title a {
+  color: #25294a;
+}
+
+.car__content__top__title a:hover {
+  color: #007b8c;
 }
 
 @media (max-width: 768px) {
@@ -2155,7 +2256,7 @@ a {
 }
 
 .booking-modal__dates .form-control {
-  max-width: 125px;
+  max-width: 135px;
 }
 
 .booking-modal__dates .form-control:first-of-type {
@@ -2553,6 +2654,17 @@ a {
   margin-top: 0;
 }
 
+.book-form-page {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.book-form-page__submit {
+  width: 100%;
+  margin-top: 16px;
+}
+
 .cars__similiar {
   background: #f0f5fa;
   margin-top: 50px;
@@ -2933,6 +3045,7 @@ a {
   -webkit-box-shadow: 0px 4px 20px rgba(34, 113, 157, 0.05);
           box-shadow: 0px 4px 20px rgba(34, 113, 157, 0.05);
   border-radius: 4px;
+  margin-top: 24px;
 }
 
 .tour-page__left-block__prices {
@@ -3237,8 +3350,11 @@ a {
 
 .car-page__left-block__image {
   width: 100%;
-  height: 288px;
+  height: 380px;
   margin-top: 32px;
+  -webkit-box-shadow: 0px 4px 20px rgba(34, 113, 157, 0.05);
+          box-shadow: 0px 4px 20px rgba(34, 113, 157, 0.05);
+  border-radius: 4px;
 }
 
 @media (max-width: 768px) {
@@ -3355,6 +3471,9 @@ a {
   width: 100%;
   height: 112px;
   cursor: pointer;
+  -webkit-box-shadow: 0px 4px 20px rgba(34, 113, 157, 0.05);
+          box-shadow: 0px 4px 20px rgba(34, 113, 157, 0.05);
+  border-radius: 4px;
 }
 
 @media (max-width: 768px) and (max-width: 768px) {
@@ -3474,7 +3593,6 @@ a {
 .car-page__right-block__priceList__item p {
   padding: 16px;
   margin-bottom: 0;
-  word-break: break-all;
 }
 
 @media (max-width: 768px) {
@@ -4146,4 +4264,3 @@ a {
   opacity: 0.2;
   z-index: 1111;
 }
-/*# sourceMappingURL=style.css.map */

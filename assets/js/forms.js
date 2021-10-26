@@ -73,14 +73,14 @@ const bookingFormValidators = {
     city: {
         required: (text) => validateRequired(text),
     },
-    startDate: {
-        required: (text) => validateRequired(text),
-        validDate: (date) => validateStartDate(date)
-    },
-    endDate: {
-        required: (text) => validateRequired(text),
-        validDate: (start, end) => validateEndDate(start, end)
-    },
+    // startDate: {
+    //     required: (text) => validateRequired(text),
+    //     validDate: (date) => validateStartDate(date)
+    // },
+    // endDate: {
+    //     required: (text) => validateRequired(text),
+    //     validDate: (start, end) => validateEndDate(start, end)
+    // },
     email: {
         required: (text) => validateRequired(text),
         email: (email) => validateEmail(email),
@@ -129,7 +129,7 @@ const validateForm = (formProps, validationSchema, formSelector, event) => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const contactsForm = document.querySelector('.contact-us__form');
-    const bookingForm = document.querySelector('.booking-form');
+    const bookingForm = document.querySelector('.book-form-page');
 
     contactsForm?.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -144,6 +144,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const formData = new FormData(e.target);
         const formProps = Object.fromEntries(formData);
 
-        validateForm(formProps, bookingFormValidators, '.booking-form', e)
+        validateForm(formProps, bookingFormValidators, '.book-form-page', e)
     });
 });

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <meta name="googlebot" content="noindex" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script async src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script async src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <title>Limitless</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-contacts">
+        <p class="header-contacts__phone">
+          <img src="./assets/icons/phone.svg" alt="Phone Icon" />
+          +374 33 77 77 99
+        </p>
+        <div class="header-contacts__content">
+          <a href="tel:+37433777799" class="header-contacts__phone">
+            +374 33 77 77 99
+          </a>
+          <a href="facebook.com" class="header-contacts__link">
+            <img
+              src="./assets/icons/facebook.png"
+              class="header-contacts__link__icon"
+            />
+            Facebook
+          </a>
+          <a href="facebook.com" class="header-contacts__link">
+            <img
+              src="./assets/icons/instagram.png"
+              class="header-contacts__link__icon"
+            />
+            Instagram
+          </a>
+        </div>
+      </div>
+      <div class="header__container">
+        <a href="#">
+          <img src="./assets/icons/logo.svg" class="header__logo" alt="logo" />
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__list__item">
+              <a
+                class="nav__list__item__link nav__list__item__link_active"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./tours.html">Tours</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./cars.html">Rent car</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./equipment.html"
+                >Rent equipment</a
+              >
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./galery.html">Gallery</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./contactus.html"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="d-flex align-items-center">
+          <div class="basket">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="basket__icon"
+            >
+              <path
+                opacity="0.3"
+                d="M8.00002 3.04141L5.17883 6.42683C4.94312 6.70968 4.52274 6.7479 4.23989 6.51219C3.95704 6.27648 3.91883 5.8561 4.15454 5.57325L7.48787 1.57325C7.7544 1.25342 8.24563 1.25342 8.51216 1.57325L11.8455 5.57325C12.0812 5.8561 12.043 6.27648 11.7601 6.51219C11.4773 6.7479 11.0569 6.70968 10.8212 6.42683L8.00002 3.04141Z"
+                fill="#007B8C"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.33203 6C2.77975 6 2.33203 6.44772 2.33203 7V11C2.33203 12.6569 3.67517 14 5.33203 14H10.6659C12.3227 14 13.6659 12.6569 13.6659 11V7C13.6659 6.44772 13.2182 6 12.6659 6H3.33203ZM9.33255 10C9.33255 10.7364 8.7356 11.3333 7.99922 11.3333C7.26284 11.3333 6.66589 10.7364 6.66589 10C6.66589 9.26362 7.26284 8.66667 7.99922 8.66667C8.7356 8.66667 9.33255 9.26362 9.33255 10Z"
+                fill="#007B8C"
+              />
+            </svg>
+            <p class="basket__sum" data-selector="orders-list-sum">31500 ֏</p>
+          </div>
+          <div class="language-bar">
+            <a href="#" class="language-bar__item">Arm</a>
+            <a href="#" class="language-bar__item language-bar__item_active">
+              Eng
+            </a>
+            <a href="#" class="language-bar__item">Rus</a>
+          </div>
+          <div class="menu" role="button">
+            <img src="./assets/icons/menu.svg" alt="Menu" />
+            <img src="./assets/icons/menuOpened.svg" alt="Menu Opened" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- orders -->
+    <div class="orders">
+      <div class="orders__top">
+        <div class="basket basket_active">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="basket__icon"
+          >
+            <path
+              opacity="0.3"
+              d="M8.00002 3.04141L5.17883 6.42683C4.94312 6.70968 4.52274 6.7479 4.23989 6.51219C3.95704 6.27648 3.91883 5.8561 4.15454 5.57325L7.48787 1.57325C7.7544 1.25342 8.24563 1.25342 8.51216 1.57325L11.8455 5.57325C12.0812 5.8561 12.043 6.27648 11.7601 6.51219C11.4773 6.7479 11.0569 6.70968 10.8212 6.42683L8.00002 3.04141Z"
+              fill="#007B8C"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.33203 6C2.77975 6 2.33203 6.44772 2.33203 7V11C2.33203 12.6569 3.67517 14 5.33203 14H10.6659C12.3227 14 13.6659 12.6569 13.6659 11V7C13.6659 6.44772 13.2182 6 12.6659 6H3.33203ZM9.33255 10C9.33255 10.7364 8.7356 11.3333 7.99922 11.3333C7.26284 11.3333 6.66589 10.7364 6.66589 10C6.66589 9.26362 7.26284 8.66667 7.99922 8.66667C8.7356 8.66667 9.33255 9.26362 9.33255 10Z"
+              fill="#007B8C"
+            />
+          </svg>
+          <p class="basket__sum" data-selector="orders-list-sum">31500 ֏</p>
+        </div>
+        <button class="orders__close">
+          <img src="./assets/icons/close_big.svg" />
+        </button>
+      </div>
+      <h2 class="orders__title">My Orders</h2>
+      <div class="orders__list">
+        <div class="orders__list__item">
+          <img
+            src="./assets/images/equipment.png"
+            class="orders__list__item__image"
+          />
+          <div class="orders__list__item__info">
+            <h3 class="orders__list__item__info__title">6-Person Tent</h3>
+            <p class="orders__list__item__info__description">
+              Our rental tents are 3 season models that can be used with or
+              without the included rain fly. These tents are sturdy and provid.
+            </p>
+          </div>
+          <div class="orders__list__item__price__info">
+            <p class="orders__list__item__price__info__period">1 Day</p>
+            <p class="orders__list__item__price__info__price">10500 ֏</p>
+          </div>
+          <div class="d-flex">
+            <div class="counter">
+              <button
+                type="button"
+                class="counter__minus"
+                data-id="product1"
+                data-price="10500"
+              >
+                <img src="./assets/icons/minus.svg" />
+              </button>
+              <span class="counter__value" data-id="product1">1</span>
+              <button
+                type="button"
+                class="counter__plus"
+                data-id="product1"
+                data-price="10500"
+              >
+                <img src="./assets/icons/plus.svg" />
+              </button>
+            </div>
+            <button class="orders__list__item__delete">
+              <img src="./assets/icons/Delete.svg" alt="Delete" />
+            </button>
+          </div>
+        </div>
+        <div class="orders__list__item">
+          <img
+            src="./assets/images/equipment.png"
+            class="orders__list__item__image"
+          />
+          <div class="orders__list__item__info">
+            <h3 class="orders__list__item__info__title">6-Person Tent</h3>
+            <p class="orders__list__item__info__description">
+              Our rental tents are 3 season models that can be used with or
+              without the included rain fly. These tents are sturdy and provid.
+            </p>
+          </div>
+          <div class="orders__list__item__price__info">
+            <p class="orders__list__item__price__info__period">1 Day</p>
+            <p class="orders__list__item__price__info__price">10500 ֏</p>
+          </div>
+          <div class="d-flex">
+            <div class="counter">
+              <button
+                type="button"
+                class="counter__minus"
+                data-id="product2"
+                data-price="10500"
+              >
+                <img src="./assets/icons/minus.svg" />
+              </button>
+              <span class="counter__value" data-id="product2">1</span>
+              <button
+                type="button"
+                class="counter__plus"
+                data-id="product2"
+                data-price="10500"
+              >
+                <img src="./assets/icons/plus.svg" />
+              </button>
+            </div>
+            <button class="orders__list__item__delete">
+              <img src="./assets/icons/Delete.svg" alt="Delete" />
+            </button>
+          </div>
+        </div>
+        <div class="orders__list__item">
+          <img
+            src="./assets/images/equipment.png"
+            class="orders__list__item__image"
+          />
+          <div class="orders__list__item__info">
+            <h3 class="orders__list__item__info__title">6-Person Tent</h3>
+            <p class="orders__list__item__info__description">
+              Our rental tents are 3 season models that can be used with or
+              without the included rain fly. These tents are sturdy and provid.
+            </p>
+          </div>
+          <div class="orders__list__item__price__info">
+            <p class="orders__list__item__price__info__period">1 Day</p>
+            <p class="orders__list__item__price__info__price">10500 ֏</p>
+          </div>
+          <div class="d-flex">
+            <div class="counter">
+              <button
+                type="button"
+                class="counter__minus"
+                data-id="product3"
+                data-price="10500"
+              >
+                <img src="./assets/icons/minus.svg" />
+              </button>
+              <span class="counter__value" data-id="product3">1</span>
+              <button
+                type="button"
+                class="counter__plus"
+                data-id="product3"
+                data-price="10500"
+              >
+                <img src="./assets/icons/plus.svg" />
+              </button>
+            </div>
+            <button class="orders__list__item__delete">
+              <img src="./assets/icons/Delete.svg" alt="Delete" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="orders__footer">
+        <div class="orders__footer__info">
+          <p class="orders__footer__info__total">Total:</p>
+          <p
+            class="orders__footer__info__price"
+            data-selector="orders-list-sum"
+          >
+            31500 ֏
+          </p>
+        </div>
+
+        <div class="orders__footer__checkout">
+          <p>Checkout</p>
+          <p data-selector="orders-list-sum">31500 ֏</p>
+          <input type="hidden" value="31500" class="ordersListTotalAmount" />
+        </div>
+      </div>
+    </div>
+    <div class="order__shadow"></div>
+
+    <!-- mobile nav panel -->
+    <div class="mobile-nav">
+      <div class="mobile-nav__content">
+        <div class="language-bar">
+          <a href="#" class="language-bar__item">Arm</a>
+          <a href="#" class="language-bar__item language-bar__item_active">
+            Eng
+          </a>
+          <a href="#" class="language-bar__item">Rus</a>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__list__item">
+              <a
+                class="nav__list__item__link nav__list__item__link_active"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./tours.html">Tours</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./cars.html">Rent car</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./equipment.html"
+                >Rent equipment</a
+              >
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./galery.html">Gallery</a>
+            </li>
+            <li class="nav__list__item">
+              <a class="nav__list__item__link" href="./contactus.html"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="mobile-nav__shadow"></div>
+
+    <form class="book-form-page booking-form__inputs">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" class="form-control" id="name" name="name" />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input
+          type="tel"
+          class="form-control"
+          id="phone"
+          placeholder="(915) 555 5555"
+          name="phone"
+        />
+      </div>
+      <div class="form-group">
+        <label for="city">Current City</label>
+        <select class="form-select" aria-label="Yerevan" name="city" id="city">
+          <option selected value="Yerevan">Yerevan</option>
+          <option value="Gyumri">Gyumri</option>
+          <option value="Sevan">Sevan</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="Enter email"
+          name="email"
+        />
+      </div>
+      <div class="form-group">
+        <label for="note">Note</label>
+        <textarea
+          class="form-control"
+          placeholder="Type here"
+          id="note"
+          name="note"
+          style="height: 126px"
+        ></textarea>
+      </div>
+      <button type="submit" class="book-form-page__submit">Submit</button>
+    </form>
+
+    <footer class="footer">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list__item">
+            <a
+              class="nav__list__item__link nav__list__item__link_active"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li class="nav__list__item">
+            <a class="nav__list__item__link" href="./cars.html">Cars</a>
+          </li>
+          <li class="nav__list__item">
+            <a class="nav__list__item__link" href="./galery.html">Gallery</a>
+          </li>
+          <li class="nav__list__item">
+            <a class="nav__list__item__link" href="./contactus.html"
+              >Contact us</a
+            >
+          </li>
+          <li class="nav__list__item">
+            <a class="nav__list__item__link" href="#">Terms and conditions</a>
+          </li>
+        </ul>
+      </nav>
+      <img class="footer__logo" src="./assets/icons/logoLight.svg" alt="logo" />
+      <p class="copyright">
+        Copyright © 2020-2021 Greenhouse formula. All rights reserved.
+      </p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+      integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+      integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script type="module" src="./assets/js/script.js"></script>
+    <script type="module" src="./assets/js/forms.js"></script>
+  </body>
+</html>
